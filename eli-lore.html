@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>The P4perSMP</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script src="https://kit.fontawesome.com/79670ba214.js" crossorigin="anonymous"></script>
+        <link rel="icon"  href="P4persmp logo.jpg">
+        <link rel="stylesheet" type="text/css" href="style sheet.css">
+    </head>
+    <body class="eli-lore-page">
+        
+<div class="headingbox2-lore">
+    <h1 class="heading">The P4perSMP</h1>
+</div>
+<ul class="character-list-eli">
+    <li><a href="ethan-lore.html">C!Ethan!</a></li>
+    <li><a href="andy-lore.html">C!Andy</a></li>
+    <li><a href="taylor-lore.html">C!Taylor</a></li>
+    <li><a href="ashlyn-lore.html">C!Ashlyn</a></li>
+    <li><a href="desca-lore.html">C!Desca</a></li>
+    <li><a href="rachel-lore.html">C!Rachel</a></li>
+    <li><a href="ember-lore.html">C!Ember</a></li>
+    <li><a href="fire-lore.html">C!Fire</a></li>
+    <li><a href="val-lore.html">C!Val</a></li>
+    <li><a href="eli-lore.html">C!Eli</a></li>
+    <li><a href="mossie-lore.html">C!Mossie</a></li>
+    <li><a href="lore.html">Back</a></li>
+</ul>
+<div class="slideshow-eli">
+    <div class="slides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="C!Eli minecraft skin.png" style="width:100%">
+  </div>
+  <div class="slides fade">
+    <div class="numbertext">2/3</div>
+    <img src="C!Eli halloween minecraft skin.png" style="width:100%">
+  </div>
+  <div class="slides fade">
+    <div class="numbertext">3/3</div>
+    <img src="C!Eli new years minecraft skin.png" style="width:100%">
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<div style="text-align:center" class="dots-eli">
+  <span class="dot-eli" onclick="currentSlide(1)"></span>
+  <span class="dot-eli" onclick="currentSlide(2)"></span>
+  <span class="dot-eli" onclick="currentSlide(3)"></span>
+</div>
+<script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("slides");
+  let dots = document.getElementsByClassName("dot-eli");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active-eli", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active-eli";
+}
+</script>
+<img src="C!Eli lore achievement.png" class="eli-achievement-lore"/>
+<div class="eli-lore">
+    <ul>
+        <p class="para">Pre-Season 1</p>
+        <p class="para">C!Eli grew up in the north of Aldwynn however ran away due to a disaster. He made it to Coalhaven at age 12 and had to fend for himself.</p>
+        <p class="para"> </p>
+        <p class="para">Season 1</p>
+        <p class="para">C!Eli very quickly became friends with C!Taylor after venturing into Giredale. The two became "pilot pals" as C!Taylor had a plane which C!Eli then stole. He is often out adventuring doing quests to try get by or is off at pilot school. He attended the New Year's Eve party under the alias of "Voyager"</p>
+    </ul>
+</div>
+<img src="minecraft quadrocopter.png" class="quadrocopter"/>
+<div class="eli-credits">
+    <ul>
+        <p>All credits for C!Eli's lore belong to Elisinspace</p>
+        <li><a href="http://www.youtube.com/@elisinspace" class="links-eli">YouTube Main <i class="fa-brands fa-youtube"></i></a></li>
+        <li><a href="http://www.youtube.com/@elisinspaceLIVE" class="links-eli">YouTube Live <i class="fa-brands fa-youtube"></i></a></li>
+        <li><a href="https://www.instagram.com/elisinspace_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="links-eli">Instagram <i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="https://www.tiktok.com/@elisinspace?is_from_webapp=1&sender_device=pc" class="links-eli">Main TikTok <i class="fa-brands fa-tiktok"></i></a></li>
+        <li><a href="https://www.tiktok.com/@elisonearth?is_from_webapp=1&sender_device=pc" class="links-eli">TikTok Personal <i class="fa-brands fa-tiktok"></i></a></li>
+        <li><a href="https://www.twitch.tv/elisinspace/about" class="links-eli">Twitch <i class="fa-brands fa-twitch"></i></a></li>
+    </ul>
+</div>
+    </body>
+</html>

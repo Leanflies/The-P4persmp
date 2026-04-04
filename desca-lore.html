@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>The P4perSMP</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script src="https://kit.fontawesome.com/79670ba214.js" crossorigin="anonymous"></script>
+        <link rel="icon"  href="P4persmp logo.jpg">
+        <link rel="stylesheet" type="text/css" href="style sheet.css">
+    </head>
+    <body class="desca-lore-page">
+        
+<div class="headingbox2-lore">
+    <h1 class="heading">The P4perSMP</h1>
+</div>
+<ul class="character-list-desca">
+    <li><a href="ethan-lore.html">C!Ethan!</a></li>
+    <li><a href="andy-lore.html">C!Andy</a></li>
+    <li><a href="taylor-lore.html">C!Taylor</a></li>
+    <li><a href="ashlyn-lore.html">C!Ashlyn</a></li>
+    <li><a href="desca-lore.html">C!Desca</a></li>
+    <li><a href="rachel-lore.html">C!Rachel</a></li>
+    <li><a href="ember-lore.html">C!Ember</a></li>
+    <li><a href="fire-lore.html">C!Fire</a></li>
+    <li><a href="val-lore.html">C!Val</a></li>
+    <li><a href="eli-lore.html">C!Eli</a></li>
+    <li><a href="mossie-lore.html">C!Mossie</a></li>
+    <li><a href="lore.html">Back</a></li>
+</ul>
+<div class="slideshow-desca">
+    <div class="slides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="C!Desca minecraft skin.png" style="width:100%">
+  </div>
+  <div class="slides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="C!Desca christmas minecraft skin.png" style="width:100%">
+  </div>
+  <div class="slides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="C!Desca new years minecraft skin.png" style="width:100%">
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<div style="text-align:center" class="dots-desca">
+  <span class="dot-desca" onclick="currentSlide(1)"></span>
+  <span class="dot-desca" onclick="currentSlide(2)"></span>
+  <span class="dot-desca" onclick="currentSlide(3)"></span>
+</div>
+<script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("slides");
+  let dots = document.getElementsByClassName("dot-desca");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active-desca", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active-desca";
+}
+</script>
+<img src="C!Desca lore achievement.png" class="desca-achievement-lore"/>
+<div class="desca-lore">
+    <ul>
+        <p class="para">Pre-Season 1</p>
+        <p class="para">C!Desca grew up in Grimwyck with her paretns who were magic users. When her parents learnt that she wasn't able to do magic they rejected her. She moved to Giredale, and because of her love of magic she started using redstone inventions as a way to spread magic to people like her who couldn't do magic. After she left Grimwyck C!Ethan stayed friends with her and was one of the only people to accept the fact that she couldn't do magic.</p>
+        <p class="para"> </p>
+        <p class="para">Season 1</p>
+        <p class="para">Early in the season she goes on many adventures with C!Ethan and tries to help him find his rotten spellbook. She would often try stop C!Ethan and C!Andy from fighting but it didn't usually work. At christmas, she was C!Ethan's secret santa and built him a frog statue with redstone that resembled Lily. She attended the New Year's Eve party under the alias of "Edith Clark" and afterwards was recruited by C!Ethan to go rob the palace. When she learnt the Giredale guards were going door to door, looking for the stolen items, she took her share of the loot to C!Ethan's house until they found a better solution.</p>
+    </ul>
+</div>
+<div class="desca-credits">
+    <ul>
+        <p>All credits for C!Desca's lore belong to desca_gaming</p>
+        <li><a href="http://www.youtube.com/@Desca_Gaming" class="links-desca">YouTube <i class="fa-brands fa-youtube"></i></a></li>
+        <li><a href="https://www.instagram.com/descairl?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="links-desca">Instagram <i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="https://www.tiktok.com/@desca_gaming?is_from_webapp=1&sender_device=pc" class="links-desca">TikTok <i class="fa-brands fa-tiktok"></i></a></li>
+        <li><a href="https://www.twitch.tv/desca_gaming/about" class="links-desca">Twitch <i class="fa-brands fa-twitch"></i></a></li>
+    </ul>
+</div>
+    </body>
+</html>

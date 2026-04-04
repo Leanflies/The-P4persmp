@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>The P4perSMP</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script src="https://kit.fontawesome.com/79670ba214.js" crossorigin="anonymous"></script>
+        <link rel="icon"  href="P4persmp logo.jpg">
+        <link rel="stylesheet" type="text/css" href="style sheet.css">
+    </head>
+    <body class="fire-lore-page">
+        
+<div class="headingbox2-lore">
+    <h1 class="heading">The P4perSMP</h1>
+</div>
+<ul class="character-list-fire">
+    <li><a href="ethan-lore.html">C!Ethan!</a></li>
+    <li><a href="andy-lore.html">C!Andy</a></li>
+    <li><a href="taylor-lore.html">C!Taylor</a></li>
+    <li><a href="ashlyn-lore.html">C!Ashlyn</a></li>
+    <li><a href="desca-lore.html">C!Desca</a></li>
+    <li><a href="rachel-lore.html">C!Rachel</a></li>
+    <li><a href="ember-lore.html">C!Ember</a></li>
+    <li><a href="fire-lore.html">C!Fire</a></li>
+    <li><a href="val-lore.html">C!Val</a></li>
+    <li><a href="eli-lore.html">C!Eli</a></li>
+    <li><a href="mossie-lore.html">C!Mossie</a></li>
+    <li><a href="lore.html">Back</a></li>
+</ul>
+<div class="slideshow-fire">
+    <div class="slides fade">
+        <div class="numbertext">1 / 1</div>
+        <img src="C!Fire minecraft skin.png" style="width:100%">
+  </div>
+</div>
+<div style="text-align:center" class="dots-fire">
+  <span class="dot-fire" onclick="currentSlide(1)"></span>
+</div>
+<script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("slides");
+  let dots = document.getElementsByClassName("dot-fire");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active-fire", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active-fire";
+}
+</script>
+<img src="C!Fire lore achievement.png" class="fire-achievement-lore"/>
+<div class="fire-lore">
+    <ul>
+        <p class="para">Pre-Season 1</p>
+        <p class="para">C!Fire used to be good friends with C!Andy when they were kids. C!Andy sponsored her to start selling her artworks. She took these artworks outside of Aldwynn and ended up becoming super rich because of it.</p>
+        <p class="para"> </p>
+        <p class="para">Season 1</p>
+        <p class="para">C!Fire returned at the christmas episode as she was selling her paintings at the market. She has a connection with C!Taylor and has been living in her bookshop as well as paying C!Taylor's rent. She's also a fox.</p>
+    </ul>
+</div>
+<img src="minecraft fox sat.png" class="fox-sat"/>
+<div class="fire-credits">
+    <ul>
+        <p>All credits for C!Fire's lore belong to LunyLuna</p>
+        <li><a href="https://www.instagram.com/lunyluna?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="links-fire">Personal Instagram <i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="https://www.instagram.com/an.artistic.lunatic?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="links-fire">Art Instagram <i class="fa-brands fa-instagram"></i></a></li>
+    </ul>
+</div>
+    </body>
+</html>
