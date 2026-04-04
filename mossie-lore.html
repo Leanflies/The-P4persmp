@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>The P4perSMP</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script src="https://kit.fontawesome.com/79670ba214.js" crossorigin="anonymous"></script>
+        <link rel="icon"  href="P4persmp logo.jpg">
+        <link rel="stylesheet" type="text/css" href="style sheet.css">
+    </head>
+    <body class="mossie-lore-page">
+        
+<div class="headingbox2-lore">
+    <h1 class="heading">The P4perSMP</h1>
+</div>
+<ul class="character-list-mossie">
+    <li><a href="ethan-lore.html">C!Ethan!</a></li>
+    <li><a href="andy-lore.html">C!Andy</a></li>
+    <li><a href="taylor-lore.html">C!Taylor</a></li>
+    <li><a href="ashlyn-lore.html">C!Ashlyn</a></li>
+    <li><a href="desca-lore.html">C!Desca</a></li>
+    <li><a href="rachel-lore.html">C!Rachel</a></li>
+    <li><a href="ember-lore.html">C!Ember</a></li>
+    <li><a href="fire-lore.html">C!Fire</a></li>
+    <li><a href="val-lore.html">C!Val</a></li>
+    <li><a href="eli-lore.html">C!Eli</a></li>
+    <li><a href="mossie-lore.html">C!Mossie</a></li>
+    <li><a href="lore.html">Back</a></li>
+</ul>
+<div class="slideshow-mossie">
+    <div class="slides fade">
+        <div class="numbertext">1 / 1</div>
+        <img src="C!mossie minecraft skin.png" style="width:100%">
+  </div>
+</div>
+<div style="text-align:center" class="dots-mossie">
+  <span class="dot-mossie" onclick="currentSlide(1)"></span>
+</div>
+<script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("slides");
+  let dots = document.getElementsByClassName("dot-mossie");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active-mossie", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active-mossie";
+}
+</script>
+<img src="C!Mossie lore achievement.png" class="mossie-achievement-lore"/>
+<div class="mossie-lore">
+    <ul>
+        <p class="para">C!Mossie is a monk that owns a churcch just outside of Giredale. He's also a puppet made of wood, meaning he can't get wet. He recently broke free of the strings that made him a puppet but doesn't remember anything from before then. He also wears a ring around his neck which has a lot of importance to him.</p>
+    </ul>
+</div>
+<img src="minecraft wood block.png" class="wood-block"/>
+<div class="mossie-credits">
+    <ul>
+        <p>All credits for C!Mossie's lore belong to Mossiesocks</p>
+        <li><a href="http://www.youtube.com/@mossysocks" class="links-mossie">YouTube Main <i class="fa-brands fa-youtube"></i></a></li>
+        <li><a href="http://www.youtube.com/@mossysocksVODs" class="links-mossie">YouTube Vods <i class="fa-brands fa-youtube"></i></a></li>
+        <li><a href="https://www.instagram.com/mossy_socks?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="links-mossie">Instagram <i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="https://www.tiktok.com/@mossy_socks?is_from_webapp=1&sender_device=pc" class="links-mossie">TikTok <i class="fa-brands fa-tiktok"></i></a></li>
+        <li><a href="https://www.twitch.tv/mossy_socks" class="links-mossie">Twitch <i class="fa-brands fa-twitch"></i></a></li>
+    </ul>
+</div>
+    </body>
+</html>

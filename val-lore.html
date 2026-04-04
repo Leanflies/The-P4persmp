@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>The P4perSMP</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script src="https://kit.fontawesome.com/79670ba214.js" crossorigin="anonymous"></script>
+        <link rel="icon"  href="P4persmp logo.jpg">
+        <link rel="stylesheet" type="text/css" href="style sheet.css">
+    </head>
+    <body class="val-lore-page">
+        
+<div class="headingbox2-lore">
+    <h1 class="heading">The P4perSMP</h1>
+</div>
+<ul class="character-list-val">
+    <li><a href="ethan-lore.html">C!Ethan!</a></li>
+    <li><a href="andy-lore.html">C!Andy</a></li>
+    <li><a href="taylor-lore.html">C!Taylor</a></li>
+    <li><a href="ashlyn-lore.html">C!Ashlyn</a></li>
+    <li><a href="desca-lore.html">C!Desca</a></li>
+    <li><a href="rachel-lore.html">C!Rachel</a></li>
+    <li><a href="ember-lore.html">C!Ember</a></li>
+    <li><a href="fire-lore.html">C!Fire</a></li>
+    <li><a href="val-lore.html">C!Val</a></li>
+    <li><a href="eli-lore.html">C!Eli</a></li>
+    <li><a href="mossie-lore.html">C!Mossie</a></li>
+    <li><a href="lore.html">Back</a></li>
+</ul>
+<div class="slideshow-val">
+    <div class="slides fade">
+        <div class="numbertext">1 / 2</div>
+        <img src="C!val minecraft skin.png" style="width:100%">
+  </div>
+  <div class="slides fade">
+    <div class="numbertext">2/2</div>
+    <img src="C!Val new years minecraft skin.png" style="width:100%">
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<div style="text-align:center" class="dots-val">
+  <span class="dot-val" onclick="currentSlide(1)"></span>
+  <span class="dot-val" onclick="currentSlide(2)"></span>
+</div>
+<script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("slides");
+  let dots = document.getElementsByClassName("dot-val");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active-val", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active-val";
+}
+</script>
+<img src="C!Val lore achievement.png" class="val-achievement-lore"/>
+<div class="val-lore">
+    <ul>
+        <p class="para">Pre-Season 1</p>
+        <p class="para">C!Val is a guard for Giredale's royal palace and was a guard at the smae time C!Taylor was in prison which led to her dislike for them.</p>
+        <p class="para"> </p>
+        <p class="para">Season 1</p>
+        <p class="para">C!Val is first introduced at the christmas party as she is supposed to be keeping an eye on peopl at the christmas market. C!Rachel invites her to join them at the party after getting to know her at their flower shop and a while later C!Rachel walks her home. C!Val is once again working at the Neww Year's Eve party and is able to recognise everyone for the safety for the royal family. She recognises C!Taylor and warns her that she has a close eye on them. After the New Year's Eve party she goes to C!Rachel's flower shop almost every day, buying flowers each time and chatting with C!Rachel when there isn't other customers.</p>
+    </ul>
+</div>
+<div class="val-credits">
+    <ul>
+        <p>All credits for C!Val's lore belong to Valerbii</p>
+        <li><a href="https://www.instagram.com/valerbii?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="links-val">Personal Instagram <i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="https://www.twitch.tv/valerbii/" class="links-val">Twitch <i class="fa-brands fa-twitch"></i></a></li>
+    </ul>
+</div>
+    </body>
+</html>

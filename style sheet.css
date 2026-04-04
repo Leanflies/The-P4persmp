@@ -1,0 +1,4866 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "MyFont", sans-serif;
+    scroll-behavior: smooth;
+    box-sizing:border-box
+}
+
+.home-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: radial-gradient(circle,#04AA6D,#1B512D 80%);
+}
+
+.lore-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("landscape\ image3.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.quizzes-main-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("landscape\ image12.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.welcome-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("sculk minecraft wallpaper.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.characters-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("landscape\ image2.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.watch-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("Giredale\ town\ landscape.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.title{
+    color: #1B512D;
+    text-align: center;
+    text-shadow: 2px 2px black;
+}
+
+.titlebox{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 10;
+    background-color: rgb(42, 55, 55);
+    padding: 1%;
+    border-radius: 30px;
+    cursor: context-menu;
+}
+
+.welcome{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    background-color: rgb(42, 55, 55);
+    max-width: 200px;
+}
+
+.container1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup{
+    width:400px;
+    background: rgb(42, 55, 55);
+    border-radius: 6px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #ddd;
+    visibility: visible;
+    transition: transform 0.4s, top 0.4s;
+    z-index: 2;
+    overflow: hidden;
+    cursor: context-menu;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+.popuptext {
+    font-size: 10px;
+    text-align: center;
+    background-color: rgb(42, 55, 55);
+}
+
+.popuptext2 {
+    font-size: 10px;
+    text-align: center;
+    background-color: rgb(42, 55, 55);
+}
+
+.popuptext3 {
+    font-size: 10px;
+    text-align: center;
+    background-color: rgb(42, 55, 55);
+}
+
+@font-face{
+    font-family: "MyFont";
+    ;
+    src: url("Pixeled.ttf") format("truetype");
+}
+
+.headingbox{
+    border-radius: 6px;
+    background-color: rgb(1, 45, 43);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 100;
+    padding-left: 5%;
+    padding-right: 5%;
+    cursor: context-menu;
+}
+
+.headingbox2{
+    border-radius: 6px;
+    background-color: rgb(1, 45, 43);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 10;
+    left: 38%;
+    padding-left: 5%;
+    padding-right: 5%;
+    cursor: context-menu;
+}
+
+.heading{
+    text-align: center;
+    color: #017672;
+    text-shadow: 2px 2px black;
+}
+
+.bottombars{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: -200;
+}
+.pages{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #1B512D;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.pages li a{
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: ease-in-out .5s;
+}
+
+.pages li a:hover{
+    background-color: rgb(33, 190, 25);
+    box-shadow: 0 0 5px rgb(33, 190, 25), 0 0 25px rgb(33, 190, 25), 0 0 50px rgb(33, 190, 25), 0 0 100px rgb(33, 190, 25), 0 0 200px rgb(33, 190, 25);
+}
+
+.pages li a.active{
+    background-color: #04AA6D;
+}
+.pages li {
+  float: left;
+  border-right: 1px solid white;
+}
+
+.pages li:last-child {
+  border-right: none;
+}
+
+.creeper{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 10;
+    right: 5;
+    height: 150px;
+}
+
+.fish{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 10;
+    left: 5;
+    height: 150px;
+}
+
+.bluey{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 10;
+    right:5;
+    height: 150px;
+}
+
+.horn{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 10;
+    left: 5;
+    height: 150px;
+}
+
+.enchantedbook{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: -50;
+    height: 300px;
+}
+
+.fox{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: -50;
+    right: 5;
+    height: 250px;
+}
+
+.crow{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 90;
+    right: 5;
+    height: 150px;
+}
+
+.iron-golem{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 10;
+    left: 5;
+    height: 350px;
+}
+
+.welcome-achievement{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 83;
+    left: 0;
+    height: 50px;
+}
+
+.character-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+    background-color: #1B512D;
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.character-list li a{
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    transition: ease-in-out .5s;
+}
+
+.character-list li a:hover{
+    background-color: rgb(33, 190, 25);
+    box-shadow: 0 0 5px rgb(33, 190, 25), 0 0 25px rgb(33, 190, 25), 0 0 50px rgb(33, 190, 25), 0 0 100px rgb(33, 190, 25), 0 0 200px rgb(33, 190, 25);
+}
+
+.character-list li a.active{
+    background-color: #04AA6D;
+}
+
+.character-list li {
+  border-bottom: 1px solid white;
+}
+
+.character-list li:last-child {
+  border-right: none;
+}
+
+.ethan-name{
+    color: #017672;
+    background: rgb(1, 45, 43);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 17.5%;
+    left: 11%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    cursor: context-menu;
+}
+
+.ethan-achievement{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 3.5%;
+    left: 13%;
+}
+
+.ethan-skin{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 250;
+    left: 125;
+    height: 450px;
+}
+
+.ethan-key-facts{
+    background: rgb(1, 45, 43);
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 200;
+    left: 425;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    color: #017672;
+    text-shadow: 2px 2px black;
+    max-width: 310;
+    cursor: context-menu;
+}
+
+.ethan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #376c48;
+    text-shadow: 2px 2px black;
+}
+
+.character-list-ethan{
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+    background-color: #1B512D;
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.character-list-ethan li a{
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    transition: ease-in-out .5s;
+}
+
+.character-list-ethan li a:hover{
+    background-color: rgb(33, 190, 25);
+    box-shadow: 0 0 5px rgb(33, 190, 25), 0 0 25px rgb(33, 190, 25), 0 0 50px rgb(33, 190, 25), 0 0 100px rgb(33, 190, 25), 0 0 200px rgb(33, 190, 25);
+}
+
+.character-list-ethan li a.active{
+    background-color: #04AA6D;
+}
+
+.character-list-ethan li {
+  border-bottom: 1px solid white;
+}
+
+.character-list-ethan li:last-child {
+  border-right: none;
+}
+
+.ethan-siblings{
+    background: rgb(1, 45, 43);
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 590;
+    left: 425;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    color: #017672;
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+}
+
+.ethan-pets{
+    background: rgb(1, 45, 43);
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 160;
+    left: 775;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    color: #017672;
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+}
+
+.marlin{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 90;
+    right: 5;
+    height: 150px;
+}
+
+.lily{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 600;
+    right: 250;
+    height: 200px;
+}
+
+.bud{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 300;
+    right: 50;
+    height: 150px;
+}
+
+.dirt{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 645;
+    right: 500;
+    height: 120px;
+}
+
+.frame{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 250;
+    height: 400px;
+    z-index: 1;
+}
+
+.psmp-logo{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 313;
+    height: 275px;
+    z-index: 2;
+}
+
+.andy-siblings{
+    background-image: url("minecraft\ wood\ texture.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 590;
+    left: 425;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    color: #ffffff;
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+}
+
+.andy-pets{
+    background-image: url("minecraft\ wood\ texture.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 190;
+    left: 775;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    color: #ffffff;
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+}
+
+.andy-achievement{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 3.5%;
+    left: 13%;
+}
+
+.andy-skin{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 225;
+    left: 125;
+    height: 450px;
+}
+
+.andy-key-facts{
+    background-image: url("minecraft\ wood\ texture.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 200;
+    left: 425;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    color: #ffffff;
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+}
+
+.andy{
+    width: 100%;
+    background-color: #3c0404;
+}
+
+.character-list-andy{
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+    background-color: #a80000;
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.character-list-andy li a{
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    text-shadow: 2px 2px black;
+    transition: ease-in-out .5s;
+}
+
+.character-list-andy li a:hover{
+    background-color: rgb(255, 0, 0);
+    box-shadow: 0 0 5px rgb(255, 0, 0), 0 0 25px rgb(255, 0, 0), 0 0 50px rgb(255, 0, 0), 0 0 100px rgb(255, 0, 0), 0 0 200px rgb(255, 0, 0);
+}
+
+.character-list-andy li a.active{
+    background-color: #aa0404;
+}
+
+.character-list-andy li {
+  border-bottom: 1px solid white;
+}
+
+.character-list-andy li:last-child {
+  border-right: none;
+}
+
+.headingbox2-andy{
+    border-radius: 6px;
+    background-image: url("minecraft\ wood\ texture.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 10;
+    left: 38%;
+    padding-left: 5%;
+    padding-right: 5%;
+    cursor: context-menu;
+}
+
+.heading-andy{
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 2px black;
+}
+
+.andy-name{
+    color: #ffffff;
+    background-image: url("minecraft\ wood\ texture.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 17.5%;
+    left: 11%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+}
+
+.koda{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 640;
+    left: 150;
+    height: 140px;
+}
+
+.cheese{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 100;
+    right: 25;
+    height: 100px;
+}
+
+.doris{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 150;
+    right: 5;
+    height: 450px
+}
+
+.taylor-siblings{
+    background-image: url("long\ minecraft\ bookshelf.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 590;
+    left: 425;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    color: #ffffff;
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+}
+
+.taylor-pets{
+    background-image: url("long\ minecraft\ bookshelf.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 190;
+    left: 775;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    color: #ffffff;
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+}
+
+.taylor-achievement{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 3.5%;
+    left: 13%;
+}
+
+.taylor-skin{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 250;
+    left: 125;
+    height: 450px;
+}
+
+.taylor-key-facts{
+    background-image: url("long\ minecraft\ bookshelf.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 200;
+    left: 425;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    color: #ffffff;
+    text-shadow: 2px 2px black;
+    max-width: 310;
+    cursor: context-menu;
+}
+
+.taylor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1e3c04;
+}
+
+.character-list-taylor{
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+    background-color: #408001;
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.character-list-taylor li a{
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    text-shadow: 2px 2px black;
+    transition: ease-in-out .5s;
+}
+
+.character-list-taylor li a:hover{
+    background-color: rgb(80, 132, 87);
+    box-shadow: 0 0 5px rgb(80, 132, 87), 0 0 25px rgb(80, 132, 87), 0 0 50px rgb(80, 132, 87), 0 0 100px rgb(80, 132, 87), 0 0 200px rgb(80, 132, 87);
+}
+
+.character-list-taylor li a.active{
+    background-color: #0caa04;
+}
+
+.character-list-taylor li {
+  border-bottom: 1px solid white;
+}
+
+.character-list-taylor li:last-child {
+  border-right: none;
+}
+
+.headingbox2-taylor{
+    border-radius: 6px;
+    background-image: url("long\ minecraft\ bookshelf.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 10;
+    left: 38%;
+    padding-left: 5%;
+    padding-right: 5%;
+    cursor: context-menu;
+}
+
+.heading-taylor{
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 2px black;
+}
+
+.taylor-name{
+    color: #ffffff;
+    background-image: url("long\ minecraft\ bookshelf.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 17.5%;
+    left: 11%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+}
+
+.oakley{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 100;
+    right: 50;
+    height: 250px;
+}
+
+.ashlyn-siblings{
+    background:rgb(255, 157, 203);
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 590;
+    left: 425;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    color: #ff6ebe;
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+}
+
+.ashlyn-pets{
+    background: rgb(255, 157, 203);
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 200;
+    left: 875;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    color: #ff6ebe;
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+}
+
+.ashlyn-achievement{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 3.5%;
+    left: 13%;
+}
+
+.ashlyn-skin{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 250;
+    left: 125;
+    height: 450px;
+}
+
+.ashlyn-key-facts{
+    background: rgb(255, 157, 203);
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 200;
+    left: 425;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    color: #ff6ebe;
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+}
+
+.ashlyn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ff46af;
+}
+
+.character-list-ashlyn{
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+    background-color: #d73e88;
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.character-list-ashlyn li a{
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    text-shadow: 2px 2px black;
+    transition: ease-in-out .5s;
+}
+
+.character-list-ashlyn li a:hover{
+    background-color: rgb(156, 41, 99);
+    box-shadow: 0 0 5px rgb(156, 41, 99), 0 0 25px rgb(156, 41, 99), 0 0 50px rgb(156, 41, 99), 0 0 100px rgb(156, 41, 99), 0 0 200px rgb(156, 41, 99);
+}
+
+.character-list-ashlyn li a.active{
+    background-color: #9c04aa;
+}
+
+.character-list-ashlyn li {
+  border-bottom: 1px solid white;
+}
+
+.character-list-ashlyn li:last-child {
+  border-right: none;
+}
+
+.headingbox2-ashlyn{
+    border-radius: 6px;
+    background: rgb(255, 157, 203);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 10;
+    left: 38%;
+    padding-left: 5%;
+    padding-right: 5%;
+    cursor: context-menu;
+}
+
+.heading-ashlyn{
+    text-align: center;
+    color: #ff6ebe;
+    text-shadow: 2px 2px black;
+}
+
+.ashlyn-name{
+    color: #ff6ebe;
+    background: rgb(255, 157, 203);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 17.5%;
+    left: 11%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+}
+
+.open-button-ashlyn{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 550;
+    right: 55;
+    background-color: rgb(255, 157, 203);
+    color: #ff6ebe;
+    text-shadow: 2px 2px black;
+    cursor: pointer;
+}
+
+.close-button-ashlyn{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 500;
+    right: 52.5;
+    background-color: rgb(255, 157, 203);
+    color: #ff6ebe;
+    text-shadow: 2px 2px black;
+    cursor: pointer;
+}
+
+.sheldon{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 500;
+    right: 575;
+    height: 300px
+}
+
+.candle{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 50;
+    right: 50;
+    height: 150px;
+}
+
+.desca-pets{
+    background: rgb(94, 18, 42);
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 200;
+    left: 875;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    color: #e2ad00;
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+}
+
+.desca-achievement{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 3.5%;
+    left: 13%;
+}
+
+.desca-skin{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 250;
+    left: 125;
+    height: 450px;
+}
+
+.desca-key-facts{
+    background: rgb(94, 18, 42);
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 200;
+    left: 425;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    color: #e2ad00;
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+}
+
+.desca{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #752731;
+}
+
+.character-list-desca{
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+    background-color: #601f1f;
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.character-list-desca li a{
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    text-shadow: 2px 2px black;
+    transition: ease-in-out .5s;
+}
+
+.character-list-desca li a:hover{
+    background-color: rgb(156, 41, 41);
+    box-shadow: 0 0 5px rgb(156, 41, 41), 0 0 25px rgb(156, 41, 41), 0 0 50px rgb(156, 41, 41), 0 0 100px rgb(156, 41, 41), 0 0 200px rgb(156, 41, 41);
+}
+
+.character-list-desca li a.active{
+    background-color: #9c04aa;
+}
+
+.character-list-desca li {
+  border-bottom: 1px solid white;
+}
+
+.character-list-desca li:last-child {
+  border-right: none;
+}
+
+.headingbox2-desca{
+    border-radius: 6px;
+    background: rgb(94, 18, 42);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 10;
+    left: 38%;
+    padding-left: 5%;
+    padding-right: 5%;
+    cursor: context-menu;
+}
+
+.heading-desca{
+    text-align: center;
+    color: #e2ad00;
+    text-shadow: 2px 2px black;
+}
+
+.desca-name{
+    color: #e2ad00;
+    background: rgb(94, 18, 42);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 17.5%;
+    left: 11%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+}
+
+.open-button-desca{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 550;
+    right: 55;
+    background-color: rgb(94, 18, 42);
+    color: #e2ad00;
+    text-shadow: 2px 2px black;
+    cursor: pointer;
+}
+
+.close-button-desca{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 500;
+    right: 52.5;
+    background-color: rgb(94, 18, 42);
+    color: #e2ad00;
+    text-shadow: 2px 2px black;
+    cursor: pointer;
+}
+
+.rachel-siblings{
+    background: rgb(59, 1, 82);
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 590;
+    left: 425;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    color: #b881e9;
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+}
+
+.rachel-pets{
+    background: rgb(59, 1, 82);
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 200;
+    left: 875;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    color: #b881e9;
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+}
+
+.rachel-achievement{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 3.5%;
+    left: 13%;
+}
+
+.rachel-skin{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 250;
+    left: 125;
+    height: 450px;
+}
+
+.rachel-key-facts{
+    background: rgb(59, 1, 82);
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 200;
+    left: 425;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    color: #b881e9;
+    text-shadow: 2px 2px black;
+    max-width: 350;
+    cursor: context-menu;
+}
+
+.rachel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #8b69a4;
+}
+
+.character-list-rachel{
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+    background-color: #7f00b5;
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.character-list-rachel li a{
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    text-shadow: 2px 2px black;
+    transition: ease-in-out .5s;
+}
+
+.character-list-rachel li a:hover{
+    background-color: rgb(200, 81, 255);
+    box-shadow: 0 0 5px rgb(200, 81, 255), 0 0 25px rgb(200, 81, 255), 0 0 50px rgb(200, 81, 255), 0 0 100px rgb(200, 81, 255), 0 0 200px rgb(200, 81, 255);
+}
+
+.character-list-rachel li a.active{
+    background-color: #0caa04;
+}
+
+.character-list-rachel li {
+  border-bottom: 1px solid white;
+}
+
+.character-list-rachel li:last-child {
+  border-right: none;
+}
+
+.headingbox2-rachel{
+    border-radius: 6px;
+    background: rgb(59, 1, 82);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 10;
+    left: 38%;
+    padding-left: 5%;
+    padding-right: 5%;
+    cursor: context-menu;
+}
+
+.heading-rachel{
+    text-align: center;
+    color: #b881e9;
+    text-shadow: 2px 2px black;
+}
+
+.rachel-name{
+    color: #b881e9;
+    background: rgb(59, 1, 82);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 17.5%;
+    left: 11%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+}
+
+.pot1{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 600;
+    right: 500;
+    height: 100px
+}
+
+.red-flower{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 560;
+    right: 505;
+    height: 135px
+}
+
+.pot2{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 600;
+    right: 420;
+    height: 100px
+}
+
+.blue-flower{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 580;
+    right: 435;
+    height: 90px
+}
+
+.open-button-rachel{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 550;
+    right: 55;
+    background-color: rgb(59, 1, 82);
+    color: #b881e9;
+    text-shadow: 2px 2px black;
+    cursor: pointer;
+}
+
+.close-button-rachel{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 500;
+    right: 52.5;
+    background-color: rgb(59, 1, 82);
+    color: #b881e9;
+    text-shadow: 2px 2px black;
+    cursor: pointer;
+}
+
+.chest{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 610;
+    right: 50;
+    height: 150px
+}
+
+.open-button-ethan{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 550;
+    right: 55;
+    background-color: rgb(1, 45, 43);
+    color: #017672;
+    text-shadow: 2px 2px black;
+    cursor: pointer;
+}
+
+.close-button-ethan{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 500;
+    right: 52.5;
+    background-color: rgb(1, 45, 43);
+    color: #017672;
+    text-shadow: 2px 2px black;
+    cursor: pointer;
+}
+
+.open-button-andy{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 550;
+    right: 55;
+    color: #ffffff;
+    background-image: url("minecraft\ wood\ texture.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    text-shadow: 2px 2px black;
+    cursor: pointer;
+}
+
+.close-button-andy{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 500;
+    right: 52.5;
+    color: #ffffff;
+    background-image: url("minecraft\ wood\ texture.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    text-shadow: 2px 2px black;
+    cursor: pointer;
+}
+
+.open-button-taylor{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 550;
+    right: 55;
+    background-image: url("long\ minecraft\ bookshelf.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    text-shadow: 2px 2px black;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.close-button-taylor{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 500;
+    right: 52.5;
+    background-image: url("long\ minecraft\ bookshelf.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    text-shadow: 2px 2px black;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.credits-andy{
+    color: #ffffff;
+    background-image: url("minecraft\ wood\ texture.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 400;
+    right: 250;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    max-width: 400px;
+    font-size: 12px;
+    cursor: context-menu;
+}
+
+.links-andy{
+    color: #ffffff;
+    text-shadow: 2px 2px black;
+    text-decoration: none;
+}
+
+.credits-ethan{
+    color: #017672;
+    background: rgb(1, 45, 43);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 400;
+    right: 250;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    max-width: 400px;
+    font-size: 12px;
+    cursor: context-menu;
+}
+
+.links-ethan{
+    color: #017672;
+    text-shadow: 2px 2px black;
+    text-decoration: none;
+}
+
+.credits-taylor{
+    color: #ffffff;
+    background-image: url("long\ minecraft\ bookshelf.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 400;
+    right: 250;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    max-width: 400px;
+    font-size: 12px;
+    cursor: context-menu;
+}
+
+.links-taylor{
+    color: #ffffff;
+    text-shadow: 2px 2px black;
+    text-decoration: none;
+}
+
+.credits-ashlyn{
+    color: #ff6ebe;
+    background: rgb(255, 157, 203);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 400;
+    right: 200;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    max-width: 400px;
+    font-size: 12px;
+    cursor: context-menu;
+}
+
+.ashlyn-links{
+    color: #ff6ebe;
+    text-shadow: 2px 2px black;
+    text-decoration: none;
+}
+
+.links-ashlyn{
+    color: #ffffff;
+    text-shadow: 2px 2px black;
+    text-decoration: none;
+}
+
+.credits-desca{
+    color: #e2ad00;
+    background: rgb(94, 18, 42);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 350;
+    right: 200;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    max-width: 400px;
+    font-size: 12px;
+    cursor: context-menu;
+}
+
+.links-desca{
+    color: #e2ad00;
+    text-shadow: 2px 2px black;
+    text-decoration: none;
+}
+
+.credits-rachel{
+    color: #b881e9;
+    background: rgb(59, 1, 82);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 350;
+    right: 200;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    max-width: 400px;
+    font-size: 12px;
+    cursor: context-menu;
+}
+
+.links-rachel{
+    color: #b881e9;
+    text-shadow: 2px 2px black;
+    text-decoration: none;
+}
+
+.ember-pets{
+    background: rgb(29, 164, 172);
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 200;
+    left: 875;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    color: #e981d9;
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+}
+
+.ember-achievement{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 3.5%;
+    left: 13%;
+}
+
+.ember-skin{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 250;
+    left: 125;
+    height: 450px;
+}
+
+.ember-key-facts{
+    background: rgb(29, 164, 172);
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 200;
+    left: 425;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    color: #e981d9;
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+}
+
+.ember{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e981d9;
+}
+
+.character-list-ember{
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+    background-color: #a75a9b;
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.character-list-ember li a{
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    text-shadow: 2px 2px black;
+    transition: ease-in-out .5s;
+}
+
+.character-list-ember li a:hover{
+    background-color: rgb(81, 203, 255);
+    box-shadow: 0 0 5px rgb(81, 203, 255), 0 0 25px rgb(81, 203, 255), 0 0 50px rgb(81, 203, 255), 0 0 100px rgb(81, 203, 255), 0 0 200px rgb(81, 203, 255);
+}
+
+.character-list-ember li a.active{
+    background-color: #0caa04;
+}
+
+.character-list-ember li {
+  border-bottom: 1px solid white;
+}
+
+.character-list-ember li:last-child {
+  border-right: none;
+}
+
+.headingbox2-ember{
+    border-radius: 6px;
+    background: rgb(29, 164, 172);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 10;
+    left: 38%;
+    padding-left: 5%;
+    padding-right: 5%;
+    cursor: context-menu;
+}
+
+.heading-ember{
+    text-align: center;
+    color: #e981d9;
+    text-shadow: 2px 2px black;
+}
+
+.ember-name{
+    color: #e981d9;
+    background: rgb(29, 164, 172);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 17.5%;
+    left: 11%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+}
+
+.credits-ember{
+    color: #e981d9;
+    background: rgb(29, 164, 172);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 350;
+    right: 200;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    max-width: 400px;
+    font-size: 12px;
+    cursor: context-menu;
+}
+
+.links-ember{
+    color: #e981d9;
+    text-shadow: 2px 2px black;
+    text-decoration: none;
+}
+
+.open-button-ember{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 550;
+    right: 55;
+    background-color: rgb(29, 164, 172);
+    color: #e981d9;
+    text-shadow: 2px 2px black;
+    cursor: pointer;
+}
+
+.close-button-ember{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 500;
+    right: 52.5;
+    background-color: rgb(29, 164, 172);
+    color: #e981d9;
+    text-shadow: 2px 2px black;
+    cursor: pointer;
+}
+
+.candy{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 450;
+    left: 450;
+    height: 250px;
+}
+
+.fire-pets{
+    background: rgb(172, 72, 29);
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 200;
+    left: 875;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    color: #dd8e5c;
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+}
+
+.fire-achievement{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 3.5%;
+    left: 13%;
+}
+
+.fire-skin{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 250;
+    left: 125;
+    height: 450px;
+}
+
+.fire-key-facts{
+    background: rgb(172, 72, 29);
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 200;
+    left: 425;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    color: #dd8e5c;
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+}
+
+.fire{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #dd8e5c;
+}
+
+.character-list-fire{
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+    background-color: #714021;
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.character-list-fire li a{
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    text-shadow: 2px 2px black;
+    transition: ease-in-out .5s;
+}
+
+.character-list-fire li a:hover{
+    background-color: rgb(243, 161, 46);
+    box-shadow: 0 0 5px rgb(243, 161, 46), 0 0 25px rgb(243, 161, 46), 0 0 50px rgb(243, 161, 46), 0 0 100px rgb(243, 161, 46), 0 0 200px rgb(243, 161, 46);
+}
+
+.character-list-fire li a.active{
+    background-color: #0caa04;
+}
+
+.character-list-fire li {
+  border-bottom: 1px solid white;
+}
+
+.character-list-fire li:last-child {
+  border-right: none;
+}
+
+.headingbox2-fire{
+    border-radius: 6px;
+    background: rgb(172, 72, 29);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 10;
+    left: 38%;
+    padding-left: 5%;
+    padding-right: 5%;
+    cursor: context-menu;
+}
+
+.heading-fire{
+    text-align: center;
+    color: #dd8e5c;
+    text-shadow: 2px 2px black;
+}
+
+.fire-name{
+    color: #dd8e5c;
+    background: rgb(172, 72, 29);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 17.5%;
+    left: 11%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+}
+
+.credits-fire{
+    color: #dd8e5c;
+    background: rgb(172, 72, 29);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 350;
+    right: 200;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    max-width: 400px;
+    font-size: 12px;
+    cursor: context-menu;
+}
+
+.links-fire{
+    color: #dd8e5c;
+    text-shadow: 2px 2px black;
+    text-decoration: none;
+}
+
+.open-button-fire{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 550;
+    right: 55;
+    background-color: rgb(172, 72, 29);
+    color: #dd8e5c;
+    text-shadow: 2px 2px black;
+    cursor: pointer;
+}
+
+.close-button-fire{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 500;
+    right: 52.5;
+    background-color: rgb(172, 72, 29);
+    color: #dd8e5c;
+    text-shadow: 2px 2px black;
+    cursor: pointer;
+}
+
+.fire-fox{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 400;
+    left: 450;
+}
+
+.val-pets{
+    background: rgb(24, 111, 142);
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 200;
+    left: 875;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    color: #7c2f29;
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+}
+
+.val-achievement{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 3.5%;
+    left: 13%;
+}
+
+.val-skin{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 250;
+    left: 125;
+    height: 450px;
+}
+
+.val-key-facts{
+    background: rgb(24, 111, 142);
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 200;
+    left: 425;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    color: #7c2f29;
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+}
+
+.val{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #7c2f29;
+}
+
+.character-list-val{
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+    background-color: #6e98a0;
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.character-list-val li a{
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    text-shadow: 2px 2px black;
+    transition: ease-in-out .5s;
+}
+
+.character-list-val li a:hover{
+    background-color: rgb(179, 94, 94);
+    box-shadow: 0 0 5px rgb(179, 94, 94), 0 0 25px rgb(179, 94, 94), 0 0 50px rgb(179, 94, 94), 0 0 100px rgb(179, 94, 94), 0 0 200px rgb(179, 94, 94);
+}
+
+.character-list-val li a.active{
+    background-color: #0caa04;
+}
+
+.character-list-val li {
+  border-bottom: 1px solid white;
+}
+
+.character-list-val li:last-child {
+  border-right: none;
+}
+
+.headingbox2-val{
+    border-radius: 6px;
+    background: rgb(24, 111, 142);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 10;
+    left: 38%;
+    padding-left: 5%;
+    padding-right: 5%;
+    cursor: context-menu;
+}
+
+.heading-val{
+    text-align: center;
+    color: #7c2f29;
+    text-shadow: 2px 2px black;
+}
+
+.val-name{
+    color: #7c2f29;
+    background: rgb(24, 111, 142);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 17.5%;
+    left: 11%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+}
+
+.credits-val{
+    color: #7c2f29;
+    background: rgb(24, 111, 142);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 350;
+    right: 135;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    max-width: 400px;
+    font-size: 12px;
+    cursor: context-menu;
+}
+
+.links-val{
+    color: #7c2f29;
+    text-shadow: 2px 2px black;
+    text-decoration: none;
+}
+
+.open-button-val{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 550;
+    right: 55;
+    background-color: rgb(24, 111, 142);
+    color: #7c2f29;
+    text-shadow: 2px 2px black;
+    cursor: pointer;
+}
+
+.close-button-val{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 500;
+    right: 52.5;
+    background-color: rgb(24, 111, 142);
+    color: #7c2f29;
+    text-shadow: 2px 2px black;
+    cursor: pointer;
+}
+
+.headingbox2-eli{
+    border-radius: 6px;
+    background: #4f0d09;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 10;
+    left: 38%;
+    padding-left: 5%;
+    padding-right: 5%;
+    cursor: context-menu;
+}
+
+.heading-eli{
+    text-align: center;
+    color: rgb(47, 45, 107);
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+}
+
+.eli-pets{
+    background: #4f0d09;
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 150;
+    left: 750;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    color: rgb(47, 45, 107);
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+}
+
+.eli-achievement{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 3.5%;
+    left: 13%;
+}
+
+.eli-skin{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 250;
+    left: 125;
+    height: 450px;
+}
+
+.eli-key-facts{
+    background: #4f0d09;
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 200;
+    left: 425;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    color: rgb(47, 45, 107);
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+}
+
+.eli{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(47, 45, 107);
+}
+
+.character-list-eli{
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+    background-color: #005096;
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.character-list-eli li a{
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    text-shadow: 2px 2px black;
+    transition: ease-in-out .5s;
+}
+
+.character-list-eli li a:hover{
+    background-color: rgb(94, 108, 179);
+    box-shadow: 0 0 5px rgb(94, 108, 179), 0 0 25px rgb(94, 108, 179), 0 0 50px rgb(94, 108, 179), 0 0 100px rgb(94, 108, 179), 0 0 200px rgb(94, 108, 179);
+}
+
+.character-list-eli li a.active{
+    background-color: #0caa04;
+}
+
+.character-list-eli li {
+  border-bottom: 1px solid white;
+}
+
+.character-list-eli li:last-child {
+  border-right: none;
+}
+
+.eli-name{
+    color: rgb(47, 45, 107);
+    background: #4f0d09;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 17.5%;
+    left: 11%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+}
+
+.credits-eli{
+    color: rgb(47, 45, 107);
+    background: #4f0d09;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 400;
+    right: 250;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    max-width: 400px;
+    font-size: 12px;
+    cursor: context-menu;
+}
+
+.links-eli{
+    color: rgb(47, 45, 107);
+    text-shadow: 2px 2px black;
+    text-decoration: none;
+}
+
+.open-button-eli{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 550;
+    right: 55;
+    background-color: #4f0d09;
+    color: rgb(47, 45, 107);
+    text-shadow: 2px 2px black;
+    cursor: pointer;
+}
+
+.close-button-eli{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 500;
+    right: 52.5;
+    background-color: #4f0d09;
+    color: rgb(47, 45, 107);
+    text-shadow: 2px 2px black;
+    cursor: pointer;
+}
+
+.headingbox2-mossie{
+    border-radius: 6px;
+    background-image: url("Minecraft\ Mossy\ Cobblestone.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 10;
+    left: 38%;
+    padding-left: 5%;
+    padding-right: 5%;
+    cursor: context-menu;
+}
+
+.heading-mossie{
+    text-align: center;
+    color: rgb(26, 45, 30);
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+}
+
+.mossie-pets{
+    background-image: url("Minecraft\ Mossy\ Cobblestone.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 200;
+    left: 875;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    color: rgb(26, 45, 30);
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+}
+
+.mossie-achievement{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 3.5%;
+    left: 13%;
+}
+
+.mossie-skin{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 250;
+    left: 125;
+    height: 450px;
+}
+
+.mossie-key-facts{
+    background-image: url("Minecraft\ Mossy\ Cobblestone.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 200;
+    left: 425;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    color: rgb(26, 45, 30);
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+}
+
+.mossie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(26, 45, 30);
+}
+
+.character-list-mossie{
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+    background-color: #009634;
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.character-list-mossie li a{
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    text-shadow: 2px 2px black;
+    transition: ease-in-out .5s;
+}
+
+.character-list-mossie li a:hover{
+    background-color: rgb(94, 179, 102);
+    box-shadow: 0 0 5px rgb(94, 179, 102), 0 0 25px rgb(94, 179, 102), 0 0 50px rgb(94, 179, 102), 0 0 100px rgb(94, 179, 102), 0 0 200px rgb(94, 179, 102);
+}
+
+.character-list-mossie li a.active{
+    background-color: #0caa04;
+}
+
+.character-list-mossie li {
+  border-bottom: 1px solid white;
+}
+
+.character-list-mossie li:last-child {
+  border-right: none;
+}
+
+.mossie-name{
+    color: rgb(26, 45, 30);
+    background-image: url("Minecraft\ Mossy\ Cobblestone.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 17.5%;
+    left: 11%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+}
+
+.credits-mossie{
+    color: rgb(26, 45, 30);
+    background-image: url("Minecraft\ Mossy\ Cobblestone.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 350;
+    right: 250;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    max-width: 400px;
+    font-size: 16px;
+    cursor: context-menu;
+}
+
+.links-mossie{
+    color: rgb(26, 45, 30);
+    text-shadow: 2px 2px black;
+    text-decoration: none;
+}
+
+.open-button-mossie{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 550;
+    right: 55;
+    background-image: url("Minecraft\ Mossy\ Cobblestone.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    color: rgb(26, 45, 30);
+    text-shadow: 2px 2px black;
+    cursor: pointer;
+}
+
+.close-button-mossie{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 500;
+    right: 52.5;
+    background-image: url("Minecraft\ Mossy\ Cobblestone.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    color: rgb(26, 45, 30);
+    text-shadow: 2px 2px black;
+    cursor: pointer;
+}
+
+.details{
+    background-color: rgb(1, 45, 43);
+    color: #017672;
+    border-radius: 6px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    text-shadow: 2px 2px black;
+    justify-content: center;
+    display: flex;
+    position: fixed;
+    text-align: center;
+    max-width: 700px;
+    font-size: 20px;
+    top: 250;
+    cursor: context-menu;
+}
+
+.ethan-credit-link{
+    color: #017672;
+    transition: ease-in-out .5s;
+}
+
+.ethan-credit-link:hover{
+    background-image: url("sculk minecraft wallpaper.jpg");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.plane{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    height: 250px;
+    top: 425;
+    left: 350;
+}
+
+.ethan-lore{
+    background: rgb(1, 45, 43);
+    color: #017672;
+    display: block;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    max-width: 895;
+    right: 50;
+    top: 175;
+    font-size: 16px;
+    z-index: -1;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: .5%;
+    padding-bottom: .5%;
+    border-radius: 6px;
+    cursor: context-menu;
+}
+
+.ethan-credits{
+    background: rgb(1, 45, 43);
+    color: #017672;
+    display: block;
+    position: fixed;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: .5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    max-width: 300px;
+    font-size: 12px;
+    top: 475;
+    left: 160;
+    cursor: context-menu;
+}
+
+.ethan-lore-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #376c48;
+    text-shadow: 2px 2px black;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.ethan-lore-page::-webkit-scrollbar {
+    display: none;
+}
+
+.headingbox2-lore{
+    position: absolute;
+    border-radius: 6px;
+    background-color: rgb(1, 45, 43);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 10;
+    left: 38%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.ethan-achievement-lore{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 3.5%;
+    right: .5%;
+}
+
+.para {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    line-height: 1.4;
+    white-space: pre-wrap;
+}
+
+.slideshow-ethan{
+    position: fixed;
+    margin: auto;
+    left: 175;
+    top: 25;
+    width: 250px;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  font-family: "MyFont", sans-serif;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot-ethan {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(1, 45, 43);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dots-ethan{
+    position: fixed;
+    left: 205;
+    top: 330;
+}
+
+.active-ethan, .dot-ethan:hover {
+  background-color: #017672;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.dot-andy {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(255, 0, 0);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active-andy, .dot-andy:hover {
+  background-color: #a80000;
+}
+
+.andy-achievement-lore{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 3.5%;
+    right: .5%;
+}
+
+.andy-lore{
+    background-image: url(minecraft\ wood\ texture.jpg);
+    color: #ffffff;
+    display: block;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    max-width: 895;
+    right: 50;
+    top: 175;
+    font-size: 16px;
+    z-index: -1;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: .5%;
+    padding-bottom: .5%;
+    border-radius: 6px;
+    cursor: context-menu;
+}
+
+.andy-credits{
+    background-image: url(minecraft\ wood\ texture.jpg);
+    color: #ffffff;
+    display: block;
+    position: fixed;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: .5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    max-width: 300px;
+    font-size: 12px;
+    top: 420;
+    left: 160;
+    cursor: context-menu;
+}
+
+.andy-lore-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #3c0404;
+    text-shadow: 2px 2px black;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.andy-lore-page::-webkit-scrollbar {
+    display: none;
+}
+
+.slideshow-andy{
+    position: fixed;
+    margin: auto;
+    left: 175;
+    top: 25;
+    width: 250px;
+}
+
+.dots-andy{
+    position: fixed;
+    left: 205;
+    top: 330;
+}
+
+.watch-ethan{
+    background: rgb(1, 45, 43);
+    color: #017672;
+    display: block;
+    position: fixed;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    max-width: 300px;
+    font-size: 12px;
+    top: 140;
+    left: 100;
+    padding-bottom: 5;
+    padding-top: 5;
+    cursor: context-menu;
+}
+
+.watch-links-ethan{
+    color: #017672;
+    text-decoration: none;
+    transition: ease-in-out .5s;
+}
+
+.watch-links-ethan:hover{
+    color: #00bdb7;
+}
+
+.backArrow{
+    font-size: 90px;
+    color: #fff;
+    position: fixed;
+    top: -125;
+    left: 10;
+    transition: ease-in-out .5s;
+}
+
+.backArrow:hover{
+    background-image: url(sculk\ minecraft\ wallpaper.jpg);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.watch-andy{
+    background-image: url(minecraft\ wood\ texture.jpg);
+    color: #ffffff;
+    display: block;
+    position: fixed;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    max-width: 300px;
+    font-size: 12px;
+    top: 315;
+    left: 100;
+    padding-bottom: 5;
+    padding-top: 5;
+    cursor: context-menu;
+}
+
+.watch-links-andy{
+    color: #ffffff;
+    text-decoration: none;
+    transition: ease-in-out .5s;
+}
+
+.watch-links-andy:hover{
+    color: #960a0a;
+}
+
+.watch-taylor{
+    background-image: url(normal\ minecraft\ bookshelf.jpg);
+    color: #ffffff;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: block;
+    position: fixed;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    max-width: 300px;
+    font-size: 12px;
+    top: 490;
+    left: 100;
+    padding-bottom: 5;
+    padding-top: 5;
+    cursor: context-menu;
+}
+
+.watch-links-taylor{
+    color: #ffffff;
+    text-decoration: none;
+    transition: ease-in-out .5s;
+}
+
+.watch-links-taylor:hover{
+    color: #1e3c04;
+}
+
+.watch-rachel{
+    background-color: rgb(59, 1, 82);
+    color: #b881e9;
+    display: block;
+    position: fixed;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    max-width: 300px;
+    font-size: 12px;
+    padding-bottom: 5;
+    padding-top: 5;
+    top: 490;
+    left: 450;
+    cursor: context-menu;
+}
+
+.watch-links-rachel{
+    color: #b881e9;
+    text-decoration: none;
+    transition: ease-in-out .5s;
+}
+
+.watch-links-rachel:hover{
+    color: #9b74ff;
+}
+
+.watch-desca{
+    background-color: rgb(94, 18, 42);
+    color: #e2ad00;
+    display: block;
+    position: fixed;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    max-width: 300px;
+    font-size: 12px;
+    padding-bottom: 5;
+    padding-top: 5;
+    top: 315;
+    left: 450;
+    cursor: context-menu;
+}
+
+.watch-links-desca{
+    color: #e2ad00;
+    text-decoration: none;
+    transition: ease-in-out .5s;
+}
+
+.watch-links-desca:hover{
+    color: #ad8609;
+}
+
+.watch-ashlyn{
+    background-color: rgb(255, 157, 203);
+    color: #ff6ebe;
+    display: block;
+    position: fixed;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    max-width: 300px;
+    font-size: 12px;
+    padding-bottom: 5;
+    padding-top: 5;
+    top: 140;
+    left: 450;
+    cursor: context-menu;
+}
+
+.watch-links-ashlyn{
+    color: #ff6ebe;
+    text-decoration: none;
+    transition: ease-in-out .5s;
+}
+
+.watch-links-ashlyn:hover{
+    color: #ff0090;
+}
+
+.headingbox3{
+    border-radius: 6px;
+    background-color: rgb(1, 45, 43);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 10;
+    padding-left: 5%;
+    padding-right: 5%;
+    cursor: context-menu;
+}
+
+.watch-ember{
+    background-color: rgb(29, 164, 172);
+    color: #e981d9;
+    display: block;
+    position: fixed;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    max-width: 255px;
+    font-size: 12px;
+    padding-bottom: 5;
+    padding-top: 5;
+    top: 140;
+    left: 800;
+    cursor: context-menu;
+}
+
+.watch-fire{
+    background-color: rgb(172, 72, 29);
+    color: #dd8e5c;
+    display: block;
+    position: fixed;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    max-width: 255px;
+    font-size: 12px;
+    padding-bottom: 5;
+    padding-top: 5;
+    top: 315;
+    left: 800;
+    cursor: context-menu;
+}
+
+.watch-val{
+    background-color: rgb(24, 111, 142);
+    color: #7c2f29;
+    display: block;
+    position: fixed;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    max-width: 255px;
+    font-size: 12px;
+    padding-bottom: 5;
+    padding-top: 5;
+    top: 490;
+    left: 800;
+    cursor: context-menu;
+}
+
+.watch-eli{
+    background-color: rgb(47, 45, 107);
+    color: #4f0d09;
+    display: block;
+    position: fixed;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    max-width: 255px;
+    font-size: 12px;
+    padding-bottom: 5;
+    padding-top: 5;
+    top: 200;
+    left: 1150;
+    cursor: context-menu;
+}
+
+.watch-links-eli{
+    color: #4f0d09;
+    text-decoration: none;
+    transition: ease-in-out .5s;
+}
+
+.watch-links-eli:hover{
+    color: #005096;
+}
+
+.watch-mossie{
+    background-image: url(Minecraft\ Mossy\ Cobblestone.jpg);
+    color: rgb(23, 78, 35);
+    display: block;
+    position: fixed;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    max-width: 255px;
+    font-size: 12px;
+    padding-bottom: 5;
+    padding-top: 5;
+    top: 400;
+    left: 1150;
+    cursor: context-menu;
+}
+
+.watch-links-mossie{
+    color: rgb(23, 78, 35);
+    text-decoration: none;
+    transition: ease-in-out .5s;
+}
+
+.watch-links-mossie:hover{
+    color: rgb(59, 98, 67);
+}
+
+.popup2{
+    width:600px;
+    background: rgb(42, 55, 55);
+    border-radius: 6px;
+    position: fixed;
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #ddd;
+    visibility: visible;
+    transition: transform 0.4s, top 0.4s;
+    z-index: 2;
+    overflow: hidden;
+    cursor: context-menu;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    left: 500px;
+}
+
+.container2{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.all-characters-fanart{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    top: 50;
+    right: 50;
+    max-height: 300px;
+}
+
+.taylor-art-credit1{
+    color: #ffffff;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    top: 350;
+    right: 40;
+    width: 240px;
+    text-align: center;
+    cursor: context-menu;
+    text-shadow: 2px 2px black;
+}
+
+.taylor-art-credit-link{
+    color: #ffffff;
+    text-decoration: none;
+    transition: ease-in-out .5s;
+}
+
+.taylor-art-credit-link:hover{
+    color: #1e3c04;
+}
+
+.pinefall-siblings-fanart{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    top: 150;
+    right: 75;
+    max-height: 300px;
+}
+
+.taylor-art-credit2{
+    color: #ffffff;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    top: 450;
+    right: 75;
+    text-align: center;
+    cursor: context-menu;
+    text-shadow: 2px 2px black;
+}
+
+.greenwood-koda-fanart{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    top: 150;
+    left: 575;
+    max-height: 300px;
+}
+
+.taylor-art-credit3{
+    color: #ffffff;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    top: 450;
+    right: 600;
+    text-align: center;
+    cursor: context-menu;
+    text-shadow: 2px 2px black;
+    width: 250px;
+}
+
+.lonelyangel-fanart{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    top: 450;
+    left: 250;
+    max-height: 200px;
+}
+
+.ethan-art-credit1{
+    color: #ffffff;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    top: 650;
+    left: 250;
+    text-align: center;
+    cursor: context-menu;
+    text-shadow: 2px 2px black;
+    width: 300px;
+}
+
+.ethan-art-credit-link{
+    color: #ffffff;
+    text-decoration: none;
+    transition: ease-in-out .5s;
+}
+
+.ethan-art-credit-link:hover{
+    background-image: url("sculk minecraft wallpaper.jpg");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.greenwood-fanart1{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    top: 550;
+    left: 650;
+    max-height: 200px;
+}
+
+.ethan-art-credit2{
+    color: #ffffff;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    top: 550;
+    left: 825;
+    text-align: center;
+    cursor: context-menu;
+    text-shadow: 2px 2px black;
+    width: 150px;
+}
+
+.greenwood-fanart2{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    top: 550;
+    left: 1000;
+    max-height: 200px;
+}
+
+.andy-art-credit1{
+    color: #ffffff;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    top: 550;
+    left: 1235;
+    text-align: center;
+    cursor: context-menu;
+    text-shadow: 2px 2px black;
+    width: 150px;
+}
+
+.andy-art-credit-link{
+    color: #ffffff;
+    text-decoration: none;
+    transition: ease-in-out .5s;
+}
+
+.andy-art-credit-link:hover{
+    color: #3c0404;
+}
+
+.doris-fanart{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    top: 150;
+    left: 250;
+    max-height: 200px;
+}
+
+.taylor-art-credit4{
+    color: #ffffff;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    top: 350;
+    left: 270;
+    width: 300px;
+    text-align: center;
+    cursor: context-menu;
+    text-shadow: 2px 2px black;
+}
+
+.popup3{
+    width:400px;
+    background: rgb(42, 55, 55);
+    border-radius: 6px;
+    position: fixed;
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #ddd;
+    visibility: visible;
+    transition: transform 0.4s, top 0.4s;
+    z-index: 2;
+    overflow: hidden;
+    cursor: context-menu;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    left: 500px;
+}
+
+.container3{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pinefall-banner-fanart{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    top: 150;
+    right: 50;
+    max-height: 300px;
+}
+
+.andy-art-credit2{
+    color: #ffffff;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    top: 450;
+    right: 40;
+    text-align: center;
+    cursor: context-menu;
+    text-shadow: 2px 2px black;
+    width: 250px;
+}
+
+.bear-fanart{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    top: 150;
+    right: 75;
+    max-height: 300px;
+}
+
+.andy-art-credit3{
+    color: #ffffff;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    top: 450;
+    right: 100;
+    text-align: center;
+    cursor: context-menu;
+    text-shadow: 2px 2px black;
+    width: 250px;
+}
+
+.pinefall-siblings-fanart2{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    top: 450;
+    left: 200;
+    max-height: 200px;
+}
+
+.andy-art-credit4{
+    color: #ffffff;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    top: 450;
+    left: 410;
+    text-align: center;
+    cursor: context-menu;
+    text-shadow: 2px 2px black;
+    width: 200px;
+}
+
+.taylor-masquerade-ball-fanart{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    top: 575;
+    left: 625;
+    max-height: 175px;
+}
+
+.taylor-art-credit5{
+    color: #ffffff;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    top: 575;
+    left: 735;
+    text-align: center;
+    cursor: context-menu;
+    text-shadow: 2px 2px black;
+    width: 200px;
+}
+
+.taylor-halloween-fanart{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    top: 575;
+    left: 950;
+    max-height: 175px;
+}
+
+.taylor-art-credit6{
+    color: #ffffff;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    top: 575;
+    left: 1090;
+    text-align: center;
+    cursor: context-menu;
+    text-shadow: 2px 2px black;
+    width: 200px;
+}
+
+.background1{
+    border-radius: 16px;
+    max-width: 300px;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+.image-association{
+    top: 550;
+    left: 150;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+}
+
+.image-association-text{
+    text-decoration: none;
+    color: #ffffff;
+    top: 593;
+    left: 195;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    text-shadow: 2px 2px black;
+    transition: ease-in-out .5s;
+    max-width: 200px;
+    text-align: center;
+}
+
+.image-association-text:hover{
+    background-image: url("sculk minecraft wallpaper.jpg");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.background2{
+    border-radius: 16px;
+    max-width: 300px;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+.emoji-association{
+    top: 550;
+    left: 550;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+}
+
+.emoji-association-text{
+    text-decoration: none;
+    color: #ffffff;
+    top: 595;
+    left: 593;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    text-shadow: 2px 2px black;
+    transition: ease-in-out .5s;
+    max-width: 200px;
+    text-align: center;
+}
+
+.emoji-association-text:hover{
+    background-image: url("sculk minecraft wallpaper.jpg");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.background3{
+    border-radius: 16px;
+    max-width: 300px;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+.lore-quiz{
+    top: 550;
+    left: 950;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+}
+
+.lore-quiz-text{
+    text-decoration: none;
+    color: #ffffff;
+    top: 610;
+    left: 1030;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    max-width: 200px;
+    text-align: center;
+    text-shadow: 2px 2px black;
+    transition: ease-in-out .5s;
+}
+
+.lore-quiz-text:hover{
+    background-image: url("sculk minecraft wallpaper.jpg");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.background4{
+    border-radius: 16px;
+    max-width: 300px;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+.town-quiz{
+    top: 350;
+    left: 350;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+}
+
+.town-quiz-text{
+    text-decoration: none;
+    color: #ffffff;
+    top: 410;
+    left: 430;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    max-width: 200px;
+    text-align: center;
+    text-shadow: 2px 2px black;
+    transition: ease-in-out .5s;
+}
+
+.town-quiz-text:hover{
+    background-image: url("sculk minecraft wallpaper.jpg");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.background5{
+    border-radius: 16px;
+    max-width: 300px;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+.colour-association{
+    top: 350;
+    left: 750;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+}
+
+.colour-association-text{
+    text-decoration: none;
+    color: #ffffff;
+    top: 395;
+    left: 802;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    max-width: 200px;
+    text-align: center;
+    text-shadow: 2px 2px black;
+    transition: ease-in-out .5s;
+}
+
+.colour-association-text:hover{
+    background-image: url("sculk minecraft wallpaper.jpg");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.background7{
+    border-radius: 16px;
+    max-width: 300px;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+.quote-quiz{
+    top: 150;
+    left: 550;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+}
+
+.quote-quiz-text{
+    text-decoration: none;
+    color: #ffffff;
+    top: 210;
+    left: 620;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    max-width: 200px;
+    text-align: center;
+    text-shadow: 2px 2px black;
+    transition: ease-in-out .5s;
+}
+
+.quote-quiz-text:hover{
+    background-image: url("sculk minecraft wallpaper.jpg");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+.dot-taylor {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(23, 78, 35);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active-taylor, .dot-taylor:hover {
+  background-color: #0caa04;
+}
+
+.taylor-achievement-lore{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 3.5%;
+    right: .5%;
+}
+
+.taylor-lore{
+    background-image: url(long\ minecraft\ bookshelf.jpg);
+    color: #ffffff;
+    display: block;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    max-width: 895;
+    right: 50;
+    top: 175;
+    font-size: 16px;
+    z-index: -1;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: .5%;
+    padding-bottom: .5%;
+    border-radius: 6px;
+    cursor: context-menu;
+}
+
+.taylor-credits{
+    background-image: url(long\ minecraft\ bookshelf.jpg);
+    color: #ffffff;
+    display: block;
+    position: fixed;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: .5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    max-width: 300px;
+    font-size: 12px;
+    top: 420;
+    left: 160;
+    cursor: context-menu;
+}
+
+.taylor-lore-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1e3c04;
+    text-shadow: 2px 2px black;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.taylor-lore-page::-webkit-scrollbar {
+    display: none;
+}
+
+.slideshow-taylor{
+    position: fixed;
+    margin: auto;
+    left: 175;
+    top: 25;
+    width: 250px;
+}
+
+.dots-taylor{
+    position: fixed;
+    left: 240;
+    top: 325;
+}
+
+.dot-ashlyn {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #ff6ebe;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active-ashlyn, .dot-ashlyn:hover {
+  background-color: #ff0090;
+}
+
+.ashlyn-achievement-lore{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 3.5%;
+    right: .5%;
+}
+
+.ashlyn-lore{
+    background-color: #ff46af;
+    color: #ffffff;
+    display: block;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    max-width: 895;
+    right: 50;
+    top: 175;
+    font-size: 16px;
+    z-index: -1;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: .5%;
+    padding-bottom: .5%;
+    border-radius: 6px;
+    cursor: context-menu;
+}
+
+.ashlyn-credits{
+    background-color: #ff46af;
+    color: #fff;
+    display: block;
+    position: fixed;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: .5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    max-width: 300px;
+    font-size: 12px;
+    top: 420;
+    left: 160;
+    cursor: context-menu;
+}
+
+.ashlyn-lore-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(255, 157, 203);
+    text-shadow: 2px 2px black;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.ashlyn-lore-page::-webkit-scrollbar {
+    display: none;
+}
+
+.slideshow-ashlyn{
+    position: fixed;
+    margin: auto;
+    left: 175;
+    top: 25;
+    width: 250px;
+}
+
+.dots-ashlyn{
+    position: fixed;
+    left: 250;
+    top: 330;
+}
+
+.dot-desca {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #e2ad00;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active-desca, .dot-desca:hover {
+  background-color: #FFD342;
+}
+
+.desca-achievement-lore{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 3.5%;
+    right: .5%;
+}
+
+.desca-lore{
+    background-color: rgb(94, 18, 42);
+    color: #e2ad00;
+    display: block;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    max-width: 895;
+    right: 50;
+    top: 175;
+    font-size: 16px;
+    z-index: -1;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: .5%;
+    padding-bottom: .5%;
+    border-radius: 6px;
+    cursor: context-menu;
+}
+
+.desca-credits{
+    background-color: rgb(94, 18, 42);
+    color: #e2ad00;
+    display: block;
+    position: fixed;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: .5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    max-width: 300px;
+    font-size: 12px;
+    top: 420;
+    left: 160;
+    cursor: context-menu;
+}
+
+.desca-lore-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #752731;
+    text-shadow: 2px 2px black;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.desca-lore-page::-webkit-scrollbar {
+    display: none;
+}
+
+.slideshow-desca{
+    position: fixed;
+    margin: auto;
+    left: 175;
+    top: 25;
+    width: 250px;
+}
+
+.dots-desca{
+    position: fixed;
+    left: 270;
+    top: 330;
+}
+
+.dot-rachel {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #b881e9;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active-rachel, .dot-rachel:hover {
+  background-color: rgb(59, 1, 82);
+}
+
+.rachel-achievement-lore{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 3.5%;
+    right: .5%;
+}
+
+.rachel-lore{
+    background-color: rgb(59, 1, 82);
+    color: #b881e9;
+    display: block;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    max-width: 895;
+    right: 50;
+    top: 175;
+    font-size: 16px;
+    z-index: -1;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: .5%;
+    padding-bottom: .5%;
+    border-radius: 6px;
+    cursor: context-menu;
+}
+
+.rachel-credits{
+    background-color: rgb(59, 1, 82);
+    color: #b881e9;
+    display: block;
+    position: fixed;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: .5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    max-width: 300px;
+    font-size: 12px;
+    top: 420;
+    left: 160;
+    cursor: context-menu;
+}
+
+.rachel-lore-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #8b69a4;
+    text-shadow: 2px 2px black;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.rachel-lore-page::-webkit-scrollbar {
+    display: none;
+}
+
+.slideshow-rachel{
+    position: fixed;
+    margin: auto;
+    left: 175;
+    top: 25;
+    width: 250px;
+}
+
+.dots-rachel{
+    position: fixed;
+    left: 235;
+    top: 330;
+}
+
+.dot-ember {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(29, 164, 172);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active-ember, .dot-ember:hover {
+  background-color: #00F4FF;
+}
+
+.ember-achievement-lore{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 3.5%;
+    right: .5%;
+}
+
+.ember-lore{
+    background-color: rgb(29, 164, 172);
+    color: #e981d9;
+    display: block;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    max-width: 895;
+    right: 50;
+    top: 175;
+    font-size: 16px;
+    z-index: -1;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: .5%;
+    padding-top: .5%;
+    border-radius: 6px;
+    cursor: context-menu;
+}
+
+.ember-credits{
+    background-color: rgb(29, 164, 172);
+    color: #e981d9;
+    display: block;
+    position: fixed;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: .5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    max-width: 300px;
+    font-size: 12px;
+    top: 420;
+    left: 160;
+    cursor: context-menu;
+}
+
+.ember-lore-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e981d9;
+    text-shadow: 2px 2px black;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.ember-lore-page::-webkit-scrollbar {
+    display: none;
+}
+
+.slideshow-ember{
+    position: fixed;
+    margin: auto;
+    left: 175;
+    top: 25;
+    width: 250px;
+}
+
+.dots-ember{
+    position: fixed;
+    left: 285;
+    top: 330;
+}
+
+.dot-fire {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #dd8e5c;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active-fire, .dot-fire:hover {
+  background-color: #714021;
+}
+
+.fire-achievement-lore{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 3.5%;
+    right: .5%;
+}
+
+.fire-lore{
+    background-color: rgb(172, 72, 29);
+    color: #dd8e5c;
+    display: block;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    max-width: 895;
+    right: 50;
+    top: 175;
+    font-size: 16px;
+    z-index: -1;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: .5%;
+    padding-bottom: .5%;
+    border-radius: 6px;
+    cursor: context-menu;
+}
+
+.fire-credits{
+    background-color: rgb(172, 72, 29);
+    color: #dd8e5c;
+    display: block;
+    position: fixed;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: .5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    max-width: 300px;
+    font-size: 12px;
+    top: 420;
+    left: 160;
+    cursor: context-menu;
+}
+
+.fire-lore-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #dd8e5c;
+    text-shadow: 2px 2px black;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.fire-lore-page::-webkit-scrollbar {
+    display: none;
+}
+
+.slideshow-fire{
+    position: fixed;
+    margin: auto;
+    left: 175;
+    top: 25;
+    width: 250px;
+}
+
+.dots-fire{
+    position: fixed;
+    left: 290;
+    top: 350;
+}
+
+.dot-val {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(24, 111, 142);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active-val, .dot-val:hover {
+  background-color: #2FA9D6;
+}
+
+.val-achievement-lore{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 3.5%;
+    right: .5%;
+}
+
+.val-lore{
+    background-color: rgb(24, 111, 142);
+    color: #7c2f29;
+    display: block;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    max-width: 895;
+    right: 50;
+    top: 175;
+    font-size: 16px;
+    z-index: -1;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: .5%;
+    padding-bottom: .5%;
+    border-radius: 6px;
+    cursor: context-menu;
+    text-shadow: 2px 2px black;
+}
+
+.val-credits{
+    background-color: rgb(24, 111, 142);
+    color: #7c2f29;
+    display: block;
+    position: fixed;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: .5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    max-width: 300px;
+    font-size: 12px;
+    top: 420;
+    left: 160;
+    cursor: context-menu;
+}
+
+.val-lore-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #7c2f29;
+    text-shadow: 2px 2px black;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.val-lore-page::-webkit-scrollbar {
+    display: none;
+}
+
+.slideshow-val{
+    position: fixed;
+    margin: auto;
+    left: 175;
+    top: 25;
+    width: 250px;
+}
+
+.dots-val{
+    position: fixed;
+    left: 280;
+    top: 350;
+}
+
+.dot-eli {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #4f0d09;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active-eli, .dot-eli:hover {
+  background-color: #8F4B47;
+}
+
+.eli-achievement-lore{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 3.5%;
+    right: .5%;
+}
+
+.eli-lore{
+    background-color: #4f0d09;
+    color: rgb(47, 45, 107);
+    display: block;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    max-width: 895;
+    right: 50;
+    top: 175;
+    font-size: 16px;
+    z-index: -1;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: .5%;
+    padding-bottom: .5%;
+    border-radius: 6px;
+    cursor: context-menu;
+    text-shadow: 2px 2px black;
+}
+
+.eli-credits{
+    background-color: #4f0d09;
+    color: rgb(47, 45, 107);
+    display: block;
+    position: fixed;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: .5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    max-width: 300px;
+    font-size: 12px;
+    top: 420;
+    left: 160;
+    cursor: context-menu;
+}
+
+.eli-lore-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(47, 45, 107);
+    text-shadow: 2px 2px black;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.eli-lore-page::-webkit-scrollbar {
+    display: none;
+}
+
+.slideshow-eli{
+    position: fixed;
+    margin: auto;
+    left: 175;
+    top: 25;
+    width: 250px;
+}
+
+.dots-eli{
+    position: fixed;
+    left: 265;
+    top: 350;
+}
+
+.dot-mossie {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(26, 45, 30);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active-mossie, .dot-mossie:hover {
+  background-color: #658A6A;
+}
+
+.mossie-achievement-lore{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 3.5%;
+    right: .5%;
+}
+
+.mossie-lore{
+    background-image: url(Minecraft\ Mossy\ Cobblestone.jpg);
+    color: rgb(26, 45, 30);
+    display: block;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    max-width: 895;
+    right: 50;
+    top: 175;
+    font-size: 16px;
+    z-index: -1;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: .5%;
+    padding-bottom: .5%;
+    border-radius: 6px;
+    cursor: context-menu;
+    text-shadow: 2px 2px black;
+}
+
+.mossie-credits{
+    background-image: url(Minecraft\ Mossy\ Cobblestone.jpg);
+    color: rgb(26, 45, 30);
+    display: block;
+    position: fixed;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: .5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    max-width: 300px;
+    font-size: 12px;
+    top: 420;
+    left: 160;
+    cursor: context-menu;
+}
+
+.mossie-lore-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(26, 45, 30);
+    text-shadow: 2px 2px black;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.mossie-lore-page::-webkit-scrollbar {
+    display: none;
+}
+
+.slideshow-mossie{
+    position: fixed;
+    margin: auto;
+    left: 175;
+    top: 25;
+    width: 250px;
+}
+
+.dots-mossie{
+    position: fixed;
+    left: 290;
+    top: 350;
+}
+
+#board{
+    background-color: green;
+}
+
+#quote-image {
+    width: 280px;
+    height: auto;
+    margin-bottom: 20px;
+    position: fixed;
+    top: 100;
+    left: 590;
+}
+
+#quiz-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    gap: 10px;
+}
+
+#quiz-container button {
+    background-color: grey;
+    color: white;
+    width: 280px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+    position: fixed;
+}
+
+#quiz-container button:hover {
+    background-color: lightgray;
+}
+
+.quote-quiz-title{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    top: 0;
+    left: 500;
+    color: white;
+}
+
+.quote-quiz-page{
+    background: radial-gradient(circle,#FFE6E6,#FFB8B8,#FF8A8A,#FF5C5C,#FF2E2E,#FF0000,#D10000,#A30000,#750000,#470000,#1A0000 95%);
+}
+
+#option0{
+    top: 390;
+    left: 590;
+}
+
+#option1{
+    top: 465;
+    left: 590;
+}
+
+#option2{
+    top: 540;
+    left: 590;
+}
+
+#option3{
+    top: 615;
+    left: 590;
+}
+
+#next-question{
+    top: 690;
+    left: 590;
+    color: #3A124D;
+}
+
+#image {
+    width: 280px;
+    margin-bottom: 20px;
+    position: fixed;
+    top: 90;
+    left: 590;
+    height: 250px;
+}
+
+.image-association-title{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    top: 0;
+    left: 275;
+    color: white;
+}
+
+.image-association-page{
+    background: radial-gradient(circle, #EEFFE6,#CFFFB8,#B1FF8A,#92FF5C,#74FF2E,#55FF00,#46D100,#36A300,#277500,#184700,#081A00 95%);
+}
+
+#emoji-image {
+    width: 280px;
+    margin-bottom: 20px;
+    position: fixed;
+    top: 90;
+    left: 590;
+    height: 250px;
+}
+
+.emoji-association-title{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    top: 0;
+    left: 275;
+    color: white;
+}
+
+.emoji-association-page{
+    background: radial-gradient(circle, #E6F3FF,#B8DCFF,#8AC6FF,#5CB0FF,#2E9AFF,#0084FF,#006CD1,#0054A3,#003D75,#002547,#000D1A 95%);
+}
+
+#town-image {
+    width: 280px;
+    margin-bottom: 20px;
+    position: fixed;
+    top: 90;
+    left: 590;
+    height: 250px;
+}
+
+.town-quiz-title{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    top: 0;
+    left: 400;
+    color: white;
+}
+
+.town-quiz-page{
+    background: radial-gradient(circle, #FFF4E6,#FFE0B8,#FFCC8A,#FFB85C,#FFA42E,#FF9000,#D17600,#A35C00,#754200,#472800,#1A0E00 95%);
+}
+
+#colour-image {
+    width: 280px;
+    margin-bottom: 20px;
+    position: fixed;
+    top: 90;
+    left: 590;
+    height: 250px;
+}
+
+.colour-association-title{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    top: 0;
+    left: 275;
+}
+
+.colour-association-page{
+    background: radial-gradient(circle, #FFFFE6,#FFFEB8,#FFFD8A,#FFFC5C,#FFFC2E,#FFFB00,#D1CE00,#A3A000,#757300,#474600,#1A1900 95%);
+}
+
+#lore-image {
+    width: 280px;
+    margin-bottom: 20px;
+    position: fixed;
+    top: 90;
+    left: 590;
+    height: 250px;
+}
+
+.lore-quiz-title{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    top: 0;
+    left: 275;
+    color: white;
+}
+
+.lore-quiz-page{
+    background: radial-gradient(circle, #F3E6FF,#DEB8FF,#C88AFF,#B35CFF,#9D2EFF,#8800FF,#7000D1,#5700A3,#3F0075,#260047,#0E001A 95%);
+}
+
+.dog{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 25;
+    left: 500;
+    width: 250px;
+}
+
+.frog{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 50;
+    left: 900;
+    width: 200px;
+}
+
+.parrot{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 200;
+    left: 1200;
+    width: 150px;
+}
+
+.fox-sat{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 75;
+    left: 1200;
+    width: 150px;
+}
+
+.quadrocopter{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: -50;
+    left: 500;
+    width: 750px;
+}
+
+.wood-block{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 50;
+    left: 750;
+    width: 250px;
+}
+
+.shield{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    bottom: 20;
+    left: 500;
+    width: 150px;
+}
+
+.redstone{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    bottom: 20;
+    left: 500;
+    width: 200px;
+}
+
+.sword-val{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 75;
+    right: 50;
+    width: 250px;
+}
+
+.sword-mossie{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    bottom: 20;
+    left: 425;
+    width: 400px;
+}
