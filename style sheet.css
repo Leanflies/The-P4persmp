@@ -385,7 +385,7 @@
     border-radius: 6px;
     color: #017672;
     text-shadow: 2px 2px black;
-    max-width: 310;
+    width: 310;
     cursor: context-menu;
 }
 
