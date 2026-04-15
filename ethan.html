@@ -41,16 +41,12 @@
             <li><p>Green Witch</p></li>
         </ul>
     </div>
-    <div class="ethan-siblings">
-        <h4 class="ethan-siblings-title">Siblings!</h4>
-        <ul class="ethan-siblings-list">
+    <div class="ethan-other">
+        <ul class="ethan-other-list">
+            <li class="none-list"><h4 class="ethan-siblings-title">Siblings!</h4></li>
             <li><p>Brother, Unknown</p></li>
             <li><p>Sister, Unknown</p></li>
-        </ul>
-    </div>
-    <div class="ethan-pets">
-        <h4 class="ethan-pets-title">Pets!</h4>
-        <ul class="ethan-pets-list">
+            <li class="none-list"><h4 class="ethan-pets-title">Pets!</h4></li>
             <li><p>Lily, Ribbit</p></li>
             <li><p>Marlin, Sniffer</p></li>
             <li><p>Dirt, Golem</p></li>
@@ -65,28 +61,33 @@
     <img src="Dirt minecraft versions.png" class="dirt"/>
 
     <img id="chest" class="chest" src="Minecraft chest.jpg"/>
-<button onclick="changeImage()" class="open-button-ethan">Open Chest</button>  
+<button id="ethan-button" onclick="changeButton()">Open Chest</button>
 <script>
-  const image = document.getElementById("chest");
-  function changeImage() {
-   image.src = "C!Ethan items.png";
-  }
-</script>
-<button onclick="changeImage2()" class="close-button-ethan">Close Chest</button>
-<script>
-  const image2 = document.getElementById("chest");
-  function changeImage2() {
-   image.src = "Minecraft chest.jpg";
-  }
+function changeButton() {
+    const btn = document.getElementById("ethan-button");
+    const image = document.getElementById("chest");
+
+    if (btn.textContent === "Open Chest") {
+        btn.textContent = "Close Chest";
+        image.src = "C!Ethan items.png";
+    } else {
+        btn.textContent = "Open Chest";
+        image.src = "Minecraft chest.jpg";
+    }
+} 
 </script>
 <div class="credits-ethan">
     <ul>
-        <p>All credits for C!Ethan belong to P4perback</p>
+        <li class="none-list"><p>All credits for C!Ethan belong to P4perback</p></li>
+        <div class="credits-col1">
         <li><a href="http://www.youtube.com/@p4perback" class="links-ethan">YouTube Main <i class="fa-brands fa-youtube"></i></a></li>
         <li><a href="http://www.youtube.com/@p4pervods" class="links-ethan">YouTube Vods <i class="fa-brands fa-youtube"></i></a></li>
         <li><a href="https://www.instagram.com/p4perback?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="links-ethan">Instagram <i class="fa-brands fa-instagram"></i></a></li>
+        </div>
+        <div class="credits-col2">
         <li><a href="https://www.tiktok.com/@p4perback?is_from_webapp=1&sender_device=pc" class="links-ethan">TikTok <i class="fa-brands fa-tiktok"></i></a></li>
         <li><a href="https://m.twitch.tv/p4perback/home" class="links-ethan">Twitch <i class="fa-brands fa-twitch"></i></a></li>
+        </div>
     </ul>
 </div>
 </body>
