@@ -399,6 +399,34 @@
     text-shadow: 2px 2px black;
 }
 
+#ethan-button{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 550;
+    right: 55;
+    background-color: rgb(1, 45, 43);
+    color: #017672;
+    text-shadow: 2px 2px black;
+    cursor: pointer;
+}
+
+.ethan-other{
+    background: rgb(1, 45, 43);
+    display: block;
+    justify-content: center;
+    position: fixed;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    color: #017672;
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+    top: 120;
+    left: 775;
+    font-size: 13px;
+}
+
 .character-list-ethan{
     list-style-type: none;
     margin: 0;
@@ -1588,12 +1616,13 @@
     display: flex;
     justify-content: center;
     position: fixed;
-    top: 400;
+    top: 468;
     right: 250;
     padding-left: 2.5%;
     padding-right: 2.5%;
     border-radius: 6px;
     text-shadow: 2px 2px black;
+    height: 175;
     max-width: 400px;
     font-size: 12px;
     cursor: context-menu;
