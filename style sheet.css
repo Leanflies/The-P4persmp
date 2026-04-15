@@ -1544,6 +1544,18 @@
     cursor: pointer;
 }
 
+.credits-col1{
+    float: left;
+}
+
+.credits-col2{
+    float: right;
+}
+
+.none-list{
+    list-style: none;
+}
+
 .credits-andy{
     color: #ffffff;
     background-image: url("minecraft\ wood\ texture.jpg");
@@ -1553,13 +1565,13 @@
     display: flex;
     justify-content: center;
     position: fixed;
-    top: 400;
+    top: 600;
     right: 250;
     padding-left: 2.5%;
     padding-right: 2.5%;
     border-radius: 6px;
     text-shadow: 2px 2px black;
-    max-width: 400px;
+    max-height: 150px;
     font-size: 12px;
     cursor: context-menu;
 }
