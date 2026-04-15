@@ -40,16 +40,12 @@
             <li><p>The Forrest</p></li>
         </ul>
     </div>
-    <div class="andy-siblings">
-        <h4 class="andy-siblings-title">Siblings!</h4>
-        <ul class="andy-siblings-list">
+    <div class="andy-other">
+        <ul class="andy-other-list">
+            <li class="none-list"><h4 class="andy-siblings-title">Siblings!</h4></li>
             <li><p>Sister, Rachel</p></li>
             <li><p>Sister, Taylor</p></li>
-        </ul>
-    </div>
-    <div class="andy-pets">
-        <h4 class="andy-pets-title">Pets!</h4>
-        <ul class="andy-pets-list">
+            <li class="none-list"><h4 class="andy-pets-title">Pets!</h4></li>
             <li><p>Doris, Cat</p></li>
             <li><p>Koda, Bear</p></li>
             <li><p>Cheese, Rat</p></li>
@@ -61,17 +57,20 @@
     <img src="cheese (minecraft version).png" class="cheese"/>
     <img src="koda minecraft verion.png" class="koda"/>
 <img id="chest" class="chest" src="Minecraft chest.jpg"/>
-<button onclick="changeImage()" class="open-button-andy" id="open-button-andy">Open Chest</button>
-<button onclick="changeImage2()" class="close-button-andy"  id="close-button-andy" hidden>Close Chest</button>  
+<button id="andy-button" onclick="changeButton()">Open Chest</button>
 <script>
-  const image = document.getElementById("chest");
-  function changeImage() {
-   image.src = "C!Andy items.png";
-  }
-  const image2 = document.getElementById("chest");
-  function changeImage2() {
-   image.src = "Minecraft chest.jpg";
-  }
+function changeButton() {
+    const btn = document.getElementById("andy-button");
+    const image = document.getElementById("chest");
+
+    if (btn.textContent === "Open Chest") {
+        btn.textContent = "Close Chest";
+        image.src = "C!Andy items.png";
+    } else {
+        btn.textContent = "Open Chest";
+        image.src = "Minecraft chest.jpg";
+    }
+} 
 </script>
 
 <div class="credits-andy">
