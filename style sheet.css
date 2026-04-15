@@ -575,6 +575,39 @@
     height: 450px;
 }
 
+.andy-other{
+    top: 190;
+    left: 775;
+    background-image: url("minecraft\ wood\ texture.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: block;
+    justify-content: center;
+    position: fixed;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    color: #ffffff;
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+}
+
+#andy-button{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 550;
+    right: 55;
+    color: #ffffff;
+    background-image: url("minecraft\ wood\ texture.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    text-shadow: 2px 2px black;
+    cursor: pointer;
+}
+
 .andy-key-facts{
     background-image: url("minecraft\ wood\ texture.jpg");
     background-size: 100% 100%;
