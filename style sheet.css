@@ -748,6 +748,38 @@
     height: 140px;
 }
 
+.taylor-other{
+    top: 120;
+    left: 775;
+    background-image: url("long\ minecraft\ bookshelf.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: block;
+    justify-content: center;
+    position: fixed;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    color: #ffffff;
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+}
+
+#taylor-button{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 550;
+    right: 55;
+    background-image: url("long\ minecraft\ bookshelf.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    color: #ffffff;
+    text-shadow: 2px 2px black;
+    cursor: pointer;
+}
 .cheese{
     display: flex;
     justify-content: center;
@@ -1643,13 +1675,13 @@
     display: flex;
     justify-content: center;
     position: fixed;
-    top: 400;
+    top: 600;
     right: 250;
     padding-left: 2.5%;
     padding-right: 2.5%;
     border-radius: 6px;
     text-shadow: 2px 2px black;
-    max-width: 400px;
+    max-height: 150px;
     font-size: 12px;
     cursor: context-menu;
 }
