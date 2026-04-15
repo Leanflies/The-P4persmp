@@ -378,7 +378,7 @@
     display: block;
     justify-content: center;
     position: fixed;
-    top: 200;
+    top: 205;
     left: 425;
     padding-left: 5%;
     padding-right: 5%;
@@ -443,7 +443,7 @@
     justify-content: center;
     position: fixed;
     top: 590;
-    left: 425;
+    left: 525;
     padding-left: 2.5%;
     padding-right: 2.5%;
     border-radius: 6px;
