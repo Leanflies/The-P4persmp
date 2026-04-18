@@ -374,20 +374,9 @@
 }
 
 .ethan-key-facts{
-    background: rgb(1, 45, 43);
-    display: block;
-    justify-content: center;
-    position: fixed;
-    top: 205;
-    left: 425;
-    padding-left: 5%;
-    padding-right: 5%;
-    border-radius: 6px;
     color: #017672;
-    text-shadow: 2px 2px black;
-    width: 310;
-    max-length: 200;
-    cursor: context-menu;
+    display: block; 
+    flex: 1 1 150px;
 }
 
 .ethan{
@@ -397,6 +386,51 @@
     min-height: 100vh;
     background-color: #376c48;
     text-shadow: 2px 2px black;
+}
+
+.ethan-facts{
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    padding: 20px; 
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+    background-color: rgb(1, 45, 43);
+    width: 600px;
+    justify-content: space-evenly;
+    max-height: 500px;
+    overflow-y: auto;
+    right: 350px;
+}
+
+.ethan-facts::-webkit-scrollbar {
+    width: 10px;
+}
+
+.ethan-facts::-webkit-scrollbar-track {
+    background: rgb(1, 45, 43); 
+}
+
+.ethan-facts::-webkit-scrollbar-thumb {
+    background: #017672;        
+    border-radius: 6px;
+}
+
+.ethan-facts::-webkit-scrollbar-thumb:hover {
+    background: #017672;
+}
+
+.ethan-facts ul {
+    padding: 0;
+    margin: 0;
+}
+
+.ethan-facts p {
+    line-height: 1.4;
 }
 
 #ethan-button{
@@ -412,19 +446,9 @@
 }
 
 .ethan-other{
-    background: rgb(1, 45, 43);
-    display: block;
-    justify-content: center;
-    position: fixed;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    border-radius: 6px;
     color: #017672;
-    text-shadow: 2px 2px black;
-    cursor: context-menu;
-    top: 120;
-    left: 775;
-    font-size: 13px;
+    display: block; 
+    flex: 1 1 150px;
 }
 
 .character-list-ethan{
@@ -1644,20 +1668,8 @@
 
 .credits-ethan{
     color: #017672;
-    background: rgb(1, 45, 43);
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    top: 468;
-    right: 250;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    border-radius: 6px;
-    text-shadow: 2px 2px black;
-    height: 175;
-    max-width: 400px;
-    font-size: 12px;
-    cursor: context-menu;
+    display: block; 
+    flex: 1 1 150px;
 }
 
 .links-ethan{
