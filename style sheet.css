@@ -801,21 +801,57 @@
 }
 
 .taylor-other{
-    top: 120;
-    left: 775;
+    display: block; 
+    flex: 1 1 150px;
+    color: #ffffff;
+}
+
+.taylor-facts{
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    padding: 20px; 
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
     background-image: url("long\ minecraft\ bookshelf.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     overflow: hidden;
-    display: block;
-    justify-content: center;
-    position: fixed;
-    padding-left: 5%;
-    padding-right: 5%;
+    width: 600px;
+    justify-content: space-evenly;
+    max-height: 500px;
+    overflow-y: auto;
+    right: 350px;
+}
+
+.taylor-facts::-webkit-scrollbar {
+    width: 10px;
+}
+
+.taylor-facts::-webkit-scrollbar-track {
+    background: rgb(1, 45, 43); 
+}
+
+.taylor-facts::-webkit-scrollbar-thumb {
+    background: #017672;        
     border-radius: 6px;
-    color: #ffffff;
-    text-shadow: 2px 2px black;
-    cursor: context-menu;
+}
+
+.taylor-facts::-webkit-scrollbar-thumb:hover {
+    background: #017672;
+}
+
+.taylor-facts ul {
+    padding: 0;
+    margin: 0;
+}
+
+.taylor-facts p {
+    line-height: 1.4;
 }
 
 #taylor-button{
@@ -904,22 +940,9 @@
 }
 
 .taylor-key-facts{
-    background-image: url("long\ minecraft\ bookshelf.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    display: block;
-    justify-content: center;
-    position: fixed;
-    top: 200;
-    left: 425;
-    padding-left: 5%;
-    padding-right: 5%;
-    border-radius: 6px;
+    display: block; 
+    flex: 1 1 150px;
     color: #ffffff;
-    text-shadow: 2px 2px black;
-    max-width: 310;
-    cursor: context-menu;
 }
 
 .taylor{
@@ -1694,22 +1717,8 @@
 
 .credits-taylor{
     color: #ffffff;
-    background-image: url("long\ minecraft\ bookshelf.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    top: 600;
-    right: 250;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    border-radius: 6px;
-    text-shadow: 2px 2px black;
-    max-height: 150px;
-    font-size: 12px;
-    cursor: context-menu;
+    display: block; 
+    flex: 1 1 150px;
 }
 
 .links-taylor{
