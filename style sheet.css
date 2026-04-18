@@ -602,10 +602,7 @@
 }
 
 .andy-facts::-webkit-scrollbar-track {
-     background-image: url("minecraft\ wood\ texture.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    overflow: hidden;
+    background: #f0f0f0
 }
 
 .andy-facts::-webkit-scrollbar-thumb {
@@ -833,16 +830,16 @@
 }
 
 .taylor-facts::-webkit-scrollbar-track {
-    background: rgb(1, 45, 43); 
+    background: #f0f0f0; 
 }
 
 .taylor-facts::-webkit-scrollbar-thumb {
-    background: #017672;        
+    background: #ffffff;        
     border-radius: 6px;
 }
 
 .taylor-facts::-webkit-scrollbar-thumb:hover {
-    background: #017672;
+    background: #ffffff;
 }
 
 .taylor-facts ul {
