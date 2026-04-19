@@ -1092,6 +1092,12 @@
     color: #ff6ebe;
 }
 
+.ashlyn-other{
+    display: block; 
+    flex: 1 1 150px;
+    color: #ff6ebe;
+}
+
 .ashlyn{
     display: flex;
     justify-content: center;
