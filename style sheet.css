@@ -1054,21 +1054,6 @@
     cursor: context-menu;
 }
 
-.ashlyn-pets{
-    background: rgb(255, 157, 203);
-    display: block;
-    justify-content: center;
-    position: fixed;
-    top: 200;
-    left: 875;
-    padding-left: 5%;
-    padding-right: 5%;
-    border-radius: 6px;
-    color: #ff6ebe;
-    text-shadow: 2px 2px black;
-    cursor: context-menu;
-}
-
 .ashlyn-achievement{
     display: flex;
     justify-content: center;
