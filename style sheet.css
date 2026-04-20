@@ -1251,8 +1251,8 @@
     display: flex;
     justify-content: center;
     position: fixed;
-    top: 350;
-    right: 50;
+    top: 300;
+    right: 40;
     height: 300px
 }
 
