@@ -1115,7 +1115,7 @@
 }
 
 .ashlyn-facts::-webkit-scrollbar-track {
-    background: ; 
+    background: #ff46af; 
 }
 
 .ashlyn-facts::-webkit-scrollbar-thumb {
@@ -1240,7 +1240,7 @@
     justify-content: center;
     position: fixed;
     top: 500;
-    right: 575;
+    right: 75;
     height: 300px
 }
 
