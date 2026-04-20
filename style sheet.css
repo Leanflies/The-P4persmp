@@ -1071,6 +1071,18 @@
     height: 450px;
 }
 
+#ashlyn-button{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 550;
+    right: 55;
+    background-color: rgb(255, 157, 203);
+    color: #ff6ebe;
+    text-shadow: 2px 2px black;
+    cursor: pointer;
+}
+
 .ashlyn-key-facts{
     display: block; 
     flex: 1 1 150px;
