@@ -1513,6 +1513,10 @@
     left: 13%;
 }
 
+.rachel-other-list{
+    color: #b881e9;
+}
+
 .rachel-facts{
     position: fixed;
     display: flex;
