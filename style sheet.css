@@ -1886,19 +1886,8 @@
 
 .credits-rachel{
     color: #b881e9;
-    background: rgb(59, 1, 82);
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    top: 350;
-    right: 200;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    border-radius: 6px;
-    text-shadow: 2px 2px black;
-    max-width: 400px;
-    font-size: 12px;
-    cursor: context-menu;
+    display: block; 
+    flex: 1 1 150px;
 }
 
 .links-rachel{
