@@ -30,6 +30,7 @@
     <h3 class="rachel-name">C!Rachel</h3>
     <img src="C!Rachel achievement.png" class="rachel-achievement"/>
     <img src="C!rachel minecraft skin.png" class="rachel-skin"/>
+<div class="rachel-facts">
     <div class="rachel-key-facts">
         <h4 class="rachel-facts-title">Key Facts!</h4>
         <ul class="rachel-key-facts-list">
@@ -39,41 +40,16 @@
             <li><p>Giredale</p></li>
         </ul>
     </div>
-    <div class="rachel-siblings">
-        <h4 class="rachel-siblings-title">Siblings!</h4>
-        <ul class="rachel-siblings-list">
+    <div class="rachel-other">
+        <ul class="rachel-other-list">
+            <li class="none-list"><h4 class="rachel-siblings-title">Siblings!</h4></li>
             <li><p>Sister, Taylor</p></li>
             <li><p>Brother, Andy</p></li>
-        </ul>
-    </div>
-    <div class="rachel-pets">
-        <h4 class="rachel-pets-title">Pets!</h4>
-        <ul class="rachel-pets-list">
+            <li class="none-list"><h4 class="rachel-pets-title">Pets!</h4></li>
             <li><p>Bluey, Allay</p></li>
         </ul>
     </div>
-    <img src="c!rachel bluey.png" class="bluey"/>
-    <img src="minecraft flower pot.png" class="pot1"/>
-    <img src="Red Minecraft Flower.png" class="red-flower"/>
-    <img src="minecraft flower pot.png" class="pot2"/>
-    <img src="Blue Minecraft Flower.png" class="blue-flower"/>
-
-<img id="chest" class="chest" src="Minecraft chest.jpg"/>
-<button onclick="changeImage()" class="open-button-rachel">Open Chest</button>  
-<script>
-  const image = document.getElementById("chest");
-  function changeImage() {
-   image.src = "C!Rachel items.png";
-  }
-</script>
-<button onclick="changeImage2()" class="close-button-rachel">Close Chest</button>
-<script>
-  const image2 = document.getElementById("chest");
-  function changeImage2() {
-   image.src = "Minecraft chest.jpg";
-  }
-</script>
-<div class="credits-rachel">
+    <div class="credits-rachel">
     <ul>
         <p>All credits for C!Rachel belong to oopsyrachie</p>
         <li><a href="http://www.youtube.com/@oopsyrachie" class="links-rachel">YouTube <i class="fa-brands fa-youtube"></i></a></li>
@@ -82,5 +58,29 @@
         <li><a href="https://www.twitch.tv/oopsyrachie/about" class="links-rachel">Twitch <i class="fa-brands fa-twitch"></i></a></li>
     </ul>
 </div>
+</div>
+    <img src="c!rachel bluey.png" class="bluey"/>
+    <img src="minecraft flower pot.png" class="pot1"/>
+    <img src="Red Minecraft Flower.png" class="red-flower"/>
+    <img src="minecraft flower pot.png" class="pot2"/>
+    <img src="Blue Minecraft Flower.png" class="blue-flower"/>
+
+<img id="chest" class="chest" src="Minecraft chest.jpg"/>
+<button id="andy-button" onclick="changeButton()">Open Chest</button>
+<script>
+function changeButton() {
+    const btn = document.getElementById("andy-button");
+    const image = document.getElementById("chest");
+
+    if (btn.textContent === "Open Chest") {
+        btn.textContent = "Close Chest";
+        image.src = "C!Rachel items.png";
+    } else {
+        btn.textContent = "Open Chest";
+        image.src = "Minecraft chest.jpg";
+    }
+} 
+</script>
+
 </body>
 </html>
