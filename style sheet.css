@@ -354,7 +354,7 @@
     padding-right: 5%;
     border-radius: 6px;
     cursor: context-menu;
-    max-width: 150px;
+    width: 150px;
 }
 
 .ethan-achievement{
