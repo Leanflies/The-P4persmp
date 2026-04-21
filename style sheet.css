@@ -1368,6 +1368,18 @@
     color: #e2ad00;
 }
 
+#desca-button{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 550;
+    right: 55;
+    background-color: rgb(94, 18, 42);
+    color: #e2ad00;
+    text-shadow: 2px 2px black;
+    cursor: pointer;
+}
+
 .desca{
     display: flex;
     justify-content: center;
@@ -1577,6 +1589,18 @@
     top: 250;
     left: 125;
     height: 450px;
+}
+
+#rachel-button{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 550;
+    right: 55;
+    background-color: rgb(59, 1, 82);
+    color: #b881e9;
+    text-shadow: 2px 2px black;
+    cursor: pointer;
 }
 
 .rachel-key-facts{
