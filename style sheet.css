@@ -406,7 +406,7 @@
     overflow-y: auto;
     top: 50%;
     left: 75%;
-    transform: translate(-50%, -50%);
+   /* transform: translate(-50%, -50%);*/
 }
 
 .ethan-facts::-webkit-scrollbar {
