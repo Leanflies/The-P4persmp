@@ -1304,6 +1304,7 @@
     height: 450px;
 }
 
+
 .desca-facts{
     position: fixed;
     display: flex;
@@ -1507,6 +1508,54 @@
     left: 13%;
 }
 
+.rachel-facts{
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    padding: 20px; 
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+    background-color: rgb(59, 1, 82);
+    width: 600px;
+    justify-content: space-evenly;
+    max-height: 500px;
+    overflow-y: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rachel-facts::-webkit-scrollbar {
+    width: 10px;
+}
+
+.rachel-facts::-webkit-scrollbar-track {
+    background: #8b69a4; 
+}
+
+.rachel-facts::-webkit-scrollbar-thumb {
+    background: #b881e9;        
+    border-radius: 6px;
+}
+
+.rachel-facts::-webkit-scrollbar-thumb:hover {
+    background: #b881e9;
+}
+
+.rachel-facts ul {
+    padding: 0;
+    margin: 0;
+}
+
+.rachel-facts p {
+    line-height: 1.4;
+}
+
+
 .rachel-skin{
     display: flex;
     justify-content: center;
@@ -1517,19 +1566,9 @@
 }
 
 .rachel-key-facts{
-    background: rgb(59, 1, 82);
-    display: block;
-    justify-content: center;
-    position: fixed;
-    top: 200;
-    left: 425;
-    padding-left: 5%;
-    padding-right: 5%;
-    border-radius: 6px;
+    display: block; 
+    flex: 1 1 150px;
     color: #b881e9;
-    text-shadow: 2px 2px black;
-    max-width: 350;
-    cursor: context-menu;
 }
 
 .rachel{
