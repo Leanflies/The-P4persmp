@@ -404,7 +404,7 @@
     justify-content: space-evenly;
     max-height: 500px;
     overflow-y: auto;
-    right: 350px;
+    right: 50%;
 }
 
 .ethan-facts::-webkit-scrollbar {
@@ -593,7 +593,7 @@
     justify-content: space-evenly;
     max-height: 500px;
     overflow-y: auto;
-    right: 350px;
+    right: 50%;
     top: 200px
 }
 
@@ -822,7 +822,7 @@
     justify-content: space-evenly;
     max-height: 500px;
     overflow-y: auto;
-    right: 350px;
+    right: 50%;
 }
 
 .taylor-facts::-webkit-scrollbar {
@@ -1119,7 +1119,7 @@
     justify-content: space-evenly;
     max-height: 500px;
     overflow-y: auto;
-    right: 350px;
+    right: 50%;
 }
 
 .ashlyn-facts::-webkit-scrollbar {
