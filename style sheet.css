@@ -1316,7 +1316,7 @@
     border-radius: 6px;
     text-shadow: 2px 2px black;
     cursor: context-menu;
-    background-color: #752731;
+    background-color:  rgb(94, 18, 42);
     width: 600px;
     justify-content: space-evenly;
     max-height: 500px;
@@ -1335,12 +1335,12 @@
 }
 
 .desca-facts::-webkit-scrollbar-thumb {
-    background: #e2ad00;        
+    background:  rgb(94, 18, 42);        
     border-radius: 6px;
 }
 
 .desca-facts::-webkit-scrollbar-thumb:hover {
-    background: #e2ad00;
+    background:  rgb(94, 18, 42);
 }
 
 .desca-facts ul {
@@ -1555,6 +1555,11 @@
     line-height: 1.4;
 }
 
+.rachel-other{
+    display: block; 
+    flex: 1 1 150px;
+    colour: #b881e9;
+}
 
 .rachel-skin{
     display: flex;
