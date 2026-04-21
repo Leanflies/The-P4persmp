@@ -404,8 +404,7 @@
     justify-content: space-evenly;
     max-height: 500px;
     overflow-y: auto;
-    right: 50%;
-    transform: translateX(-50%);
+    right: 40%;
 }
 
 .ethan-facts::-webkit-scrollbar {
@@ -594,9 +593,8 @@
     justify-content: space-evenly;
     max-height: 500px;
     overflow-y: auto;
-    right: 50%;
+    right: 40%;
     top: 200px
-    transform: translateX(-50%);
 }
 
 .andy-facts::-webkit-scrollbar {
@@ -824,8 +822,7 @@
     justify-content: space-evenly;
     max-height: 500px;
     overflow-y: auto;
-    right: 50%;
-    transform: translateX(-50%);
+    right: 40%;
 }
 
 .taylor-facts::-webkit-scrollbar {
@@ -1122,8 +1119,7 @@
     justify-content: space-evenly;
     max-height: 500px;
     overflow-y: auto;
-    right: 50%;
-    transform: translateX(-50%);
+    right: 40%;
 }
 
 .ashlyn-facts::-webkit-scrollbar {
@@ -1317,8 +1313,7 @@
     justify-content: space-evenly;
     max-height: 500px;
     overflow-y: auto;
-    right: 50%;
-    transform: translateX(-50%);
+    right: 40%;
 }
 
 .desca-facts::-webkit-scrollbar {
