@@ -5094,7 +5094,7 @@
     display: flex;
     justify-content: center;
     bottom: 20;
-    left: 500;
+    right: 50;
     width: 200px;
 }
 
