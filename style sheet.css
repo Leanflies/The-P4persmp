@@ -1297,19 +1297,61 @@
     height: 450px;
 }
 
-.desca-key-facts{
-    background: rgb(94, 18, 42);
-    display: block;
-    justify-content: center;
+.desca-facts{
     position: fixed;
-    top: 200;
-    left: 425;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    padding: 20px; 
     padding-left: 5%;
     padding-right: 5%;
     border-radius: 6px;
-    color: #e2ad00;
     text-shadow: 2px 2px black;
     cursor: context-menu;
+    background-color: #752731;
+    width: 600px;
+    justify-content: space-evenly;
+    max-height: 500px;
+    overflow-y: auto;
+    right: 50%;
+}
+
+.desca-facts::-webkit-scrollbar {
+    width: 10px;
+}
+
+.desca-facts::-webkit-scrollbar-track {
+    background: #752731; 
+}
+
+.desca-facts::-webkit-scrollbar-thumb {
+    background: #e2ad00;        
+    border-radius: 6px;
+}
+
+.desca-facts::-webkit-scrollbar-thumb:hover {
+    background: #e2ad00;
+}
+
+.desca-facts ul {
+    padding: 0;
+    margin: 0;
+}
+
+.desca-facts p {
+    line-height: 1.4;
+}
+
+.desca-other{
+    display: block; 
+    flex: 1 1 150px;
+    color: #e2ad00;
+}
+
+.desca-key-facts{
+    display: block; 
+    flex: 1 1 150px;
+    color: #e2ad00;
 }
 
 .desca{
@@ -1784,19 +1826,8 @@
 
 .credits-desca{
     color: #e2ad00;
-    background: rgb(94, 18, 42);
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    top: 350;
-    right: 200;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    border-radius: 6px;
-    text-shadow: 2px 2px black;
-    max-width: 400px;
-    font-size: 12px;
-    cursor: context-menu;
+    display: block; 
+    flex: 1 1 150px;
 }
 
 .links-desca{
