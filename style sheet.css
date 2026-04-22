@@ -2179,8 +2179,8 @@
     display: flex;
     justify-content: center;
     position: fixed;
-    top: 450;
-    left: 450;
+    top: 250;
+    right: 50;
     height: 250px;
 }
 
