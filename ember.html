@@ -61,15 +61,15 @@
     <img src="Candicorn.png" class="candy"/>
 <img id="chest" class="chest" src="Minecraft chest.jpg"/>
 <button onclick="changeImage()" class="open-button-ember">Open Chest</button>  
-<button id="andy-button" onclick="changeButton()">Open Chest</button>
+<button id="ember-button" onclick="changeButton()">Open Chest</button>
 <script>
 function changeButton() {
-    const btn = document.getElementById("andy-button");
+    const btn = document.getElementById("ember-button");
     const image = document.getElementById("chest");
 
     if (btn.textContent === "Open Chest") {
         btn.textContent = "Close Chest";
-        image.src = "C!Andy items.png";
+        image.src = "C!Ember items.png";
     } else {
         btn.textContent = "Open Chest";
         image.src = "Minecraft chest.jpg";
