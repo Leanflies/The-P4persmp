@@ -5259,8 +5259,8 @@
     position: fixed;
     display: flex;
     justify-content: center;
-    bottom: 20;
-    left: 500;
+    top: 200;
+    right: 50;
     width: 150px;
 }
 
