@@ -61,19 +61,20 @@
     <img src="Candicorn.png" class="candy"/>
 <img id="chest" class="chest" src="Minecraft chest.jpg"/>
 <button onclick="changeImage()" class="open-button-ember">Open Chest</button>  
+<button id="andy-button" onclick="changeButton()">Open Chest</button>
 <script>
-  const image = document.getElementById("chest");
-  function changeImage() {
-   image.src = "C!Ember items.png";
-  }
+function changeButton() {
+    const btn = document.getElementById("andy-button");
+    const image = document.getElementById("chest");
+
+    if (btn.textContent === "Open Chest") {
+        btn.textContent = "Close Chest";
+        image.src = "C!Andy items.png";
+    } else {
+        btn.textContent = "Open Chest";
+        image.src = "Minecraft chest.jpg";
+    }
+} 
 </script>
-<button onclick="changeImage2()" class="close-button-ember">Close Chest</button>
-<script>
-  const image2 = document.getElementById("chest");
-  function changeImage2() {
-   image.src = "Minecraft chest.jpg";
-  }
-</script>
-</style>
 </body>
 </html>
