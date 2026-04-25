@@ -2514,6 +2514,9 @@
     height: 450px;
 }
 
+.credits-val-list{
+    color: #7c2f29;
+}
 
 .val{
     display: flex;
