@@ -2126,6 +2126,7 @@
     border-radius: 6px;
     text-shadow: 2px 2px black;
     cursor: context-menu;
+    width: 50px;
 }
 
 .credits-ember{
