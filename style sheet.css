@@ -2400,8 +2400,8 @@
     display: flex;
     justify-content: center;
     position: fixed;
-    top: 400;
-    left: 450;
+    top: 200;
+    right: 50;
 }
 
 .val-pets{
