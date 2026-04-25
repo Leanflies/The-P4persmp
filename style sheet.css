@@ -2475,6 +2475,84 @@
     cursor: context-menu;
 }
 
+.val-facts{
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    padding: 20px; 
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+    background-color: rgb(24, 111, 142);
+    width: 600px;
+    justify-content: space-evenly;
+    max-height: 500px;
+    overflow-y: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.val-facts::-webkit-scrollbar {
+    width: 10px;
+}
+
+.val-facts::-webkit-scrollbar-track {
+    background: #7c2f29; 
+}
+
+.val-facts::-webkit-scrollbar-thumb {
+    background: rgb(24, 111, 142);        
+    border-radius: 6px;
+}
+
+.val-facts::-webkit-scrollbar-thumb:hover {
+    background: rgb(24, 111, 142);
+}
+
+.val-facts ul {
+    padding: 0;
+    margin: 0;
+}
+
+.val-facts p {
+    line-height: 1.4;
+}
+
+.val-key-facts{
+    color: #7c2f29;
+    display: block; 
+    flex: 1 1 150px;
+}
+
+.val-credits{
+    color: #7c2f29;
+    display: block; 
+    flex: 1 1 150px;
+}
+
+.val-other{
+    color: #7c2f29;
+    display: block; 
+    flex: 1 1 150px;
+}
+
+#val-button{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 550;
+    right: 55;
+    background-color: rgb(24, 111, 142);
+    color: #7c2f29;
+    text-shadow: 2px 2px black;
+    cursor: pointer;
+}
+
+
 .val-achievement{
     display: flex;
     justify-content: center;
@@ -2581,12 +2659,13 @@
     justify-content: center;
     position: fixed;
     top: 17.5%;
-    left: 11%;
+    left: 15%;
     padding-left: 5%;
     padding-right: 5%;
     border-radius: 6px;
     text-shadow: 2px 2px black;
     cursor: context-menu;
+    width: 50px;
 }
 
 .credits-val{
