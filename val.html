@@ -30,6 +30,7 @@
     <h3 class="val-name">C!Val</h3>
     <img src="C!Val achievement.png" class="val-achievement"/>
     <img src="C!val minecraft skin.png" class="val-skin"/>
+<div class="val-facts">
     <div class="val-key-facts">
         <h4 class="val-facts-title">Key Facts!</h4>
         <ul class="val-key-facts-list">
@@ -39,31 +40,33 @@
             <li><p>Giredale</p></li>
         </ul>
     </div>
-
-<img id="chest" class="chest" src="Minecraft chest.jpg"/>
-<button onclick="changeImage()" class="open-button-val">Open Chest</button>  
-<script>
-  const image = document.getElementById("chest");
-  function changeImage() {
-   image.src = "C!Val items.png";
-  }
-</script>
-<button onclick="changeImage2()" class="close-button-val">Close Chest</button>
-<script>
-  const image2 = document.getElementById("chest");
-  function changeImage2() {
-   image.src = "Minecraft chest.jpg";
-  }
-</script>
-<img src="minecraft shield.png" class="shield"/>
-<img src="minecraft sword.png" class="sword-val"/>
-<div class="credits-val">
+    <div class="credits-val">
     <ul>
         <p>All credits for C!Val belong to Valerbii</p>
         <li><a href="https://www.instagram.com/valerbii?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="links-val">Personal Instagram <i class="fa-brands fa-instagram"></i></a></li>
         <li><a href="https://www.twitch.tv/valerbii/" class="links-val">Twitch <i class="fa-brands fa-twitch"></i></a></li>
     </ul>
 </div>
+    </div>
+
+<img id="chest" class="chest" src="Minecraft chest.jpg"/>
+<button id="val-button" onclick="changeButton()">Open Chest</button>
+<script>
+function changeButton() {
+    const btn = document.getElementById("val-button");
+    const image = document.getElementById("chest");
+
+    if (btn.textContent === "Open Chest") {
+        btn.textContent = "Close Chest";
+        image.src = "C!Val items.png";
+    } else {
+        btn.textContent = "Open Chest";
+        image.src = "Minecraft chest.jpg";
+    }
+} 
+</script>
+<img src="minecraft shield.png" class="shield"/>
+<img src="minecraft sword.png" class="sword-val"/>
 </style>
 </body>
 </html>
