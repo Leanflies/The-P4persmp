@@ -30,6 +30,7 @@
     <h3 class="eli-name">C!Eli</h3>
     <img src="C!Eli achievement.png" class="eli-achievement"/>
     <img src="C!Eli minecraft skin.png" class="eli-skin"/>
+<div class="eli-facts">
     <div class="eli-key-facts">
         <h4 class="eli-facts-title">Key Facts!</h4>
         <ul class="eli-key-facts-list">
@@ -40,33 +41,16 @@
         </ul>
     </div>
 
-<div class="eli-pets">
-        <h4 class="eli-pets-title">Pets!</h4>
-        <ul class="eli-pets-list">
+<div class="eli-other">
+        <ul class="eli-other-list">
+            <li class="none-list"><h4 class="eli-pets-title">Pets!</h4></li>
             <li><p>Bug, Leaf Bug</p></li>
             <li><p>Lettuce, Leaf Bug</p></li>
         </ul>
 </div>
-<img src="Minecraft plane.png" class="plane"/>
-<img id="chest" class="chest" src="Minecraft chest.jpg"/>
-<button onclick="changeImage()" class="open-button-eli">Open Chest</button>  
-<script>
-  const image = document.getElementById("chest");
-  function changeImage() {
-   image.src = "C!Eli items.png";
-  }
-</script>
-<button onclick="changeImage2()" class="close-button-eli">Close Chest</button>
-<script>
-  const image2 = document.getElementById("chest");
-  function changeImage2() {
-   image.src = "Minecraft chest.jpg";
-  }
-</script>
-
 <div class="credits-eli">
-    <ul>
-        <p>All credits for C!Eli belong to Elisinspace</p>
+    <ul class="credits-eli-list">
+        <li class="none-list"><p>All credits for C!Eli belong to Elisinspace</p></li>
         <li><a href="http://www.youtube.com/@elisinspace" class="links-eli">YouTube Main <i class="fa-brands fa-youtube"></i></a></li>
         <li><a href="http://www.youtube.com/@elisinspaceLIVE" class="links-eli">YouTube Live <i class="fa-brands fa-youtube"></i></a></li>
         <li><a href="https://www.instagram.com/elisinspace_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="links-eli">Instagram <i class="fa-brands fa-instagram"></i></a></li>
@@ -75,6 +59,23 @@
         <li><a href="https://www.twitch.tv/elisinspace/about" class="links-eli">Twitch <i class="fa-brands fa-twitch"></i></a></li>
     </ul>
 </div>
-</style>
+</div>
+<img src="Minecraft plane.png" class="plane"/>
+<img id="chest" class="chest" src="Minecraft chest.jpg"/>
+<button id="eli-button" onclick="changeButton()">Open Chest</button>
+<script>
+function changeButton() {
+    const btn = document.getElementById("eli-button");
+    const image = document.getElementById("chest");
+
+    if (btn.textContent === "Open Chest") {
+        btn.textContent = "Close Chest";
+        image.src = "C!Eli items.png";
+    } else {
+        btn.textContent = "Open Chest";
+        image.src = "Minecraft chest.jpg";
+    }
+} 
+</script>
 </body>
 </html>
