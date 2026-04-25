@@ -2824,23 +2824,6 @@
     width: 50px;
 }
 
-.credits-eli{
-    color: rgb(47, 45, 107);
-    background: #4f0d09;
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    top: 400;
-    right: 250;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    border-radius: 6px;
-    text-shadow: 2px 2px black;
-    max-width: 400px;
-    font-size: 12px;
-    cursor: context-menu;
-}
-
 .links-eli{
     color: rgb(47, 45, 107);
     text-shadow: 2px 2px black;
