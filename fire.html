@@ -58,15 +58,15 @@
 
 <img src="minecraft fox.png" class="fire-fox"/>
 <img id="chest" class="chest" src="Minecraft chest.jpg"/>
-<button id="andy-button" onclick="changeButton()">Open Chest</button>
+<button id="fire-button" onclick="changeButton()">Open Chest</button>
 <script>
 function changeButton() {
-    const btn = document.getElementById("andy-button");
+    const btn = document.getElementById("fire-button");
     const image = document.getElementById("chest");
 
     if (btn.textContent === "Open Chest") {
         btn.textContent = "Close Chest";
-        image.src = "C!Andy items.png";
+        image.src = "C!Fire items.png";
     } else {
         btn.textContent = "Open Chest";
         image.src = "Minecraft chest.jpg";
