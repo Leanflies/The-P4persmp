@@ -1967,21 +1967,6 @@
     height: 450px;
 }
 
-.ember-key-facts{
-    background: rgb(29, 164, 172);
-    display: block;
-    justify-content: center;
-    position: fixed;
-    top: 200;
-    left: 425;
-    padding-left: 5%;
-    padding-right: 5%;
-    border-radius: 6px;
-    color: #e981d9;
-    text-shadow: 2px 2px black;
-    cursor: context-menu;
-}
-
 .ember{
     display: flex;
     justify-content: center;
@@ -2143,23 +2128,6 @@
     width: 50px;
 }
 
-.credits-ember{
-    color: #e981d9;
-    background: rgb(29, 164, 172);
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    top: 350;
-    right: 200;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    border-radius: 6px;
-    text-shadow: 2px 2px black;
-    max-width: 400px;
-    font-size: 12px;
-    cursor: context-menu;
-}
-
 .links-ember{
     color: #e981d9;
     text-shadow: 2px 2px black;
@@ -2229,21 +2197,6 @@
     top: 250;
     left: 125;
     height: 450px;
-}
-
-.fire-key-facts{
-    background: rgb(172, 72, 29);
-    display: block;
-    justify-content: center;
-    position: fixed;
-    top: 200;
-    left: 425;
-    padding-left: 5%;
-    padding-right: 5%;
-    border-radius: 6px;
-    color: #dd8e5c;
-    text-shadow: 2px 2px black;
-    cursor: context-menu;
 }
 
 .fire-facts{
@@ -2408,22 +2361,6 @@
     width: 50px;
 }
 
-.credits-fire{
-    color: #dd8e5c;
-    background: rgb(172, 72, 29);
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    top: 350;
-    right: 200;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    border-radius: 6px;
-    text-shadow: 2px 2px black;
-    max-width: 400px;
-    font-size: 12px;
-    cursor: context-menu;
-}
 
 .links-fire{
     color: #dd8e5c;
@@ -2573,20 +2510,6 @@
     height: 450px;
 }
 
-.val-key-facts{
-    background: rgb(24, 111, 142);
-    display: block;
-    justify-content: center;
-    position: fixed;
-    top: 200;
-    left: 425;
-    padding-left: 5%;
-    padding-right: 5%;
-    border-radius: 6px;
-    color: #7c2f29;
-    text-shadow: 2px 2px black;
-    cursor: context-menu;
-}
 
 .val{
     display: flex;
@@ -2669,23 +2592,6 @@
     text-shadow: 2px 2px black;
     cursor: context-menu;
     width: 50px;
-}
-
-.credits-val{
-    color: #7c2f29;
-    background: rgb(24, 111, 142);
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    top: 350;
-    right: 135;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    border-radius: 6px;
-    text-shadow: 2px 2px black;
-    max-width: 400px;
-    font-size: 12px;
-    cursor: context-menu;
 }
 
 .links-val{
