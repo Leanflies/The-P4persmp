@@ -2113,6 +2113,19 @@
     flex: 1 1 150px;
 }
 
+
+#ember-button{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 550;
+    right: 55;
+    background-color: rgb(29, 164, 172);
+    color: #e981d9;
+    text-shadow: 2px 2px black;
+    cursor: pointer;
+}
+
 .ember-name{
     color: #e981d9;
     background: rgb(29, 164, 172);
