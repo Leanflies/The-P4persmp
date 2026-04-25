@@ -2651,6 +2651,83 @@
     cursor: context-menu;
 }
 
+.eli-facts{
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    padding: 20px; 
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+    background-color: #4f0d09;
+    width: 600px;
+    justify-content: space-evenly;
+    max-height: 500px;
+    overflow-y: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.eli-facts::-webkit-scrollbar {
+    width: 10px;
+}
+
+.eli-facts::-webkit-scrollbar-track {
+    background: rgb(47, 45, 107); 
+}
+
+.eli-facts::-webkit-scrollbar-thumb {
+    background: #4f0d09;        
+    border-radius: 6px;
+}
+
+.eli-facts::-webkit-scrollbar-thumb:hover {
+    background: #4f0d09;
+}
+
+.eli-facts ul {
+    padding: 0;
+    margin: 0;
+}
+
+.eli-facts p {
+    line-height: 1.4;
+}
+
+.eli-key-facts{
+    color: rgb(47, 45, 107);
+    display: block; 
+    flex: 1 1 150px;
+}
+
+.eli-credits{
+    color: rgb(47, 45, 107);
+    display: block; 
+    flex: 1 1 150px;
+}
+
+.eli-other{
+    color: rgb(47, 45, 107);
+    display: block; 
+    flex: 1 1 150px;
+}
+
+#eli-button{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 550;
+    right: 55;
+    background-color: #4f0d09;
+    color: rgb(47, 45, 107);
+    text-shadow: 2px 2px black;
+    cursor: pointer;
+}
+
 .eli-pets{
     background: #4f0d09;
     display: block;
@@ -2681,21 +2758,6 @@
     top: 250;
     left: 125;
     height: 450px;
-}
-
-.eli-key-facts{
-    background: #4f0d09;
-    display: block;
-    justify-content: center;
-    position: fixed;
-    top: 200;
-    left: 425;
-    padding-left: 5%;
-    padding-right: 5%;
-    border-radius: 6px;
-    color: rgb(47, 45, 107);
-    text-shadow: 2px 2px black;
-    cursor: context-menu;
 }
 
 .eli{
@@ -2753,12 +2815,13 @@
     justify-content: center;
     position: fixed;
     top: 17.5%;
-    left: 11%;
+    left: 15%;
     padding-left: 5%;
     padding-right: 5%;
     border-radius: 6px;
     text-shadow: 2px 2px black;
     cursor: context-menu;
+    width: 50px;
 }
 
 .credits-eli{
