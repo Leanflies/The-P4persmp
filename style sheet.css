@@ -2047,8 +2047,8 @@
     cursor: context-menu;
     background-color: rgb(29, 164, 172);
     justify-content: space-evenly;
-    width: 650px;
-    height: 500px;
+    width: 600px;
+    max-height: 500px;
     overflow-y: auto;
     top: 50%;
     left: 50%;
@@ -2276,6 +2276,10 @@
     color: #dd8e5c;
     text-shadow: 2px 2px black;
     cursor: pointer;
+}
+
+.credits-fire-list{
+    color: #dd8e5c;
 }
 
 .fire{
