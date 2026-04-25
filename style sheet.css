@@ -2257,7 +2257,8 @@
     text-shadow: 2px 2px black;
     cursor: context-menu;
     background-color: rgb(172, 72, 29);
-    width: 600px;
+    width: 650px;
+    height: 500px;
     justify-content: space-evenly;
     max-height: 500px;
     overflow-y: auto;
