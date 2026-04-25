@@ -2061,6 +2061,7 @@
     text-shadow: 2px 2px black;
     cursor: context-menu;
     background-color: rgb(29, 164, 172);
+    justify-content: space-evenly;
     width: 650px;
     height: 500px;
     overflow-y: auto;
@@ -2257,6 +2258,7 @@
     text-shadow: 2px 2px black;
     cursor: context-menu;
     background-color: rgb(172, 72, 29);
+    justify-content: space-evenly;
     width: 650px;
     height: 500px;
     justify-content: space-evenly;
