@@ -30,6 +30,7 @@
     <h3 class="mossie-name">C!Mossie</h3>
     <img src="C!Mossie achievement.png" class="mossie-achievement"/>
     <img src="C!mossie minecraft skin.png" class="mossie-skin"/>
+<div class="mossie-facts">
     <div class="mossie-key-facts">
         <h4 class="mossie-facts-title">Key Facts!</h4>
         <ul class="mossie-key-facts-list">
@@ -39,24 +40,7 @@
             <li><p>The Church</p></li>
         </ul>
     </div>
-
-<img id="chest" class="chest" src="Minecraft chest.jpg"/>
-<button onclick="changeImage()" class="open-button-mossie">Open Chest</button>  
-<script>
-  const image = document.getElementById("chest");
-  function changeImage() {
-   image.src = "C!Mossie items.png";
-  }
-</script>
-<button onclick="changeImage2()" class="close-button-mossie">Close Chest</button>
-<script>
-  const image2 = document.getElementById("chest");
-  function changeImage2() {
-   image.src = "Minecraft chest.jpg";
-  }
-</script>
-<img src="minecraft sword.png" class="sword-mossie">
-<div class="credits-mossie">
+    <div class="credits-mossie">
     <ul>
         <p>All credits for C!Mossie belong to Mossiesocks</p>
         <li><a href="http://www.youtube.com/@mossysocks" class="links-mossie">YouTube Main <i class="fa-brands fa-youtube"></i></a></li>
@@ -66,6 +50,24 @@
         <li><a href="https://www.twitch.tv/mossy_socks" class="links-mossie">Twitch <i class="fa-brands fa-twitch"></i></a></li>
     </ul>
 </div>
-</style>
+</div>
+
+<img id="chest" class="chest" src="Minecraft chest.jpg"/>
+<button id="mossie-button" onclick="changeButton()">Open Chest</button>
+<script>
+function changeButton() {
+    const btn = document.getElementById("mossie-button");
+    const image = document.getElementById("chest");
+
+    if (btn.textContent === "Open Chest") {
+        btn.textContent = "Close Chest";
+        image.src = "C!Mossie items.png";
+    } else {
+        btn.textContent = "Open Chest";
+        image.src = "Minecraft chest.jpg";
+    }
+} 
+</script>
+<img src="minecraft sword.png" class="sword-mossie">
 </body>
 </html>
