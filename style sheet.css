@@ -2254,7 +2254,7 @@
     flex: 1 1 150px;
 }
 
-.fire-credits{
+.credits-fire{
     color: #dd8e5c;
     display: block; 
     flex: 1 1 150px;
@@ -2276,10 +2276,6 @@
     color: #dd8e5c;
     text-shadow: 2px 2px black;
     cursor: pointer;
-}
-
-.credits-fire-list{
-    color: #dd8e5c;
 }
 
 .fire{
@@ -2472,7 +2468,7 @@
     flex: 1 1 150px;
 }
 
-.val-credits{
+.credits-val{
     color: #7c2f29;
     display: block; 
     flex: 1 1 150px;
@@ -2704,7 +2700,7 @@
     flex: 1 1 150px;
 }
 
-.eli-credits{
+.credits-eli{
     color: rgb(47, 45, 107);
     display: block; 
     flex: 1 1 150px;
@@ -3086,9 +3082,9 @@
     display: flex;
     position: fixed;
     justify-content: center;
-    height: 250px;
-    top: 425;
-    left: 350;
+    height: 150px;
+    top: 225;
+    right: 50;
 }
 
 .ethan-lore{
