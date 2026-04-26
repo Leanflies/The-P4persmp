@@ -2428,7 +2428,7 @@
     cursor: context-menu;
     background-color: rgb(24, 111, 142);
     width: 650px;
-    height: 500px;
+    max-height: 500px;
     justify-content: space-evenly;
     overflow-y: auto;
     top: 50%;
@@ -3138,7 +3138,7 @@
     justify-content: center;
     height: 150px;
     top: 225;
-    right: 50;
+    right: 25;
 }
 
 .ethan-lore{
