@@ -5382,7 +5382,7 @@
     position: fixed;
     display: flex;
     justify-content: center;
-    bottom: 20;
-    left: 425;
+    top: 20;
+    right: 25;
     width: 400px;
 }
