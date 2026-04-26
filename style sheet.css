@@ -2908,24 +2908,6 @@
     height: 450px;
 }
 
-.mossie-key-facts{
-    background-image: url("Minecraft\ Mossy\ Cobblestone.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    display: block;
-    justify-content: center;
-    position: fixed;
-    top: 200;
-    left: 425;
-    padding-left: 5%;
-    padding-right: 5%;
-    border-radius: 6px;
-    color: rgb(26, 45, 30);
-    text-shadow: 2px 2px black;
-    cursor: context-menu;
-}
-
 .mossie{
     display: flex;
     justify-content: center;
@@ -2946,6 +2928,96 @@
     left: 0;
     text-align: center;
 }
+
+.mossie-facts{
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    padding: 20px; 
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+    background-image: url("Minecraft\ Mossy\ Cobblestone.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 600px;
+    justify-content: space-evenly;
+    max-height: 500px;
+    overflow-y: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mossie-facts::-webkit-scrollbar {
+    width: 10px;
+}
+
+.mossie-facts::-webkit-scrollbar-track {
+    background-color: rgb(26, 45, 30); 
+}
+
+.mossie-facts::-webkit-scrollbar-thumb {
+    background-image: url("Minecraft\ Mossy\ Cobblestone.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;     
+    border-radius: 6px;
+}
+
+.mossie-facts::-webkit-scrollbar-thumb:hover {
+    background-image: url("Minecraft\ Mossy\ Cobblestone.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.mossie-facts ul {
+    padding: 0;
+    margin: 0;
+}
+
+.mossie-facts p {
+    line-height: 1.4;
+}
+
+.mossie-key-facts{
+    color: rgb(26, 45, 30);
+    display: block; 
+    flex: 1 1 150px;
+}
+
+.credits-mossie{
+    color: rgb(26, 45, 30);
+    display: block; 
+    flex: 1 1 150px;
+}
+
+.mossie-other{
+    color: rgb(26, 45, 30);
+    display: block; 
+    flex: 1 1 150px;
+}
+
+#mossie-button{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 550;
+    right: 55;
+    background-image: url("Minecraft\ Mossy\ Cobblestone.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    color: rgb(26, 45, 30);
+    text-shadow: 2px 2px black;
+    cursor: pointer;
+}
+
 
 .character-list-mossie li a{
     display: block;
@@ -2984,31 +3056,13 @@
     justify-content: center;
     position: fixed;
     top: 17.5%;
-    left: 11%;
+    left: 15%;
     padding-left: 5%;
     padding-right: 5%;
     border-radius: 6px;
     text-shadow: 2px 2px black;
     cursor: context-menu;
-}
-
-.credits-mossie{
-    color: rgb(26, 45, 30);
-    background-image: url("Minecraft\ Mossy\ Cobblestone.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    top: 350;
-    right: 250;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    border-radius: 6px;
-    text-shadow: 2px 2px black;
-    max-width: 400px;
-    font-size: 16px;
-    cursor: context-menu;
+    width: 50px;
 }
 
 .links-mossie{
