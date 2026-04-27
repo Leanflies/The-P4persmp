@@ -389,6 +389,14 @@
     text-shadow: 2px 2px black;
 }
 
+.ethan-main{
+    background: none;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .ethan-facts{
     position: fixed;
     display: flex;
