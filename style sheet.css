@@ -37,6 +37,14 @@
     overflow: hidden;
 }
 
+.quiz-page{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .welcome-page{
     display: flex;
     justify-content: center;
