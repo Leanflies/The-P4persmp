@@ -41,7 +41,7 @@
     display: flex;
     position: fixed;
     justify-content: center;
-    left: 50%;
+    left: 500px;
 }
 
 .welcome-page{
