@@ -692,7 +692,6 @@
     justify-content: center;
     position: fixed;
     top: 225;
-    left: 125;
     height: 450px;
 }
 
@@ -800,7 +799,6 @@
     justify-content: center;
     position: fixed;
     top: 17.5%;
-    left: 15%;
     padding-left: 5%;
     padding-right: 5%;
     border-radius: 6px;
@@ -950,12 +948,20 @@
     left: 13%;
 }
 
+.taylor-main{
+    background: none;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 300;
+}
+
 .taylor-skin{
     display: flex;
     justify-content: center;
     position: fixed;
     top: 250;
-    left: 125;
     height: 450px;
 }
 
@@ -1045,7 +1051,6 @@
     justify-content: center;
     position: fixed;
     top: 17.5%;
-    left: 15%;
     padding-left: 5%;
     padding-right: 5%;
     border-radius: 6px;
@@ -1091,7 +1096,6 @@
     justify-content: center;
     position: fixed;
     top: 250;
-    left: 125;
     height: 450px;
 }
 
@@ -1234,6 +1238,15 @@
     text-shadow: 2px 2px black;
 }
 
+.ashlyn-main{
+    background: none;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 300;
+}
+
 .ashlyn-name{
     color: #ff6ebe;
     background: rgb(255, 157, 203);
@@ -1241,7 +1254,6 @@
     justify-content: center;
     position: fixed;
     top: 17.5%;
-    left: 15%;
     padding-left: 5%;
     padding-right: 5%;
     border-radius: 6px;
