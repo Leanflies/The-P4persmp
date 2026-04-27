@@ -393,7 +393,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    left: 225;
+    left: 300;
 }
 
 .ethan-facts{
@@ -668,6 +668,15 @@
     color: #ffffff;
     text-shadow: 2px 2px black;
     cursor: context-menu;
+}
+
+.andy-main{
+    background: none;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 300;
 }
 
 .andy-achievement{
