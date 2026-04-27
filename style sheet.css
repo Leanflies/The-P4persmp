@@ -349,7 +349,6 @@
     justify-content: center;
     position: fixed;
     top: 17.5%;
-    left: 15%;
     padding-left: 5%;
     padding-right: 5%;
     border-radius: 6px;
@@ -370,7 +369,6 @@
     justify-content: center;
     position: fixed;
     top: 250;
-    left: 125;
     height: 450px;
 }
 
@@ -395,6 +393,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    left: 125;
 }
 
 .ethan-facts{
