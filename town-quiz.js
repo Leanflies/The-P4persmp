@@ -5,7 +5,7 @@ const towns = [
     },
     {
         "image": "landscape image2.jpg",
-        "name": "Giredale"
+        "name": "Coalhaven"
     },
     {
         "image": "landscape image4.jpg",
