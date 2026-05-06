@@ -38,10 +38,6 @@ const colours = [
     {
         "image": "C!Taylor colour palette.png",
         "name": "C!Taylor"
-    },
-    {
-        "image": "C!Val colour palette.png",
-        "name": "C!Val"
     }
 ];
 const colourImage = document.getElementById("colour-image");
