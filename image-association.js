@@ -53,6 +53,8 @@ const nextQuestion = document.getElementById("next-question");
 
 let answer = "";
 let options = [];
+let score = 0;
+let remainingImages = [...images];
 
 window.onload = function() {
     setQuestion();
@@ -65,23 +67,54 @@ window.onload = function() {
 
 
 function setQuestion() {
+    if (remainingImages.length === 0) {
+        imageImage.hidden = true;
+
+        option0.hidden = true;
+        option1.hidden = true;
+        option2.hidden = true;
+        option3.hidden = true;
+
+        nextQuestion.hidden = true;
+
+        alert(
+            `Quiz finished!\nYour score: ${score}/${images.length}\n\nClick OK to play again.`
+        );
+
+        score = 0;
+        remainingImages = [...images];
+
+        imageImage.hidden = false;
+        option0.hidden = false;
+        option1.hidden = false;
+        option2.hidden = false;
+        option3.hidden = false;
+
+        setQuestion();
+        return;
+    }
+
     options = [];
 
-    let image = images[randomIndex(images.length)];
-    imageImage.src = image.image
+    let randomImageIndex = randomIndex(remainingImages.length);
+    let image = remainingImages[randomImageIndex];
+
+    remainingImages.splice(randomImageIndex, 1);
+
+    imageImage.src = image.image;
     answer = image.name;
     options.push(image.name);
 
-    while(options.length < 4){
-        image = images[randomIndex(images.length)];
-        if(!options.includes(image.name)){
-            options.push(image.name);
+    while (options.length < 4) {
+        let randomImage = images[randomIndex(images.length)];
+
+        if (!options.includes(randomImage.name)) {
+            options.push(randomImage.name);
         }
     }
 
     let swapIndex = randomIndex(options.length);
-    options[0] = options[swapIndex];
-    options[swapIndex] = answer;
+    [options[0], options[swapIndex]] = [options[swapIndex], options[0]];
 
     option0.innerText = options[0];
     option1.innerText = options[1];
@@ -109,6 +142,7 @@ function selectOption(){
 
     if (this.innerText == answer){
         this.style.backgroundColor = "green";
+        score++;
     }
     else{
         this.style.backgroundColor = "red";   
