@@ -56,10 +56,6 @@ const emojis = [
         "name": "C!Fire"
     },
     {
-        "image": "C!Val emojis.png",
-        "name": "C!Val"
-    },
-    {
         "image": "C!Eli emojis.png",
         "name": "C!Eli"
     },
