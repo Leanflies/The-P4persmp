@@ -32,10 +32,6 @@ const images = [
         "name": "C!Fire"
     },
     {
-        "image": "knight image c!val core.jpg",
-        "name": "C!Val"
-    },
-    {
         "image": "flying stuff image c!eli core.jpg",
         "name": "C!Eli"
     },
