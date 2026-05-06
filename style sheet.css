@@ -5257,6 +5257,10 @@
     height: 250px;
 }
 
+#next-question {
+    margin-top: -8px;
+}
+
 .emoji-association-title{
     position: fixed;
     display: flex;
