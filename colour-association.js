@@ -143,6 +143,7 @@ function selectOption(){
 
     if (this.innerText == answer){
         this.style.backgroundColor = "green";
+        score++;
     }
     else{
         this.style.backgroundColor = "red";
