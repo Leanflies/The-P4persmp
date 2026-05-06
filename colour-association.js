@@ -77,9 +77,8 @@ function setQuestion() {
 
         nextQuestion.hidden = true;
 
-        alert(
-            `Quiz finished!\nYour score: ${score}/${colours.length}\n\nClick OK to play again.`
-        );
+       popupText.innerText = `Quiz finished!\nYour score: ${score}/${lores.length}\n\nClick OK to play again.`;
+popup.style.display = "block";
 
         score = 0;
         remainingColours = [...colours];
@@ -155,3 +154,12 @@ function selectOption(){
 function randomIndex(index){
     return Math.floor(Math.random() * index);
 }
+
+const popup = document.getElementById("popup");
+const popupText = document.getElementById("popup-text");
+const popupOk = document.getElementById("popup-ok");
+
+popupOk.addEventListener("click", () => {
+    popup.style.display = "none";
+    setQuestion(); // restart quiz here
+});
