@@ -77,9 +77,12 @@ function setQuestion() {
 
         nextQuestion.hidden = true;
 
-       alert(
-            `Quiz finished!\nYour score: ${score}/${lores.length}\n\nClick OK to play again.`
+        alert(
+            `Quiz finished!\nYour score: ${score}/${colours.length}\n\nClick OK to play again.`
         );
+
+        score = 0;
+        remainingColours = [...colours];
 
         colourImage.hidden = false;
         option0.hidden = false;
@@ -140,7 +143,6 @@ function selectOption(){
 
     if (this.innerText == answer){
         this.style.backgroundColor = "green";
-        score++;
     }
     else{
         this.style.backgroundColor = "red";
