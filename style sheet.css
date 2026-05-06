@@ -5211,7 +5211,7 @@
 #quote-image,
 #image {
     width: 280px;
-    height: auto;
+    height: 280px;
 }
 
 .quote-quiz-title {
@@ -5249,7 +5249,7 @@
 
 #emoji-image {
    width: 280px;
-    height: auto;
+    height: 280px;
 }
 
 .emoji-association-title{
@@ -5263,7 +5263,7 @@
 
 #town-image {
     width: 280px;
-    height: auto;
+    height: 280px;
 }
 
 .town-quiz-title{
@@ -5277,7 +5277,7 @@
 
 #colour-image {
     width: 280px;
-    height: auto;
+    height: 280px;
 }
 
 .colour-association-title{
@@ -5290,7 +5290,7 @@
 
 #lore-image {
     width: 280px;
-    height: auto;
+    height: 280px;
 }
 
 .lore-quiz-title{
