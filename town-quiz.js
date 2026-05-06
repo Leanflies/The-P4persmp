@@ -45,6 +45,8 @@ const nextQuestion = document.getElementById("next-question");
 
 let answer = "";
 let options = [];
+let score = 0;
+let remainingTowns = [...towns];
 
 window.onload = function() {
     setQuestion();
@@ -57,23 +59,52 @@ window.onload = function() {
 
 
 function setQuestion() {
+    if (remainingTowns.length === 0) {
+        townImage.hidden = true;
+
+        option0.hidden = true;
+        option1.hidden = true;
+        option2.hidden = true;
+        option3.hidden = true;
+
+        nextQuestion.hidden = true;
+
+        alert(
+            `Quiz finished!\nYour score: ${score}/${towns.length}\n\nClick OK to play again.`
+        );
+    score = 0;
+        remainingTowns = [...towns];
+
+        townImage.hidden = false;
+        option0.hidden = false;
+        option1.hidden = false;
+        option2.hidden = false;
+        option3.hidden = false;
+
+        setQuestion();
+        return;
+    }
+
     options = [];
 
-    let town = towns[randomIndex(towns.length)];
-    townImage.src = town.image
+    let randomTownIndex = randomIndex(remainingTowns.length);
+    let town = remainingTowns[randomTownIndex];
+
+    remainingTowns.splice(randomTownIndex, 1);
+
+    townImage.src = town.image;
     answer = town.name;
     options.push(town.name);
 
-    while(options.length < 4){
-        town = towns[randomIndex(towns.length)];
-        if (!options.includes(town.name)) {
-            options.push(town.name);
+    while (options.length < 4) {
+        let randomTown = towns[randomIndex(towns.length)];
+
+        if (!options.includes(randomTown.name)) {
+            options.push(randomTown.name);
         }
     }
-
-    let swapIndex = randomIndex(options.length);
-    options[0] = options[swapIndex];
-    options[swapIndex] = answer;
+let swapIndex = randomIndex(options.length);
+    [options[0], options[swapIndex]] = [options[swapIndex], options[0]];
 
     option0.innerText = options[0];
     option1.innerText = options[1];
@@ -91,7 +122,6 @@ function setQuestion() {
     option3.style.backgroundColor = "grey";
 
     nextQuestion.hidden = true;
-
 }
 function selectOption(){
     option0.disabled = true;
@@ -101,6 +131,7 @@ function selectOption(){
 
     if (this.innerText == answer){
         this.style.backgroundColor = "green";
+        score++;
     }
     else{
         this.style.backgroundColor = "red";
