@@ -5191,8 +5191,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
-
+    gap: 8px;
     width: 100%;
     min-height: 100vh;
     justify-content: center;
@@ -5255,10 +5254,6 @@
     top: 90;
     left: 590;
     height: 250px;
-}
-
-#next-question {
-    margin-top: -8px;
 }
 
 .emoji-association-title{
