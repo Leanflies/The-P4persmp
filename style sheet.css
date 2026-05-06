@@ -5187,17 +5187,13 @@
     top: 350;
 }
 
-#board{
-    background-color: green;
-}
-
 #quote-image {
     width: 280px;
     height: auto;
     margin-bottom: 20px;
     position: fixed;
-    top: 100;
-    left: 590;
+    top: 100px;
+    left: 590px;
 }
 
 #quiz-container {
@@ -5220,14 +5216,13 @@
     border-radius: 5px;
     font-size: 16px;
     padding: 10px;
-    position: fixed;
 }
 
 #quiz-container button:hover {
     background-color: lightgray;
 }
 
-/*.quote-quiz-title{
+.quote-quiz-title{
     position: fixed;
     display: flex;
     justify-content: center;
@@ -5235,54 +5230,20 @@
     top: 0;
     left: 500;
     color: white;
-}*/
+}
 
 .quote-quiz-page{
     background: radial-gradient(circle,#FFE6E6,#FFB8B8,#FF8A8A,#FF5C5C,#FF2E2E,#FF0000,#D10000,#A30000,#750000,#470000,#1A0000 95%);
 }
 
-#option0{
-    top: 390;
-    left: 590;
-}
-
-#option1{
-    top: 465;
-    left: 590;
-}
-
-#option2{
-    top: 540;
-    left: 590;
-}
-
-#option3{
-    top: 615;
-    left: 590;
-}
-
-#next-question{
-    top: 690;
-    left: 590;
-    color: #3A124D;
-}
-
 #image {
     width: 280px;
     margin-bottom: 20px;
-    position: fixed;
-    top: 90;
-    left: 590;
     height: 250px;
 }
 
 .image-association-title{
-    position: fixed;
-    display: flex;
-    justify-content: center;
     text-align: center;
-    top: 0;
-    left: 275;
     color: white;
 }
 
