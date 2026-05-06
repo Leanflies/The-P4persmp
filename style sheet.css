@@ -5247,6 +5247,11 @@
     background: radial-gradient(circle, #EEFFE6,#CFFFB8,#B1FF8A,#92FF5C,#74FF2E,#55FF00,#46D100,#36A300,#277500,#184700,#081A00 95%);
 }
 
+#next-question{
+    top: 690;
+    left: 590;
+}
+
 #emoji-image {
     width: 280px;
     margin-bottom: 20px;
