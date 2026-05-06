@@ -2422,6 +2422,14 @@
     width: 50px;
 }
 
+.fire-main{
+    background: none;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 300;
+}
 
 .links-fire{
     color: #dd8e5c;
