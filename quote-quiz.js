@@ -57,6 +57,8 @@ const nextQuestion = document.getElementById("next-question");
 
 let answer = "";
 let options = [];
+let score = 0;
+let remainingQuotes = [...quotes];
 
 window.onload = function() {
     setQuestion();
@@ -69,23 +71,53 @@ window.onload = function() {
 
 
 function setQuestion() {
+    if (remainingQuotes.length === 0) {
+        quoteImage.hidden = true;
+
+        option0.hidden = true;
+        option1.hidden = true;
+        option2.hidden = true;
+        option3.hidden = true;
+
+        nextQuestion.hidden = true;
+
+        alert(
+            `Quiz finished!\nYour score: ${score}/${quotes.length}\n\nClick OK to play again.`
+        );
+score = 0;
+        remainingQuotes = [...quotes];
+
+        quoteImage.hidden = false;
+        option0.hidden = false;
+        option1.hidden = false;
+        option2.hidden = false;
+        option3.hidden = false;
+
+        setQuestion();
+        return;
+    }
+
     options = [];
 
-    let quote = quotes[randomIndex(quotes.length)];
-    quoteImage.src = quote.image
+    let randomQuoteIndex = randomIndex(remainingQuotes.length);
+    let quote = remainingQuotes[randomQuoteIndex];
+
+     remainingQuotes.splice(randomQuoteIndex, 1);
+
+    quoteImage.src = quote.image;
     answer = quote.name;
     options.push(quote.name);
 
-    while(options.length < 4){
-        quote = quotes[randomIndex(quotes.length)];
-        if(!options.includes(quote.name)){
-            options.push(quote.name);
+    while (options.length < 4) {
+        let randomQuote = quotes[randomIndex(quotes.length)];
+
+        if (!options.includes(randomQuote.name)) {
+            options.push(randomQuote.name);
         }
     }
 
     let swapIndex = randomIndex(options.length);
-    options[0] = options[swapIndex];
-    options[swapIndex] = answer;
+    [options[0], options[swapIndex]] = [options[swapIndex], options[0]];
 
     option0.innerText = options[0];
     option1.innerText = options[1];
@@ -113,6 +145,7 @@ function selectOption(){
 
     if (this.innerText == answer){
         this.style.backgroundColor = "green";
+        score++;
     }
     else{
         this.style.backgroundColor = "red";
