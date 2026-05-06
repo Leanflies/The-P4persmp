@@ -5207,7 +5207,6 @@
     align-items: center;
     position: fixed;
     gap: 10px;
-    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -5228,7 +5227,7 @@
     background-color: lightgray;
 }
 
-.quote-quiz-title{
+/*.quote-quiz-title{
     position: fixed;
     display: flex;
     justify-content: center;
@@ -5236,7 +5235,7 @@
     top: 0;
     left: 500;
     color: white;
-}
+}*/
 
 .quote-quiz-page{
     background: radial-gradient(circle,#FFE6E6,#FFB8B8,#FF8A8A,#FF5C5C,#FF2E2E,#FF0000,#D10000,#A30000,#750000,#470000,#1A0000 95%);
