@@ -5258,12 +5258,7 @@
 }
 
 .emoji-association-title{
-    position: fixed;
-    display: flex;
-    justify-content: center;
     text-align: center;
-    top: 0;
-    left: 275;
     color: white;
 }
 
@@ -5277,12 +5272,7 @@
 }
 
 .town-quiz-title{
-    position: fixed;
-    display: flex;
-    justify-content: center;
     text-align: center;
-    top: 0;
-    left: 400;
     color: white;
 }
 
@@ -5296,12 +5286,7 @@
 }
 
 .colour-association-title{
-    position: fixed;
-    display: flex;
-    justify-content: center;
     text-align: center;
-    top: 0;
-    left: 275;
 }
 
 .colour-association-page{
@@ -5314,12 +5299,7 @@
 }
 
 .lore-quiz-title{
-    position: fixed;
-    display: flex;
-    justify-content: center;
     text-align: center;
-    top: 0;
-    left: 275;
     color: white;
 }
 
