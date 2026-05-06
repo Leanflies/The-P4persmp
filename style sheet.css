@@ -5253,12 +5253,8 @@
 }
 
 #emoji-image {
-    width: 280px;
-    margin-bottom: 20px;
-    position: fixed;
-    top: 90;
-    left: 590;
-    height: 250px;
+   width: 280px;
+    height: auto;
 }
 
 .emoji-association-title{
@@ -5277,11 +5273,7 @@
 
 #town-image {
     width: 280px;
-    margin-bottom: 20px;
-    position: fixed;
-    top: 90;
-    left: 590;
-    height: 250px;
+    height: auto;
 }
 
 .town-quiz-title{
@@ -5300,11 +5292,7 @@
 
 #colour-image {
     width: 280px;
-    margin-bottom: 20px;
-    position: fixed;
-    top: 90;
-    left: 590;
-    height: 250px;
+    height: auto;
 }
 
 .colour-association-title{
@@ -5322,11 +5310,7 @@
 
 #lore-image {
     width: 280px;
-    margin-bottom: 20px;
-    position: fixed;
-    top: 90;
-    left: 590;
-    height: 250px;
+    height: auto;
 }
 
 .lore-quiz-title{
