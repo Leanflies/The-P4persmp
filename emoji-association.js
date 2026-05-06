@@ -68,6 +68,14 @@ const emojis = [
         "name": "C!Mossie"
     }
 ];
+
+let answer = "";
+let options = [];
+let score = 0;
+let currentQuestion = 0;
+
+let remainingEmojis = [...emojis];
+
 const emojiImage = document.getElementById("emoji-image");
 const option0 = document.getElementById("option0");
 const option1 = document.getElementById("option1");
@@ -75,8 +83,6 @@ const option2 = document.getElementById("option2");
 const option3 = document.getElementById("option3");
 const nextQuestion = document.getElementById("next-question");
 
-let answer = "";
-let options = [];
 
 window.onload = function() {
     setQuestion();
@@ -89,23 +95,47 @@ window.onload = function() {
 
 
 function setQuestion() {
+    if (remainingEmojis.length === 0) {
+        emojiImage.hidden = true;
+
+        option0.hidden = true;
+        option1.hidden = true;
+        option2.hidden = true;
+        option3.hidden = true;
+
+        nextQuestion.hidden = true;
+
+alert(`Quiz finished!\nYour score: ${score}/${emojis.length}\n\nClick OK to play again.`);
+        score = 0;
+    remainingEmojis = [...emojis];
+
+    emojiImage.hidden = false;
+
+    setQuestion();
+    return;
+    }
+
     options = [];
 
-    let emoji = emojis[randomIndex(emojis.length)];
-    emojiImage.src = emoji.image
+    let randomEmojiIndex = randomIndex(remainingEmojis.length);
+    let emoji = remainingEmojis[randomEmojiIndex];
+
+    remainingEmojis.splice(randomEmojiIndex, 1);
+
+    emojiImage.src = emoji.image;
     answer = emoji.name;
     options.push(emoji.name);
 
-    while(options.length < 4){
-        emoji = emojis[randomIndex(emojis.length)];
-        if(!options.includes(emoji.name)){
-            options.push(emoji.name);
+    while (options.length < 4) {
+        let randomEmoji = emojis[randomIndex(emojis.length)];
+
+        if (!options.includes(randomEmoji.name)) {
+            options.push(randomEmoji.name);
         }
     }
 
     let swapIndex = randomIndex(options.length);
-    options[0] = options[swapIndex];
-    options[swapIndex] = answer;
+    [options[0], options[swapIndex]] = [options[swapIndex], options[0]];
 
     option0.innerText = options[0];
     option1.innerText = options[1];
@@ -122,7 +152,13 @@ function setQuestion() {
     option2.style.backgroundColor = "grey";
     option3.style.backgroundColor = "grey";
 
+    option0.hidden = false;
+    option1.hidden = false;
+    option2.hidden = false;
+    option3.hidden = false;
+
     nextQuestion.hidden = true;
+
 }
 
 function selectOption(){
@@ -131,12 +167,12 @@ function selectOption(){
     option2.disabled = true;
     option3.disabled = true;
 
-    if (this.innerText == answer){
-        this.style.backgroundColor = "green";
-    }
-    else{
-        this.style.backgroundColor = "red";
-    }
+    if (this.innerText === answer) {
+    this.style.backgroundColor = "green";
+    score++;
+} else {
+    this.style.backgroundColor = "red";
+}
 
     nextQuestion.hidden = false
 }
