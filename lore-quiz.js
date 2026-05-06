@@ -61,6 +61,8 @@ const nextQuestion = document.getElementById("next-question");
 
 let answer = "";
 let options = [];
+let score = 0;
+let remainingLores = [...lores];
 
 window.onload = function() {
     setQuestion();
@@ -73,23 +75,53 @@ window.onload = function() {
 
 
 function setQuestion() {
+    if (remainingLores.length === 0) {
+        loreImage.hidden = true;
+
+        option0.hidden = true;
+        option1.hidden = true;
+        option2.hidden = true;
+        option3.hidden = true;
+
+        nextQuestion.hidden = true;
+
+        alert(
+            `Quiz finished!\nYour score: ${score}/${lores.length}\n\nClick OK to play again.`
+        );
+        score = 0;
+        remainingLores = [...lores];
+
+        loreImage.hidden = false;
+        option0.hidden = false;
+        option1.hidden = false;
+        option2.hidden = false;
+        option3.hidden = false;
+
+        setQuestion();
+        return;
+    }
+
     options = [];
 
-    let lore = lores[randomIndex(lores.length)];
-    loreImage.src = lore.image
+    let randomLoreIndex = randomIndex(remainingLores.length);
+    let lore = remainingLores[randomLoreIndex];
+
+     remainingLores.splice(randomLoreIndex, 1);
+
+    loreImage.src = lore.image;
     answer = lore.name;
     options.push(lore.name);
 
-    while(options.length < 4){
-        lore = lores[randomIndex(lores.length)];
-        if(!options.includes(lore.name)){
-            options.push(lore.name);
+    while (options.length < 4) {
+        let randomLore = lores[randomIndex(lores.length)];
+
+        if (!options.includes(randomLore.name)) {
+            options.push(randomLore.name);
         }
     }
 
     let swapIndex = randomIndex(options.length);
-    options[0] = options[swapIndex];
-    options[swapIndex] = answer;
+    [options[0], options[swapIndex]] = [options[swapIndex], options[0]];
 
     option0.innerText = options[0];
     option1.innerText = options[1];
@@ -109,20 +141,20 @@ function setQuestion() {
     nextQuestion.hidden = true;
 }
 
-function selectOption(){
+function selectOption() {
     option0.disabled = true;
     option1.disabled = true;
     option2.disabled = true;
     option3.disabled = true;
 
-    if (this.innerText == answer){
+    if (this.innerText === answer) {
         this.style.backgroundColor = "green";
-    }
-    else{
+        score++;
+    } else {
         this.style.backgroundColor = "red";
     }
 
-    nextQuestion.hidden = false
+    nextQuestion.hidden = false;
 }
 
 function randomIndex(index){
