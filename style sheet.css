@@ -5236,12 +5236,6 @@
     background: radial-gradient(circle,#FFE6E6,#FFB8B8,#FF8A8A,#FF5C5C,#FF2E2E,#FF0000,#D10000,#A30000,#750000,#470000,#1A0000 95%);
 }
 
-#image {
-    width: 280px;
-    margin-bottom: 20px;
-    height: 250px;
-}
-
 .image-association-title{
     text-align: center;
     color: white;
