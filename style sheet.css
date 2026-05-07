@@ -66,6 +66,21 @@
     overflow: hidden;
 }
 
+.credits-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("landscape\ image9.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 .watch-page{
     display: flex;
     justify-content: center;
