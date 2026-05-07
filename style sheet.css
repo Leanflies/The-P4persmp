@@ -5399,3 +5399,452 @@
     right: 25;
     width: 400px;
 }
+
+.ethan-credit-box{
+    background: rgb(1, 45, 43);
+    color: #017672;
+    display: block;
+    position: absolute;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    width: 500px;
+    height: 325px;
+    font-size: 12px;
+    top: 140px;
+    left: 150px;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    cursor: context-menu;
+    overflow: hidden;
+}
+
+.ethan-skin-credits{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 10px;
+    top: 20px;
+}
+
+.ethan-credits-picture{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 30px;
+    bottom: 20px;
+}
+
+.ethan-credit-list{
+    position: absolute;
+    width: 250px;
+    right: 5px;
+}
+
+.name-heading{
+    position: absolute;
+    right: 55px;
+    top: 15px;
+}
+
+.andy-credit-box{
+    background-image: url(minecraft\ wood\ texture.jpg);
+    color: #ffffff;
+    display: block;
+    position: absolute;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    width: 500px;
+    height: 325px;
+    font-size: 12px;
+    top: 140px;
+    right: 150px;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    cursor: context-menu;
+    overflow: hidden;
+}
+
+.andy-skin-credits{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 10px;
+    top: 20px;
+}
+
+.andy-credits-picture{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 30px;
+    bottom: 20px;
+}
+
+.andy-credit-list{
+    position: absolute;
+    width: 250px;
+    right: 5px;
+}
+
+.taylor-credit-box{
+    background-image: url(normal\ minecraft\ bookshelf.jpg);
+    color: #ffffff;
+    display: block;
+    position: absolute;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    width: 500px;
+    height: 325px;
+    font-size: 12px;
+    top: 540px;
+    left: 150px;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    cursor: context-menu;
+    overflow: hidden;
+}
+
+.taylor-skin-credits{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 10px;
+    top: 20px;
+}
+
+.taylor-credits-picture{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 30px;
+    bottom: 20px;
+}
+
+.taylor-credit-list{
+    position: absolute;
+    width: 250px;
+    right: 5px;
+}
+
+.headingbox4{
+    border-radius: 6px;
+    background-color: rgb(1, 45, 43);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 10;
+    left:500px;
+    padding-left: 5%;
+    padding-right: 5%;
+    cursor: context-menu;
+}
+
+.ashlyn-credit-box{
+    background-color: rgb(255, 157, 203);
+    color: #ff6ebe;
+    display: block;
+    position: absolute;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    width: 500px;
+    height: 325px;
+    font-size: 12px;
+    top: 540px;
+    right: 150px;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    cursor: context-menu;
+    overflow: hidden;
+}
+
+.ashlyn-skin-credits{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 10px;
+    top: 20px;
+}
+
+.ashlyn-credits-picture{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 30px;
+    bottom: 20px;
+}
+
+.ashlyn-credit-list{
+    position: absolute;
+    width: 250px;
+    right: 5px;
+}
+
+.desca-credit-box{
+    background-color: rgb(94, 18, 42);
+    color: #e2ad00;
+    display: block;
+    position: absolute;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    width: 500px;
+    height: 325px;
+    font-size: 12px;
+    top: 940px;
+    left: 150px;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    cursor: context-menu;
+    overflow: hidden;
+}
+
+.desca-skin-credits{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 10px;
+    top: 20px;
+}
+
+.desca-credits-picture{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 30px;
+    bottom: 20px;
+}
+
+.desca-credit-list{
+    position: absolute;
+    width: 250px;
+    right: 5px;
+}
+
+.rachel-credit-box{
+    background-color: rgb(59, 1, 82);
+    color: #b881e9;
+    display: block;
+    position: absolute;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    width: 500px;
+    height: 325px;
+    font-size: 12px;
+    top: 940px;
+    right: 150px;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    cursor: context-menu;
+    overflow: hidden;
+}
+
+.rachel-skin-credits{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 10px;
+    top: 20px;
+}
+
+.rachel-credits-picture{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 30px;
+    bottom: 20px;
+}
+
+.rachel-credit-list{
+    position: absolute;
+    width: 250px;
+    right: 5px;
+}
+
+.ember-credit-box{
+    background-color: rgb(29, 164, 172);
+    color: #e981d9;
+    display: block;
+    position: absolute;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    width: 500px;
+    height: 325px;
+    font-size: 12px;
+    top: 1340px;
+    left: 150px;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    cursor: context-menu;
+    overflow: hidden;
+}
+
+.ember-skin-credits{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 10px;
+    top: 20px;
+}
+
+.ember-credits-picture{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 30px;
+    bottom: 20px;
+}
+
+.ember-credit-list{
+    position: absolute;
+    width: 250px;
+    right: 5px;
+}
+
+.fire-credit-box{
+    background-color: rgb(172, 72, 29);
+    color: #dd8e5c;
+    display: block;
+    position: absolute;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    width: 500px;
+    height: 325px;
+    font-size: 12px;
+    top: 1340px;
+    right: 150px;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    cursor: context-menu;
+    overflow: hidden;
+}
+
+.fire-skin-credits{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 10px;
+    top: 20px;
+}
+
+.fire-credits-picture{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 30px;
+    bottom: 20px;
+}
+
+.fire-credit-list{
+    position: absolute;
+    width: 250px;
+    right: 5px;
+}
+
+.eli-credit-box{
+    background-color: rgb(47, 45, 107);
+    color: #4f0d09;
+    display: block;
+    position: absolute;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    width: 500px;
+    height: 325px;
+    font-size: 12px;
+    top: 1740px;
+    left: 150px;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    cursor: context-menu;
+    overflow: hidden;
+}
+
+.eli-skin-credits{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 10px;
+    top: 20px;
+}
+
+.eli-credits-picture{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 30px;
+    bottom: 20px;
+}
+
+.eli-credit-list{
+    position: absolute;
+    width: 250px;
+    right: 5px;
+}
+
+.mossie-credit-box{
+    background-image: url(Minecraft\ Mossy\ Cobblestone.jpg);
+    color: rgb(23, 78, 35);
+    display: block;
+    position: absolute;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    width: 500px;
+    height: 325px;
+    font-size: 12px;
+    top: 1740px;
+    right: 150px;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    cursor: context-menu;
+    overflow: hidden;
+}
+
+.mossie-skin-credits{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 10px;
+    top: 20px;
+}
+
+.mossie-credits-picture{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 30px;
+    bottom: 20px;
+}
+
+.mossie-credit-list{
+    position: absolute;
+    width: 250px;
+    right: 5px;
+}
