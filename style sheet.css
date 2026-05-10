@@ -15,6 +15,10 @@
     background: radial-gradient(circle,#04AA6D,#1B512D 80%);
 }
 
+.pages{
+    font-size: 12px;
+}
+
 .lore-page{
     display: flex;
     justify-content: center;
