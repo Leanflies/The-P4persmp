@@ -249,7 +249,7 @@
         width: 42vw;
         padding-left: 2.5%;
         padding-right: 2.5%;
-        top: 35%;
+        top: 50%;
         left: calc(100px + ((100vw - 100px) / 2));
         transform: translateX(-50%, -50%);
     }
