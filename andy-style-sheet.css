@@ -319,7 +319,7 @@
     .andy-facts{
         width: 600px;
         font-size: 12px;
-        height: 500px;
+        height: 550px;
         top: calc(110px + ((100vh - 110px) / 2));
         left: calc(120px + ((100vw - 120px) / 2));
     }
