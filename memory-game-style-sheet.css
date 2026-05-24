@@ -24,11 +24,12 @@
 
 .board {
   display: grid;
-  grid-template-columns: repeat(4, 225px);
-  grid-template-rows: repeat(4, 225px);
+  grid-gap: 12px;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
   position: fixed;
-  top: 20px;
-  transform-style: preserve-3d;
+  top: 120px;
+  transform-style: flat;
   transform: none;
   user-select: none;
   margin: 0;
@@ -42,41 +43,36 @@
   display: none;
 }
 
-.cube{
-    transform-style: preserve-3d;
-    transition: transform 350ms ease-out;
-    width: 200px;
-    height: 200px;
-    position: relative;
+.cube {
+  animation: enter 600ms ease-out;
+  transform-style: preserve-3d;
+  transform: translateZ(0) scale(1);
+  transition: all 350ms ease-out;
+  transform-origin: 50% 50%;
+  backface-visibility: hidden;
 }
 
-.cube.flipped{
-    transform: rotateY(180deg);
-    transition: transform 500ms ease-out;
+.cube.flipped {
+  pointer-events: none;
+  transform: rotateY(180deg) translateZ(0) scale(1);
+  transition: all 500ms ease-out;
 }
 
-.front,
-.back{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-}
-
-.back{
-    transform: rotateY(180deg);
-    animation: match 6500ms ease-out;
+.cube.matched {
+  pointer-events: none;
+  transform: rotateY(180deg) translateZ(0) scale(1);
+  animation: match 650ms ease-out;
 }
 
 .face {
   outline: 1px solid transparent;
   backface-visibility: hidden;
   box-shadow: inset 0 0 2px 1px #fff0d2;
-  height: 200px;
+  height: 100px;
   overflow: hidden;
   position: absolute;
   transform-origin: 50% 50%;
-  width: 200px;
+  width: 100px;
 }
 
 .face:nth-child(1) {
@@ -88,17 +84,17 @@
 
 .face:nth-child(1)::before {
   align-items: center;
-  bottom: 0px;
+  bottom: 0;
   color: #93794c;
   content: '?';
   display: flex;
   font-family: 'Fredoka One', cursive;
   font-size: 60px;
   justify-content: center;
-  left: 0px;
+  left: 0;
   position: absolute;
-  right: 0px;
-  top: 0px;
+  right: 0;
+  top: 0;
 }
 
 .face:nth-child(2) {
@@ -195,52 +191,52 @@
 
 [data-tile="C!Ethan"] div:nth-child(3) {
     background: #fff8e7 url(C!Ethan-skin.png) center center no-repeat;
-    background-size: 100px;
+    background-size: 65px;
   }
 
 [data-tile="C!Andy"] div:nth-child(3) {
     background: #fff8e7 url(C!Andy-skin.png) bottom center no-repeat;
-    background-size: 100px;
+    background-size: 65px;
   }
 
 [data-tile="C!Taylor"] div:nth-child(3) {
     background: #fff8e7 url(C!Taylor-skin.png) center center no-repeat;
-    background-size: 100px;
+    background-size: 65px;
   }
 
 [data-tile="C!Ashlyn"] div:nth-child(3) {
     background: #fff8e7 url(C!Ashlyn-skin.png) center center no-repeat;
-    background-size: 100px;
+    background-size: 65px;
   }
 
 [data-tile="C!Desca"] div:nth-child(3) {
     background: #fff8e7 url(C!Desca-skin.png) center center no-repeat;
-    background-size: 100px;
+    background-size: 65px;
   }
 
 [data-tile="C!Rachel"] div:nth-child(3) {
     background: #fff8e7 url(C!Rachel-skin.png) center center no-repeat;
-    background-size: 100px;
+    background-size: 65px;
   }
 
 [data-tile="C!Ember"] div:nth-child(3) {
     background: #fff8e7 url(C!Ember-skin.png) center center no-repeat;
-    background-size: 100px;
+    background-size: 65px;
   }
 
 [data-tile="C!Fire"] div:nth-child(3) {
     background: #fff8e7 url(C!Fire-skin.png) center center no-repeat;
-    background-size: 100px;
+    background-size: 65px;
   }
 
 [data-tile="C!Eli"] div:nth-child(3) {
     background: #fff8e7 url(C!Eli-skin.png) center center no-repeat;
-    background-size: 100px;
+    background-size: 65px;
   }
 
 [data-tile="C!Mossie"] div:nth-child(3) {
     background: #fff8e7 url(C!Mossie-skin.png) center center no-repeat;
-    background-size: 100px;
+    background-size: 65px;
   }
 
 audio {
@@ -275,21 +271,17 @@ audio {
 .moves{
     margin-top: 20px;
     position: fixed;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
     clear: both;
     right: 150px;
-    color: #ffffff;
 }
 
 .memory-game-title{
     position: fixed;
     top: 25px;
     left: 50%;
-    transform: translate(-50%);
-    color: #ffffff;
-    font-size: 50px;
-    text-align: center;
+    transform: translate(-50%, -50%);
 }
 
 .backArrow{
