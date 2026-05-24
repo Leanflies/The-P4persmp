@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <script src="https://kit.fontawesome.com/79670ba214.js" crossorigin="anonymous"></script>
         <link rel="icon"  href="P4persmp logo.jpg">
-        <link rel="stylesheet" type="text/css" href="style sheet.css">
+        <link rel="stylesheet" type="text/css" href="fire-lore-style-sheet.css">
     </head>
     <body class="fire-lore-page">
         
-<div class="headingbox2-lore">
+<div class="headingbox2-lore-fire">
     <h1 class="heading">The P4perSMP</h1>
 </div>
 <ul class="character-list-fire">
@@ -67,16 +67,35 @@ function showSlides(n) {
         <p class="para">C!Fire used to be good friends with C!Andy when they were kids. C!Andy sponsored her to start selling her artworks. She took these artworks outside of Aldwynn and ended up becoming super rich because of it.</p>
         <p class="para"> </p>
         <p class="para">Season 1</p>
-        <p class="para">C!Fire returned at the Christmas episode as she was selling her paintings at the market. She has a connection with C!Taylor and has been living in their bookshop as well as paying C!Taylor's rent. She's also a fox.</p>
+        <p class="para">C!Fire returned at the christmas episode as she was selling her paintings at the market. She has a connection with C!Taylor and has been living in her bookshop as well as paying C!Taylor's rent. She's also a fox.</p>
     </ul>
 </div>
 <img src="minecraft fox sat.png" class="fox-sat"/>
 <div class="fire-credits">
     <ul>
-        <p>All credits for C!Fire's lore belong to LunyLuna</p>
-        <li><a href="https://www.instagram.com/lunyluna?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="links-fire">Personal Instagram <i class="fa-brands fa-instagram"></i></a></li>
-        <li><a href="https://www.instagram.com/an.artistic.lunatic?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="links-fire">Art Instagram <i class="fa-brands fa-instagram"></i></a></li>
+        <li class="none-list"><p>All credits for C!Fire's lore belong to LunyLuna</p></li>
+        <li class="none-list"><a href="https://www.instagram.com/lunyluna?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="links-fire">Personal Instagram <i class="fa-brands fa-instagram"></i></a></li>
+        <li class="none-list"><a href="https://www.instagram.com/an.artistic.lunatic?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="links-fire">Art Instagram <i class="fa-brands fa-instagram"></i></a></li>
     </ul>
 </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+  let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
     </body>
 </html>

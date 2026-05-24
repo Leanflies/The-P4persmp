@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "MyFont", sans-serif;
+    scroll-behavior: smooth;
+    box-sizing:border-box
+}
+
+@font-face{
+    font-family: "MyFont";
+    src: url("Pixeled.ttf") format("truetype");
+}
+
+.lore-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("landscape\ image3.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.headingbox2{
+    border-radius: 6px;
+    background-color: rgb(1, 45, 43);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 10;
+    left: 50%;
+    transform: translate(-50%);
+    padding-left: 5%;
+    padding-right: 5%;
+    cursor: context-menu;
+}
+
+.heading{
+    text-align: center;
+    color: #017672;
+    text-shadow: 2px 2px black;
+}
+
+.character-list{
+    list-style: none;
+    padding: 0;
+    background-color: #1B512D;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: clamp(120px, 18vw, 220px);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: clamp(14px, 1.2vw, 20px);
+}
+
+.character-list li{
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid white;;
+}
+
+.character-list li:last-child {
+    border-bottom: none;
+}
+
+.character-list li a{
+    color: white;
+    text-decoration: none;
+    transition: ease-in-out .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    box-sizing: border-box;
+    flex: 1;
+    inset: 0;
+    position: absolute;
+}
+
+.character-list li a:hover {
+    background-color: rgb(33, 190, 25);
+    box-shadow:
+        0 0 5px rgb(33, 190, 25),
+        0 0 25px rgb(33, 190, 25),
+        0 0 50px rgb(33, 190, 25),
+        0 0 100px rgb(33, 190, 25),
+        0 0 200px rgb(33, 190, 25);
+}
+
+.pinefall-banner-fanart{
+    position: fixed;
+    top: clamp(40px, 8vh, 80px);
+    right: clamp(10px, 3vw, 50px);
+    max-height: clamp(200px, 40vh, 500px);
+}
+
+.andy-art-credit2{
+    color: #ffffff;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    top: 600px;
+    right: 115px;
+    text-align: center;
+    cursor: context-menu;
+    text-shadow: 2px 2px black;
+    width: 300px;
+    font-size: clamp(14px, 1.5vw, 20px);
+}
+
+.andy-art-credit-link{
+    color: #ffffff;
+    text-decoration: none;
+    transition: ease-in-out .5s;
+}
+
+.andy-art-credit-link:hover{
+    color: #3c0404;
+}
+
+.popup3{
+    width: clamp(260px, 70vw, 1000px);
+    background: rgb(42, 55, 55);
+    border-radius: 6px;
+    position: fixed;
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #ddd;
+    visibility: visible;
+    transition: transform 0.4s, top 0.4s;
+    z-index: 2;
+    overflow: hidden;
+    cursor: context-menu;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.container3{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.popuptext {
+    font-size: 25px;
+    text-align: center;
+    background-color: rgb(42, 55, 55);
+}
+
+.popuptext2 {
+    font-size: 25px;
+    text-align: center;
+    background-color: rgb(42, 55, 55);
+}
+
+.popuptext3 {
+    font-size: 25px;
+    text-align: center;
+    background-color: rgb(42, 55, 55);
+}
+
+@media (max-width: 1440px){
+    .popup3{
+        width: 600px;
+    }
+
+    .popuptext, .popuptext2, .popuptext3{
+        font-size: 12px;
+    }
+
+    .pinefall-banner-fanart{
+        max-height: 300px;
+        top: 50px;
+        right: 50px;
+    }
+
+    .andy-art-credit2{
+        top: 350px;
+        right: 40px;
+        font-size: 12px;
+        width: 240px;
+    }
+
+    .character-list{
+        width: 150px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1024px){
+    .lore-page{
+        background: linear-gradient(#5AA371, #3EB9A8, #1D6C61, #193A31, #1E201F);
+    }
+    
+    .character-list{
+        position: fixed;
+        top: 0;
+        width: 100px;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        background-color: #1B512D;
+    }
+
+    .character-list li{
+        font-size: 8px;
+    }
+
+    .character-list li a{
+        position: absolute;
+        inset: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .headingbox2{
+        padding: 8px 20px;
+        font-size: 8px;
+        width: 45vw;
+        left: calc(100px + ((100vw - 100px) / 2));
+        text-align: center;
+    }
+
+    .pinefall-banner-fanart{
+        display: none;
+    }
+
+    .andy-art-credit2{
+        display: none;
+    }
+
+    .popup3{
+        width: 42vw;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        top: 35%;
+        left: calc(100px + ((100vw - 100px) / 2));
+        transform: translateX(-50%, -50%);
+    }
+
+    .popuptext,
+    .popuptext2,
+    .popuptext3{
+        font-size: 10px;
+    }
+}

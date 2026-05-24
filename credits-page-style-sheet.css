@@ -1,0 +1,939 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "MyFont", sans-serif;
+    scroll-behavior: smooth;
+    box-sizing:border-box
+}
+
+@font-face{
+    font-family: "MyFont";
+    ;
+    src: url("Pixeled.ttf") format("truetype");
+}
+
+.credits-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("landscape\ image9.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.ethan-credit-box{
+    background: rgb(1, 45, 43);
+    color: #017672;
+    display: block;
+    position: absolute;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    width: 500px;
+    height: 325px;
+    font-size: 12px;
+    top: 140px;
+    left: 15%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    cursor: context-menu;
+    overflow: hidden;
+}
+
+.ethan-skin-credits{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 10px;
+    top: 20px;
+}
+
+.ethan-credits-picture{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 30px;
+    bottom: 20px;
+}
+
+.ethan-credit-list{
+    position: absolute;
+    width: 250px;
+    right: 5px;
+}
+
+.links-ethan{
+    color: #017672;
+    text-shadow: 2px 2px black;
+    text-decoration: none;
+}
+
+.name-heading{
+    position: absolute;
+    right: 55px;
+    top: 15px;
+}
+
+.andy-credit-box{
+    background-image: url(minecraft\ wood\ texture.jpg);
+    color: #ffffff;
+    display: block;
+    position: absolute;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    width: 500px;
+    height: 325px;
+    font-size: 12px;
+    top: 140px;
+    right: 15%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    cursor: context-menu;
+    overflow: hidden;
+}
+
+.andy-skin-credits{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 10px;
+    top: 20px;
+}
+
+.andy-credits-picture{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 30px;
+    bottom: 20px;
+}
+
+.andy-credit-list{
+    position: absolute;
+    width: 250px;
+    right: 5px;
+    top: 85px;
+}
+
+.links-andy{
+    color: #ffffff;
+    text-shadow: 2px 2px black;
+    text-decoration: none;
+}
+
+.taylor-credit-box{
+    background-image: url(normal\ minecraft\ bookshelf.jpg);
+    color: #ffffff;
+    display: block;
+    position: absolute;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    width: 500px;
+    height: 325px;
+    font-size: 12px;
+    top: 540px;
+    left: 15%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    cursor: context-menu;
+    overflow: hidden;
+}
+
+.taylor-skin-credits{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 10px;
+    top: 20px;
+}
+
+.taylor-credits-picture{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 30px;
+    bottom: 20px;
+}
+
+.taylor-credit-list{
+    position: absolute;
+    width: 250px;
+    right: 5px;
+    top: 85px;
+}
+
+.links-taylor{
+    color: #ffffff;
+    text-shadow: 2px 2px black;
+    text-decoration: none;
+}
+
+.ashlyn-credit-box{
+    background-color: rgb(255, 157, 203);
+    color: #ff6ebe;
+    display: block;
+    position: absolute;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    width: 500px;
+    height: 325px;
+    font-size: 12px;
+    top: 540px;
+    right: 15%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    cursor: context-menu;
+    overflow: hidden;
+}
+
+.ashlyn-skin-credits{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 10px;
+    top: 20px;
+}
+
+.ashlyn-credits-picture{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 30px;
+    bottom: 20px;
+}
+
+.ashlyn-credit-list{
+    position: absolute;
+    width: 250px;
+    right: 5px;
+}
+
+.ashlyn-links{
+    color: #ff6ebe;
+    text-shadow: 2px 2px black;
+    text-decoration: none;
+}
+
+.desca-credit-box{
+    background-color: rgb(94, 18, 42);
+    color: #e2ad00;
+    display: block;
+    position: absolute;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    width: 500px;
+    height: 325px;
+    font-size: 12px;
+    top: 940px;
+    left: 15%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    cursor: context-menu;
+    overflow: hidden;
+}
+
+.desca-skin-credits{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 10px;
+    top: 20px;
+}
+
+.desca-credits-picture{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 30px;
+    bottom: 20px;
+}
+
+.desca-credit-list{
+    position: absolute;
+    width: 250px;
+    right: 5px;
+}
+
+.links-desca{
+    color: #e2ad00;
+    text-shadow: 2px 2px black;
+    text-decoration: none;
+}
+
+.rachel-credit-box{
+    background-color: rgb(59, 1, 82);
+    color: #b881e9;
+    display: block;
+    position: absolute;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    width: 500px;
+    height: 325px;
+    font-size: 12px;
+    top: 940px;
+    right: 15%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    cursor: context-menu;
+    overflow: hidden;
+}
+
+.rachel-skin-credits{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 10px;
+    top: 20px;
+}
+
+.rachel-credits-picture{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 30px;
+    bottom: 20px;
+}
+
+.rachel-credit-list{
+    position: absolute;
+    width: 250px;
+    right: 5px;
+}
+
+.links-rachel{
+    color: #b881e9;
+    text-shadow: 2px 2px black;
+    text-decoration: none;
+}
+
+.ember-credit-box{
+    background-color: rgb(29, 164, 172);
+    color: #e981d9;
+    display: block;
+    position: absolute;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    width: 500px;
+    height: 325px;
+    font-size: 12px;
+    top: 1340px;
+    left: 15%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    cursor: context-menu;
+    overflow: hidden;
+}
+
+.ember-skin-credits{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 10px;
+    top: 20px;
+}
+
+.ember-credits-picture{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 30px;
+    bottom: 20px;
+}
+
+.ember-credit-list{
+    position: absolute;
+    width: 250px;
+    right: 5px;
+}
+
+.links-ember{
+    color: #e981d9;
+    text-shadow: 2px 2px black;
+    text-decoration: none;
+}
+
+.fire-credit-box{
+    background-color: rgb(172, 72, 29);
+    color: #dd8e5c;
+    display: block;
+    position: absolute;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    width: 500px;
+    height: 325px;
+    font-size: 12px;
+    top: 1340px;
+    right: 15%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    cursor: context-menu;
+    overflow: hidden;
+}
+
+.fire-skin-credits{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 10px;
+    top: 20px;
+}
+
+.fire-credits-picture{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 30px;
+    bottom: 20px;
+}
+
+.fire-credit-list{
+    position: absolute;
+    width: 250px;
+    right: 5px;
+}
+
+.links-fire{
+    color: #dd8e5c;
+    text-shadow: 2px 2px black;
+    text-decoration: none;
+}
+
+.eli-credit-box{
+    background-color: rgb(47, 45, 107);
+    color: #4f0d09;
+    display: block;
+    position: absolute;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    width: 500px;
+    height: 325px;
+    font-size: 12px;
+    top: 1740px;
+    left: 15%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    cursor: context-menu;
+    overflow: hidden;
+}
+
+.eli-skin-credits{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 10px;
+    top: 20px;
+}
+
+.eli-credits-picture{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 30px;
+    bottom: 20px;
+}
+
+.eli-credit-list{
+    position: absolute;
+    width: 250px;
+    right: 5px;
+    top: 85px;
+}
+
+.watch-links-eli{
+    color: #4f0d09;
+    text-decoration: none;
+    transition: ease-in-out .5s;
+}
+
+.mossie-credit-box{
+    background-image: url(Minecraft\ Mossy\ Cobblestone.jpg);
+    color: rgb(23, 78, 35);
+    display: block;
+    position: absolute;
+    justify-content: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    width: 500px;
+    height: 325px;
+    font-size: 12px;
+    top: 1740px;
+    right: 15%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    cursor: context-menu;
+    overflow: hidden;
+}
+
+.mossie-skin-credits{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 10px;
+    top: 20px;
+}
+
+.mossie-credits-picture{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 30px;
+    bottom: 20px;
+}
+
+.mossie-credit-list{
+    position: absolute;
+    width: 250px;
+    right: 5px;
+}
+
+.watch-links-mossie{
+    color: rgb(23, 78, 35);
+    text-decoration: none;
+    transition: ease-in-out .5s;
+}
+
+.headingbox4{
+    border-radius: 6px;
+    background-color: rgb(1, 45, 43);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 10;
+    left: 50%;
+    transform: translate(-50%);
+    padding-left: 5%;
+    padding-right: 5%;
+    cursor: context-menu;
+}
+
+.heading{
+    text-align: center;
+    color: #017672;
+    text-shadow: 2px 2px black;
+}
+
+.backArrow{
+    font-size: 90px;
+    color: #fff;
+    position: absolute;
+    top: -125;
+    left: 25;
+    transition: ease-in-out .5s;
+}
+
+.backArrow:hover{
+    background-image: url(sculk\ minecraft\ wallpaper.jpg);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.none-list{
+    list-style: none;
+}
+
+#myBtn {
+  display: none;
+  position: fixed; 
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgb(11, 55, 71);
+  color: white;
+  cursor: pointer; 
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+@media (min-width: 769px) and (max-width: 1440px) and (max-height: 900px){
+    .ethan-credit-box{
+        left: 150px;
+    }
+
+    .andy-credit-box{
+        right: 150px;
+    }
+
+    .taylor-credit-box{
+        left: 150px;
+    }
+
+    .ashlyn-credit-box{
+        right: 150px;
+    }
+
+    .desca-credit-box{
+        left: 150px;
+    }
+
+    .rachel-credit-box{
+        right: 150px;
+    }
+
+    .ember-credit-box{
+        left: 150px;
+    }
+
+    .fire-credit-box{
+        right: 150px;
+    }
+
+    .eli-credit-box{
+        left: 150px;
+    }
+
+    .mossie-credit-box{
+        right: 150px;
+    }
+
+    .andy-credit-list{
+        position: absolute;
+        width: 250px;
+        right: 5px;
+    }
+
+    .taylor-credit-list{
+        position: absolute;
+        width: 250px;
+        right: 5px;
+    }
+
+    .eli-credit-list{
+        position: absolute;
+        width: 250px;
+        right: 5px; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .credits-page{
+        height: 4600px;
+        background: linear-gradient(#ffccf2, #977dff, #0033ff);
+    }
+
+    .headingbox4{
+        max-width: 250px;
+    }
+
+    .credit-boxes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 100px;
+        padding-bottom: 50px;
+        overflow-y: auto;
+    }
+
+    .heading{
+        font-size: 12px;
+    }
+
+    .name-heading{
+        top: 5px;
+        font-size: 10px;
+    }
+    
+    .ethan-credit-box{
+        left: 50%;
+        transform: translate(-50%);
+        top: 20%;
+        width: 300px;
+    }
+
+    .ethan-credit-list{
+        font-size: 10px;
+        position: fixed;
+        right: 5px;
+        top: 25px;
+    }
+
+    .ethan-skin-credits{
+        right: 20px;
+        bottom: 15px;
+        left: auto;
+        top: auto;
+        position: absolute;
+        width: 150px;
+        height: 150px;
+    }
+
+    .andy-credit-box{
+        left: 50%;
+        transform: translate(-50%);
+        top: 80%;
+        width: 300px;
+        position: absolute;
+    }
+
+    .andy-credit-list{
+        font-size: 10px;
+        position: fixed;
+        right: 5px;
+        top: 25px;
+    }
+
+    .andy-skin-credits{
+        right: 20px;
+        bottom: 15px;
+        left: auto;
+        top: auto;
+        position: absolute;
+        width: 125px;
+        height: 125px;
+    }
+
+    .andy-credits-picture{
+        width: 75px;
+        height: 75px;
+    }
+
+    .taylor-credit-box{
+        left: 50%;
+        transform: translate(-50%);
+        top: 140%;
+        width: 300px;
+    }
+
+    .taylor-credit-list{
+        font-size: 10px;
+        position: fixed;
+        right: 5px;
+        top: 25px;
+    }
+
+    .taylor-skin-credits{
+        right: 20px;
+        bottom: 15px;
+        left: auto;
+        top: auto;
+        position: absolute;
+        width: 125px;
+        height: 125px;
+    }
+
+    .taylor-credits-picture{
+        width: 75px;
+        height: 75px;
+    }
+
+    .ashlyn-credit-box{
+        left: 50%;
+        transform: translate(-50%);
+        top: 200%;
+        width: 300px;
+    }
+
+    .ashlyn-credit-list{
+        font-size: 10px;
+        position: fixed;
+        right: 5px;
+        top: 25px;
+    }
+
+    .ashlyn-skin-credits{
+        right: 20px;
+        bottom: 15px;
+        left: auto;
+        top: auto;
+        position: absolute;
+        width: 150px;
+        height: 150px;
+    }
+
+    .desca-credit-box{
+        left: 50%;
+        transform: translate(-50%);
+        top: 260%;
+        width: 300px;
+    }
+
+    .desca-credit-list{
+        font-size: 10px;
+        position: fixed;
+        right: 5px;
+        top: 25px;
+    }
+
+    .desca-skin-credits{
+        right: 20px;
+        bottom: 15px;
+        left: auto;
+        top: auto;
+        position: absolute;
+        width: 150px;
+        height: 150px;
+    }
+
+    .rachel-credit-box{
+        left: 50%;
+        transform: translate(-50%);
+        top: 320%;
+        width: 300px;
+    }
+
+    .rachel-credit-list{
+        font-size: 10px;
+        position: fixed;
+        right: 5px;
+        top: 25px;
+    }
+
+    .rachel-skin-credits{
+        right: 20px;
+        bottom: 15px;
+        left: auto;
+        top: auto;
+        position: absolute;
+        width: 150px;
+        height: 150px;
+    }
+
+    .ember-credit-box{
+        left: 50%;
+        transform: translate(-50%);
+        top: 380%;
+        width: 300px;
+    }
+
+    .ember-credit-list{
+        font-size: 10px;
+        position: fixed;
+        right: 5px;
+        top: 25px;
+    }
+
+    .ember-skin-credits{
+        right: 20px;
+        bottom: 15px;
+        left: auto;
+        top: auto;
+        position: absolute;
+        width: 150px;
+        height: 150px;
+    }
+
+    .fire-credit-box{
+        left: 50%;
+        transform: translate(-50%);
+        top: 440%;
+        width: 300px;
+    }
+
+    .fire-credit-list{
+        font-size: 10px;
+        position: fixed;
+        right: 5px;
+        top: 25px;
+    }
+
+    .fire-skin-credits{
+        right: 20px;
+        bottom: 15px;
+        left: auto;
+        top: auto;
+        position: absolute;
+        width: 150px;
+        height: 150px;
+    }
+
+    .eli-credit-box{
+        left: 50%;
+        transform: translate(-50%);
+        top: 500%;
+        width: 300px;
+    }
+
+    .eli-credit-list{
+        font-size: 10px;
+        position: fixed;
+        right: 5px;
+        top: 25px;
+    }
+
+    .eli-skin-credits{
+        right: 20px;
+        bottom: 15px;
+        left: auto;
+        top: auto;
+        position: absolute;
+        width: 125px;
+        height: 125px;
+    }
+
+    .eli-credits-picture{
+        width: 75px;
+        height: 75px;
+    }
+
+    .mossie-credit-box{
+        left: 50%;
+        transform: translate(-50%);
+        top: 560%;
+        width: 300px;
+    }
+
+    .mossie-credit-list{
+        font-size: 10px;
+        position: fixed;
+        right: 5px;
+        top: 25px;
+    }
+
+    .mossie-skin-credits{
+        right: 20px;
+        bottom: 15px;
+        left: auto;
+        top: auto;
+        position: absolute;
+        width: 150px;
+        height: 150px;
+    }
+
+    #mybtn{
+        visibility: visible;
+    }
+}

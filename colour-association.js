@@ -40,7 +40,7 @@ const colours = [
         "name": "C!Taylor"
     }
 ];
-const colourImage = document.getElementById("colour-image");
+const colourImage = document.getElementById("image");
 const option0 = document.getElementById("option0");
 const option1 = document.getElementById("option1");
 const option2 = document.getElementById("option2");

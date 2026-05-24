@@ -72,7 +72,7 @@ let currentQuestion = 0;
 
 let remainingEmojis = [...emojis];
 
-const emojiImage = document.getElementById("emoji-image");
+const emojiImage = document.getElementById("image");
 const option0 = document.getElementById("option0");
 const option1 = document.getElementById("option1");
 const option2 = document.getElementById("option2");

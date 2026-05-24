@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "MyFont", sans-serif;
+    scroll-behavior: smooth;
+    box-sizing:border-box
+}
+
+@font-face{
+    font-family: "MyFont";
+    src: url("Pixeled.ttf") format("truetype");
+}
+
+#board{
+    background-color: green;
+}
+
+#quiz-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    gap: 10px;
+}
+
+#quiz-container button {
+    background-color: grey;
+    color: white;
+    width: 500px;
+    border: none;
+    border-radius: 5px;
+    font-size: 35px;
+    padding: 10px;
+    position: fixed;
+}
+
+#quiz-container button:hover {
+    background-color: lightgray;
+}
+
+.lore-quiz-title{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    top: 50;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    font-size: 38px;
+}
+
+.lore-quiz-page{
+    background: radial-gradient(circle, #F3E6FF,#DEB8FF,#C88AFF,#B35CFF,#9D2EFF,#8800FF,#7000D1,#5700A3,#3F0075,#260047,#0E001A 95%);
+}
+
+#option0{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#option1{
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#option2{
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#option3{
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#next-question{
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#image {
+    width: 500px;
+    margin-bottom: 20px;
+    position: fixed;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%);
+    height: 500px;
+}
+
+.backArrow{
+    font-size: 190px;
+    color: #fff;
+    position: fixed;
+    top: -275;
+    left: 100;
+    transition: ease-in-out .5s;
+}
+
+.backArrow:hover{
+    background-image: url(sculk\ minecraft\ wallpaper.jpg);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@media (max-width: 1440px){
+    .backArrow{
+        font-size: 90px;
+        top: -125;
+        left: 10;
+    }
+
+    #quiz-container button {
+        width: 280px;
+        font-size: 16px;
+    }
+
+    .lore-quiz-title{
+        font-size: 25px;
+        top: 30px;
+    }
+
+    #image{
+        width: 280px;
+        top: 90;
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px){
+    .lore-quiz-title{
+        font-size: 16px;
+    }
+
+    #image{
+        width: 200px;
+        height: 200px;
+        top: 140px
+    }
+}

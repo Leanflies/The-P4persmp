@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "MyFont", sans-serif;
+    scroll-behavior: smooth;
+    box-sizing:border-box
+}
+
+@font-face{
+    font-family: "MyFont";
+    src: url("Pixeled.ttf") format("truetype");
+}
+
+.memory-game{
+    align-items: center;
+    background-image: radial-gradient(circle 448px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1200px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 225px);
+  grid-template-rows: repeat(4, 225px);
+  position: fixed;
+  top: 20px;
+  transform-style: preserve-3d;
+  transform: none;
+  user-select: none;
+  margin: 0;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.clone {
+  display: none;
+}
+
+.cube{
+    transform-style: preserve-3d;
+    transition: transform 350ms ease-out;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.cube.flipped{
+    transform: rotateY(180deg);
+    transition: transform 500ms ease-out;
+}
+
+.front,
+.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.back{
+    transform: rotateY(180deg);
+    animation: match 6500ms ease-out;
+}
+
+.face {
+  outline: 1px solid transparent;
+  backface-visibility: hidden;
+  box-shadow: inset 0 0 2px 1px #fff0d2;
+  height: 200px;
+  overflow: hidden;
+  position: absolute;
+  transform-origin: 50% 50%;
+  width: 200px;
+}
+
+.face:nth-child(1) {
+  background-color: wheat;
+  cursor: pointer;
+  transform: rotateY(0deg) translateZ(10px);
+  transition: background 150ms ease-out;
+}
+
+.face:nth-child(1)::before {
+  align-items: center;
+  bottom: 0px;
+  color: #93794c;
+  content: '?';
+  display: flex;
+  font-family: 'Fredoka One', cursive;
+  font-size: 60px;
+  justify-content: center;
+  left: 0px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.face:nth-child(2) {
+  background-color: #d2b48c;
+  width: 20px;
+  transform: rotateY(90deg) translateZ(90px)
+}
+.face:nth-child(3) {
+  background-color: dodgerblue;
+  transform: rotateY(180deg) translateZ(10px)
+}
+.face:nth-child(4) {
+  background-color: #d2b48c;
+  width: 20px;
+  transform: rotateY(270deg) translateZ(10px)
+}
+.face:nth-child(5) {
+  background-color: #d2b48c;
+  height: 20px;
+  transform: rotateX(90deg) translateZ(10px)
+}
+.face:nth-child(6) {
+  background-color: #d2b48c;
+  height: 20px;
+  transform: rotateX(-90deg) translateZ(90px)
+}
+
+.overlay {
+  align-items: center;
+  background: rgba(255,255,255,0.75);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  opacity: 1;
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  transition: all 500ms ease-out;
+  z-index: 100;
+}
+
+.overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transition: all 300ms ease-out;
+}
+
+.overlay.hidden .gameover {
+  transform: translateY(60px);
+  transition: all 300ms ease-out;
+}
+
+.gameover {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 120px;
+  border: 12px solid #50b8f7;
+  color: #2e2e2e;
+  display: flex;
+  font-family: 'Fredoka One', cursive;
+  font-size: 20px;
+  height: 120px;
+  width: 340px;
+  justify-content: space-between;
+  padding: 0 10px 0 30px;
+  transform: translateY(0);
+  transition: all 500ms ease-out;
+  user-select: none;
+}
+
+.reset {
+  background-color: #fbc300;
+  border-radius: 50%;
+  border: 0;
+  box-shadow: 0px 6px 0px 0px #f2a003;
+  cursor: pointer;
+  display: block;
+  height: 90px;
+  margin-left: 20px;
+  position: relative;
+  top: -3px;
+  width: 96px;
+}
+
+.reset:active {
+  box-shadow: none;
+  top: 0;
+}
+
+.reset:focus {
+  outline: 0;
+}
+
+[data-tile="C!Ethan"] div:nth-child(3) {
+    background: #fff8e7 url(C!Ethan-skin.png) center center no-repeat;
+    background-size: 100px;
+  }
+
+[data-tile="C!Andy"] div:nth-child(3) {
+    background: #fff8e7 url(C!Andy-skin.png) bottom center no-repeat;
+    background-size: 100px;
+  }
+
+[data-tile="C!Taylor"] div:nth-child(3) {
+    background: #fff8e7 url(C!Taylor-skin.png) center center no-repeat;
+    background-size: 100px;
+  }
+
+[data-tile="C!Ashlyn"] div:nth-child(3) {
+    background: #fff8e7 url(C!Ashlyn-skin.png) center center no-repeat;
+    background-size: 100px;
+  }
+
+[data-tile="C!Desca"] div:nth-child(3) {
+    background: #fff8e7 url(C!Desca-skin.png) center center no-repeat;
+    background-size: 100px;
+  }
+
+[data-tile="C!Rachel"] div:nth-child(3) {
+    background: #fff8e7 url(C!Rachel-skin.png) center center no-repeat;
+    background-size: 100px;
+  }
+
+[data-tile="C!Ember"] div:nth-child(3) {
+    background: #fff8e7 url(C!Ember-skin.png) center center no-repeat;
+    background-size: 100px;
+  }
+
+[data-tile="C!Fire"] div:nth-child(3) {
+    background: #fff8e7 url(C!Fire-skin.png) center center no-repeat;
+    background-size: 100px;
+  }
+
+[data-tile="C!Eli"] div:nth-child(3) {
+    background: #fff8e7 url(C!Eli-skin.png) center center no-repeat;
+    background-size: 100px;
+  }
+
+[data-tile="C!Mossie"] div:nth-child(3) {
+    background: #fff8e7 url(C!Mossie-skin.png) center center no-repeat;
+    background-size: 100px;
+  }
+
+audio {
+  display: none;
+}
+
+
+@keyframes enter {
+  0% {
+    transform: translateZ(-20px) scale(0.3);
+  }
+  50% {
+    transform: translateZ(20px) scale(1.02);
+  }
+  100% {
+    transform: translateZ(0) scale(1);
+  }
+}
+
+@keyframes match {
+  0% {
+    transform: rotateY(180deg) translateZ(-15px);
+  }
+  50% {
+    transform: rotateY(180deg) translateZ(10px);
+  }
+  100% {
+    transform: rotateY(180deg) translateZ(0);
+  }
+}
+
+.moves{
+    margin-top: 20px;
+    position: fixed;
+    font-size: 3rem;
+    text-align: center;
+    clear: both;
+    right: 150px;
+    color: #ffffff;
+}
+
+.memory-game-title{
+    position: fixed;
+    top: 25px;
+    left: 50%;
+    transform: translate(-50%);
+    color: #ffffff;
+    font-size: 50px;
+    text-align: center;
+}
+
+.backArrow{
+    font-size: 190px;
+    color: #fff;
+    position: fixed;
+    top: -275;
+    left: 100;
+    transition: ease-in-out .5s;
+}
+
+.backArrow:hover{
+    background-image: url(sculk\ minecraft\ wallpaper.jpg);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@media (max-width: 1440px){
+    .backArrow{
+        font-size: 90px;
+        top: -125;
+        left: 10;
+    }
+
+    .board{
+        grid-template-columns: repeat(4, 110px);
+        grid-template-rows: repeat(4, 110px);
+    }
+
+    .face{
+        width: 100px;
+        height: 100px;
+    }
+
+    .memory-game-title{
+        font-size: 30px;
+    }
+
+    .moves{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 768px){
+    .memory-game-title{
+        font-size: 17px;
+    }
+
+    .moves{
+        font-size: 13px;
+        top: 100px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .board{
+        top: 400px
+    }
+}

@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <script src="https://kit.fontawesome.com/79670ba214.js" crossorigin="anonymous"></script>
         <link rel="icon"  href="P4persmp logo.jpg">
-        <link rel="stylesheet" type="text/css" href="style sheet.css">
+        <link rel="stylesheet" type="text/css" href="quizzes-and-minigames-mainpage-style-sheet.css">
     </head>
     <body class="quizzes-main-page">
         
@@ -67,5 +67,24 @@
         <p class="memory-game-text2">Match the characters</p>
     </div>
 </a>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+  let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
     </body>
 </html>

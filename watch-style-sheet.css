@@ -1,0 +1,540 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "MyFont", sans-serif;
+    scroll-behavior: smooth;
+    box-sizing:border-box
+}
+
+@font-face{
+    font-family: "MyFont";
+    src: url("Pixeled.ttf") format("truetype");
+}
+
+.watch-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("Giredale\ town\ landscape.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.heading{
+    text-align: center;
+    color: #017672;
+    text-shadow: 2px 2px black;
+}
+
+.headingbox3{
+    border-radius: 6px;
+    background-color: rgb(1, 45, 43);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    padding-left: 5%;
+    padding-right: 5%;
+    cursor: context-menu;
+}
+
+.backArrow{
+    font-size: 150px;
+    color: #fff;
+    position: fixed;
+    top: -205px;
+    left: 50px;
+    transition: ease-in-out .5s;
+}
+
+.backArrow:hover{
+    background-image: url(sculk\ minecraft\ wallpaper.jpg);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.watch-ethan{
+    background: rgb(1, 45, 43);
+    color: #017672;
+    display: block;
+    position: fixed;
+    justify-content: center;
+    text-align: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    width: 500px;
+    font-size: 20px;
+    top: 140px;
+    left: 25%;
+    transform: translate(-50%);
+    padding-bottom: 5;
+    padding-top: 5;
+    cursor: context-menu;
+}
+
+.watch-links-ethan{
+    color: #017672;
+    text-decoration: none;
+    transition: ease-in-out .5s;
+}
+
+.watch-links-ethan:hover{
+    color: #00bdb7;
+}
+
+.watch-andy{
+    background-image: url(minecraft\ wood\ texture.jpg);
+    color: #ffffff;
+    display: block;
+    position: fixed;
+    justify-content: center;
+    text-align: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    width: 500px;
+    font-size: 20px;
+    top: 140px;
+    left: 50%;
+    transform: translate(-50%);
+    padding-bottom: 5;
+    padding-top: 5;
+    cursor: context-menu;
+}
+
+.watch-links-andy{
+    color: #ffffff;
+    text-decoration: none;
+    transition: ease-in-out .5s;
+}
+
+.watch-links-andy:hover{
+    color: #960a0a;
+}
+
+.watch-taylor{
+    background-image: url(normal\ minecraft\ bookshelf.jpg);
+    color: #ffffff;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: block;
+    position: fixed;
+    justify-content: center;
+    text-align: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    width: 500px;
+    font-size: 20px;
+    top: 140px;
+    left: 75%;
+    transform: translate(-50%);
+    padding-bottom: 5;
+    padding-top: 5;
+    cursor: context-menu;
+}
+
+.watch-links-taylor{
+    color: #ffffff;
+    text-decoration: none;
+    transition: ease-in-out .5s;
+}
+
+.watch-links-taylor:hover{
+    color: #1e3c04;
+}
+
+.watch-rachel{
+    background-color: rgb(59, 1, 82);
+    color: #b881e9;
+    display: block;
+    position: fixed;
+    justify-content: center;
+    text-align: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    width: 500px;
+    font-size: 20px;
+    padding-bottom: 5;
+    padding-top: 5;
+    top: 440px;
+    left: 75%;
+    transform: translate(-50%);
+    cursor: context-menu;
+}
+
+.watch-links-rachel{
+    color: #b881e9;
+    text-decoration: none;
+    transition: ease-in-out .5s;
+}
+
+.watch-links-rachel:hover{
+    color: #9b74ff;
+}
+
+.watch-desca{
+    background-color: rgb(94, 18, 42);
+    color: #e2ad00;
+    display: block;
+    position: fixed;
+    justify-content: center;
+    text-align: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    width: 500px;
+    font-size: 20px;
+    padding-bottom: 5;
+    padding-top: 5;
+    top: 440px;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: context-menu;
+}
+
+.watch-links-desca{
+    color: #e2ad00;
+    text-decoration: none;
+    transition: ease-in-out .5s;
+}
+
+.watch-links-desca:hover{
+    color: #ad8609;
+}
+
+.watch-ashlyn{
+    background-color: rgb(255, 157, 203);
+    color: #ff6ebe;
+    display: block;
+    position: fixed;
+    justify-content: center;
+    text-align: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    width: 500px;
+    font-size: 20px;
+    padding-bottom: 5;
+    padding-top: 5;
+    top: 440px;
+    left: 25%;
+    transform: translate(-50%);
+    cursor: context-menu;
+}
+
+.watch-links-ashlyn{
+    color: #ff6ebe;
+    text-decoration: none;
+    transition: ease-in-out .5s;
+}
+
+.watch-links-ashlyn:hover{
+    color: #ff0090;
+}
+
+.watch-ember{
+    background-color: rgb(29, 164, 172);
+    color: #e981d9;
+    display: block;
+    position: fixed;
+    justify-content: center;
+    text-align: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    width: 500px;
+    font-size: 20px;
+    padding-bottom: 5;
+    padding-top: 5;
+    top: 740;
+    left: 25%;
+    transform: translate(-50%);
+    cursor: context-menu;
+}
+
+.watch-fire{
+    background-color: rgb(172, 72, 29);
+    color: #dd8e5c;
+    display: block;
+    position: fixed;
+    justify-content: center;
+    text-align: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    width: 500px;
+    font-size: 20px;
+    padding-bottom: 5;
+    padding-top: 5;
+    top: 740;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: context-menu;
+}
+
+.watch-eli{
+    background-color: rgb(47, 45, 107);
+    color: #4f0d09;
+    display: block;
+    position: fixed;
+    justify-content: center;
+    text-align: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    width: 500px;
+    font-size: 20px;
+    padding-bottom: 5;
+    padding-top: 5;
+    top: 740px;
+    left: 75%;
+    transform: translate(-50%);
+    cursor: context-menu;
+}
+
+.watch-links-eli{
+    color: #4f0d09;
+    text-decoration: none;
+    transition: ease-in-out .5s;
+}
+
+.watch-links-eli:hover{
+    color: #005096;
+}
+
+.watch-mossie{
+    background-image: url(Minecraft\ Mossy\ Cobblestone.jpg);
+    color: rgb(23, 78, 35);
+    display: block;
+    position: fixed;
+    justify-content: center;
+    text-align: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    width: 500px;
+    font-size: 20px;
+    padding-bottom: 5;
+    padding-top: 5;
+    top: 1040px;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: context-menu;
+}
+
+.watch-links-mossie{
+    color: rgb(23, 78, 35);
+    text-decoration: none;
+    transition: ease-in-out .5s;
+}
+
+.watch-links-mossie:hover{
+    color: rgb(59, 98, 67);
+}
+
+#myBtn {
+  display: none;
+  position: fixed; 
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgb(32, 94, 13);
+  color: white;
+  cursor: pointer; 
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  visibility: hidden;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+@media (max-width: 1440px){
+    .headingbox3{
+        width: 500px;
+        font-size: 15px;
+        height: 100px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .backArrow{
+        font-size: 90px;
+        top: -125;
+        left: 10;
+    }
+
+    .watch-ethan{
+        width: 300px;
+        font-size: 12px;
+    }
+
+    .watch-andy{
+        width: 300px;
+        font-size: 12px;
+    }
+
+    .watch-taylor{
+        width: 300px;
+        font-size: 12px;
+    }
+
+    .watch-ashlyn{
+        width: 300px;
+        font-size: 12px;
+        top: 300px;
+    }
+
+    .watch-desca{
+        width: 300px;
+        font-size: 12px;
+        top: 300px;
+    }
+    
+    .watch-rachel{
+        width: 300px;
+        font-size: 12px;
+        top: 300px;
+    }
+
+    .watch-ember{
+        width: 300px;
+        font-size: 12px;
+        top: 460px;
+    }
+
+    .watch-fire{
+        width: 300px;
+        font-size: 12px;
+        top: 460px;
+    }
+
+    .watch-eli{
+        width: 300px;
+        font-size: 12px;
+        top: 460px;
+    }
+
+    .watch-mossie{
+        width: 300px;
+        font-size: 12px;
+        top: 620px;
+    }
+}
+
+@media (max-width: 768px){
+    .watch-page{
+        height: 1500px;
+        overflow-y: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        background: linear-gradient(#C4C1B8, #635B51, #551F22, #301415, #130F0D);
+    }
+
+    .headingbox3{
+        width: 250px;
+        font-size: 9px;
+        height: 125px;
+        left: 50%;
+        transform: translate(-50%);
+        position: absolute;
+    }
+
+    .watch-ethan{
+        left: 50%;
+        transform: translate(-50%);
+        position: absolute;
+    }
+
+    .watch-andy{
+        left: 50%;
+        transform: translate(-50%);
+        top: 275px;
+        position: absolute;
+    }
+
+    .watch-taylor{
+        left: 50%;
+        transform: translate(-50%);
+        top: 410px;
+        position: absolute;
+    }
+
+    .watch-ashlyn{
+        left: 50%;
+        transform: translate(-50%);
+        top: 545px;
+        position: absolute;
+    }
+
+    .watch-desca{
+        left: 50%;
+        transform: translate(-50%);
+        top: 680px;
+        position: absolute;
+    }
+
+    .watch-rachel{
+        left: 50%;
+        transform: translate(-50%);
+        top: 815px;
+        position: absolute;
+    }
+
+    .watch-ember{
+        left: 50%;
+        transform: translate(-50%);
+        top: 950px;
+        position: absolute;
+    }
+
+    .watch-fire{
+        left: 50%;
+        transform: translate(-50%);
+        top: 1085px;
+        position: absolute;
+    }
+
+    .watch-eli{
+        left: 50%;
+        transform: translate(-50%);
+        top: 1220px;
+        position: absolute;
+    }
+
+    .watch-mossie{
+        left: 50%;
+        transform: translate(-50%);
+        top: 1355px;
+        position: absolute;
+    }
+
+    #mybtn{
+        visibility: visible;
+    }
+}

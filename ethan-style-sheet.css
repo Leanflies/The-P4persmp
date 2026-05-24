@@ -1,0 +1,491 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "MyFont", sans-serif;
+    scroll-behavior: smooth;
+    box-sizing:border-box
+}
+
+@font-face{
+    font-family: "MyFont";
+    src: url("Pixeled.ttf") format("truetype");
+}
+
+.headingbox2{
+    border-radius: 6px;
+    background-color: rgb(1, 45, 43);
+    position: fixed;
+    top: 10px;
+    left: calc(220px + ((100vw - 220px) / 2));
+    transform: translateX(-50%);
+    padding: 10px 5%;
+    cursor: context-menu;
+    font-size: 30px;
+    height: 200px;
+    width: 925px;
+}
+
+.heading{
+    text-align: center;
+    color: #017672;
+    text-shadow: 2px 2px black;
+}
+
+.ethan-name{
+    color: #017672;
+    background: rgb(1, 45, 43);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 17.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    cursor: context-menu;
+    width: 250px;
+    font-size: 30px;
+}
+
+.ethan-achievement{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 3.5%;
+    left: 12%;
+    width: 425px;
+}
+
+.ethan-skin{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 400px;
+    height: 600px;
+}
+
+.ethan-key-facts{
+    display: block; 
+    flex: 1 1 150px;
+    color: #017672;
+}
+
+.ethan-main{
+    background: none;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 475px;
+}
+
+.ethan-facts{
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    padding: 20px; 
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+    background-color: rgb(1, 45, 43);
+    width: 900px;
+    justify-content: space-evenly;
+    height: 1200px;
+    overflow-y: auto;
+    top: calc(210px + ((100vh - 210px) / 2));
+    left: calc(220px + ((100vw - 220px) / 2));
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+}
+
+.ethan-facts::-webkit-scrollbar {
+    width: 10px;
+}
+
+.ethan-facts::-webkit-scrollbar-track {
+    background: rgb(1, 45, 43); 
+}
+
+.ethan-facts::-webkit-scrollbar-thumb {
+    background: rgb(1, 45, 43);        
+    border-radius: 6px;
+}
+
+.ethan-facts::-webkit-scrollbar-thumb:hover {
+    background: rgb(1, 45, 43);
+}
+
+.ethan-facts ul {
+    padding: 0;
+    margin: 0;
+}
+
+.ethan-facts p {
+    line-height: 1.4;
+}
+
+.ethan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #376c48;
+    text-shadow: 2px 2px black;
+    margin: 0;
+}
+
+.character-list-ethan{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #1B512D;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: clamp(120px, 18vw, 220px);
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.character-list-ethan li{
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid white;
+    font-size: clamp(14px, 1.2vw, 20px);
+}
+
+.character-list-ethan li:last-child {
+    border-bottom: none;
+}
+
+.character-list-ethan li a{
+    color: white;
+    text-decoration: none;
+    transition: ease-in-out .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    box-sizing: border-box;
+    flex: 1;
+    inset: 0;
+    position: absolute;
+}
+
+
+.character-list-ethan li a:hover{
+    background-color: rgb(33, 190, 25);
+    box-shadow: 0 0 5px rgb(33, 190, 25), 0 0 25px rgb(33, 190, 25), 0 0 50px rgb(33, 190, 25), 0 0 100px rgb(33, 190, 25), 0 0 200px rgb(33, 190, 25);
+}
+
+.ethan-other{
+    color: #017672;
+    display: block; 
+    flex: 1 1 150px;
+}
+
+.marlin{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 90px;
+    right: 75px;
+    height: 250px;
+}
+
+.lily{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 350px;
+    right: 75px;
+    height: 450px;
+}
+
+.bud{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 150px;
+    left: 350px;
+    height: 300px;
+}
+
+.dirt{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 800px;
+    right: 150px;
+    height: 250px;
+}
+
+#ethan-button{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    bottom: 300px;
+    right: 100px;
+    background-color: rgb(1, 45, 43);
+    color: #017672;
+    text-shadow: 2px 2px black;
+    cursor: pointer;
+    width: 250px;
+    font-size: 25px;
+}
+
+.credits-ethan{
+    color: #017672;
+    display: block; 
+    flex: 1 1 150px;
+}
+
+.links-ethan{
+    color: #017672;
+    text-shadow: 2px 2px black;
+    text-decoration: none;
+}
+
+.chest{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 25px;
+    right: 100px;
+    height: 250px;
+}
+
+.none-list{
+    list-style: none;
+}
+
+#myBtn {
+  display: none;
+  position: fixed; 
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgb(16, 93, 35);
+  color: white;
+  cursor: pointer; 
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  visibility: hidden;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+@media (max-width: 1440px){
+    .character-list-ethan{
+        width: 120px;
+    }
+
+    .character-list-ethan li{
+        font-size: 12px;
+    }
+
+    .ethan-achievement{
+        width: 220px;
+        left: 13%;
+    }
+
+    .ethan-facts{
+        width: 650px;
+        font-size: 12px;
+        height: 500px;
+        top: calc(110px + ((100vh - 110px) / 2));
+        left: calc(120px + ((100vw - 120px) / 2));
+    }
+
+    .headingbox2{
+        width: 500px;
+        font-size: 15px;
+        height: 100px;
+        left: calc(120px + ((100vw - 120px) / 2));
+        transform: translate(-50%);
+    }
+
+    .ethan-skin{
+        height: 400px;
+        top: 200px;
+    }
+
+    .ethan-name{
+        width: 200px;
+        font-size: 15px;
+    }
+
+    .ethan-main{
+        left: 300px;
+    }
+
+    .chest{
+        height: 150px;
+    }
+
+    #ethan-button{
+        width: 150px;
+        font-size: 15px;
+        bottom: 200px;
+    }
+
+    .bud{
+        right: 50px;
+        left: auto;
+        height: 100px;
+        top: 125px;
+    }
+
+    .dirt{
+        right: 200px;
+        left: auto;
+        height: 100px;
+        top: 125px;
+    }
+
+    .lily{
+        right: 175px;
+        left: auto;
+        height: 150px;
+        top: 225px;
+    }
+
+    .marlin{
+        right: 35px;
+        left: auto;
+        height: 100px;
+        top: 250px;
+    }
+}
+
+@media (max-width: 768px){
+    .ethan{
+        overflow-y: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        height: 1600px;
+    }
+
+    .character-list-ethan{
+        position: fixed;
+        top: 0;
+        width: 75px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-color: #1B512D;
+    }
+
+    .character-list-ethan li{
+        font-size: 8px;
+    }
+
+    .ethan-facts{
+        width: 275px;
+        left: calc(75px + ((100vw - 75px)/2));
+        height: 600px;
+        align-items: center;
+        justify-content: center;
+        padding-left: 2.5%;
+        top: 900px;
+        position: absolute;
+        overflow-y: hidden;
+    }
+
+    .ethan-facts ul{
+        padding: 0;
+        margin: 0 auto;
+        list-style: none;
+    }
+
+    .ethan-facts li{
+        font-size: 9px;
+    }
+
+    .headingbox2{
+        width: 250px;
+        font-size: 9px;
+        height: 125px;
+        left: calc(75px + ((100vw - 75px)/2));
+        position: absolute;
+    } 
+
+    .ethan-achievement{
+        top: 155px;
+        left: calc(75px + ((100vw - 75px)/2));
+        transform: translate(-50%);
+        width: 300px;
+        position: absolute;
+    }
+    
+    .ethan-main{
+        position: absolute;
+        top: 250px;
+        left: calc(75px + ((100vw - 75px) / 2));
+        transform: translateX(-50%);
+        flex-direction: column;
+    }   
+
+    .ethan-name{
+        position: static;
+    }
+
+    .ethan-skin{
+        position: static;
+        height: 300px;
+    }
+
+    .bud{
+        visibility: hidden;
+    }
+
+    .dirt{
+        visibility: hidden;
+    }
+
+    .lily{
+        visibility: hidden;
+    }
+
+    .marlin{
+        visibility: hidden;
+    }
+
+    #ethan-button{
+        left: calc(75px + ((100vw - 75px) / 2));
+        transform: translateX(-50%);
+        position: absolute;
+        top: 1250px;
+        height: 50px;
+        width: 175px;
+        font-size: 15px;
+    }
+
+    .chest{
+        left: calc(75px + ((100vw - 75px) / 2));
+        transform: translateX(-50%);
+        position: absolute;
+        top: 1350px;
+        width: 200px;
+        height: 200px;
+    }
+
+    #mybtn{
+        visibility: visible;
+    }
+}

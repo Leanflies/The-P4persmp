@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <script src="https://kit.fontawesome.com/79670ba214.js" crossorigin="anonymous"></script>
         <link rel="icon"  href="P4persmp logo.jpg">
-        <link rel="stylesheet" type="text/css" href="style sheet.css">
+        <link rel="stylesheet" type="text/css" href="andy-style-sheet.css">
     </head>
     <body class="andy">
 
@@ -13,7 +13,7 @@
     <h1 class="heading-andy">The P4perSMP</h1>
 </div>
 <ul class="character-list-andy">
-    <li><a href="ethan.html">C!Ethan!</a></li>
+    <li><a href="ethan.html">C!Ethan</a></li>
     <li><a href="andy.html">C!Andy</a></li>
     <li><a href="taylor.html">C!Taylor</a></li>
     <li><a href="ashlyn.html">C!Ashlyn</a></li>
@@ -29,10 +29,10 @@
     <h3 class="andy-name">C!Andy</h3>
     <img src="C!Andy minecraft skin.png" class="andy-skin"/>
 </div>
-    <img src="C!Andy achievement.png" class="andy-achievement"/>
+<img src="C!Andy achievement.png" class="andy-achievement"/>
 <div class="andy-facts">
     <div class="andy-key-facts">
-        <h4 class="andy-facts-title">Key Facts!</h4>
+        <h3 class="andy-facts-title">Key Facts!</h3>
         <ul class="andy-key-facts-list">
             <li><p>They/Them</p></li>
             <li><p>Carpenter</p></li>
@@ -43,10 +43,10 @@
     </div>
     <div class="andy-other">
         <ul class="andy-other-list">
-            <li class="none-list"><h4 class="andy-siblings-title">Siblings!</h4></li>
+            <li class="none-list"><h3 class="andy-siblings-title">Siblings!</h3></li>
             <li><p>Sister, Rachel</p></li>
             <li><p>Sister, Taylor</p></li>
-            <li class="none-list"><h4 class="andy-pets-title">Pets!</h4></li>
+            <li class="none-list"><h3 class="andy-pets-title">Pets!</h3></li>
             <li><p>Doris, Cat</p></li>
             <li><p>Koda, Bear</p></li>
             <li><p>Cheese, Rat</p></li>
@@ -54,15 +54,15 @@
         </ul>
     </div>
     <div class="credits-andy">
-    <ul>
-        <li class="none-list"><p>All credits for C!Andy belong to WhatAboutAndy</p></li>
-        <li><a href="http://www.youtube.com/@whataboutandy" class="links-andy">YouTube Main <i class="fa-brands fa-youtube"></i></a></li>
-        <li><a href="http://www.youtube.com/@whataboutvods" class="links-andy">YouTube Vods <i class="fa-brands fa-youtube"></i></a></li>
-        <li><a href="https://www.instagram.com/whatabout4ndy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="links-andy">Cosplay Instagram <i class="fa-brands fa-instagram"></i></a></li>
-        <li><a href="https://www.instagram.com/andygalko?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="links-andy">Instagram Personal <i class="fa-brands fa-instagram"></i></a></li>
-        <li><a href="https://www.tiktok.com/@whataboutandy?is_from_webapp=1&sender_device=pc" class="links-andy">TikTok Personal <i class="fa-brands fa-tiktok"></i></a></li>
-        <li><a href="https://www.twitch.tv/whataboutandy" class="links-andy">Twitch <i class="fa-brands fa-twitch"></i></a></li>
-    </ul>
+        <ul>
+            <li class="none-list"><h3>All credits for C!Andy belong to WhatAboutAndy</h3></li>
+            <li><a href="http://www.youtube.com/@whataboutandy" class="links-andy">YouTube Main <i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="http://www.youtube.com/@whataboutvods" class="links-andy">YouTube Vods <i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="https://www.instagram.com/whatabout4ndy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="links-andy">Cosplay Instagram <i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.instagram.com/andygalko?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="links-andy">Instagram Personal <i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.tiktok.com/@whataboutandy?is_from_webapp=1&sender_device=pc" class="links-andy">TikTok Personal <i class="fa-brands fa-tiktok"></i></a></li>
+            <li><a href="https://www.twitch.tv/whataboutandy" class="links-andy">Twitch <i class="fa-brands fa-twitch"></i></a></li>
+        </ul>
     </div>
 </div>
     
@@ -71,6 +71,13 @@
     <img src="koda minecraft verion.png" class="koda"/>
 <img id="chest" class="chest" src="Minecraft chest.jpg"/>
 <button id="andy-button" onclick="changeButton()">Open Chest</button>
+<audio preload="auto" class="open-chest-audio" >
+    <source src="open chest audio.mp3">
+</audio>
+<audio preload="auto" class="close-chest-audio" >
+    <source src="close chest audio.mp3">
+</audio>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <script>
 function changeButton() {
     const btn = document.getElementById("andy-button");
@@ -79,11 +86,30 @@ function changeButton() {
     if (btn.textContent === "Open Chest") {
         btn.textContent = "Close Chest";
         image.src = "C!Andy items.png";
+        document.querySelector('.open-chest-audio').play();
     } else {
         btn.textContent = "Open Chest";
         image.src = "Minecraft chest.jpg";
+        document.querySelector('.close-chest-audio').play();
     }
 } 
+
+let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 </script>
 </style>
 </body>

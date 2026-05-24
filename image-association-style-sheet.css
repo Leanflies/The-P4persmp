@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "MyFont", sans-serif;
+    scroll-behavior: smooth;
+    box-sizing:border-box
+}
+
+@font-face{
+    font-family: "MyFont";
+    src: url("Pixeled.ttf") format("truetype");
+}
+
+#board{
+    background-color: green;
+}
+
+#quiz-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    gap: 10px;
+}
+
+#quiz-container button {
+    background-color: grey;
+    color: white;
+    width: 500px;
+    border: none;
+    border-radius: 5px;
+    font-size: 35px;
+    padding: 10px;
+    position: fixed;
+}
+
+#quiz-container button:hover {
+    background-color: lightgray;
+}
+
+.image-association-title{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    top: 10;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    font-size: 35px;
+}
+
+.image-association-page{
+    background: radial-gradient(circle, #EEFFE6,#CFFFB8,#B1FF8A,#92FF5C,#74FF2E,#55FF00,#46D100,#36A300,#277500,#184700,#081A00 95%);
+}
+
+#option0{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#option1{
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#option2{
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#option3{
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#next-question{
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#image {
+    width: 500px;
+    margin-bottom: 20px;
+    position: fixed;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%);
+    height: 500px;
+}
+
+.backArrow{
+    font-size: 190px;
+    color: #fff;
+    position: fixed;
+    top: -275;
+    left: 100;
+    transition: ease-in-out .5s;
+}
+
+.backArrow:hover{
+    background-image: url(sculk\ minecraft\ wallpaper.jpg);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@media (max-width: 1440px){
+    .backArrow{
+        font-size: 90px;
+        top: -125;
+        left: 10;
+    }
+
+    #quiz-container button {
+        width: 280px;
+        font-size: 16px;
+    }
+
+    .image-association-title{
+        font-size: 23px;
+    }
+
+    #image{
+        width: 280px;
+        top: 90;
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px){
+    .image-association-title{
+        font-size: 16px;
+    }
+
+    #image{
+        width: 200px;
+        height: 200px;
+        top: 130px
+    }
+}

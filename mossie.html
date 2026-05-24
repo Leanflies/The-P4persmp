@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <script src="https://kit.fontawesome.com/79670ba214.js" crossorigin="anonymous"></script>
         <link rel="icon"  href="P4persmp logo.jpg">
-        <link rel="stylesheet" type="text/css" href="style sheet.css">
+        <link rel="stylesheet" type="text/css" href="mossie-style-sheet.css">
     </head>
     <body class="mossie">
 
@@ -29,10 +29,10 @@
     <h3 class="mossie-name">C!Mossie</h3>
     <img src="C!mossie minecraft skin.png" class="mossie-skin"/>
 </div>
-    <img src="C!Mossie achievement.png" class="mossie-achievement"/>
+<img src="C!Mossie achievement.png" class="mossie-achievement"/>
 <div class="mossie-facts">
     <div class="mossie-key-facts">
-        <h4 class="mossie-facts-title">Key Facts!</h4>
+        <h3 class="mossie-facts-title">Key Facts!</h3>
         <ul class="mossie-key-facts-list">
             <li><p>He/Him</p></li>
             <li><p>Puppet</p></li>
@@ -42,7 +42,7 @@
     </div>
     <div class="credits-mossie">
     <ul>
-        <p>All credits for C!Mossie belong to Mossiesocks</p>
+        <li><h3>All credits for C!Mossie belong to Mossiesocks</h3></li>
         <li><a href="http://www.youtube.com/@mossysocks" class="links-mossie">YouTube Main <i class="fa-brands fa-youtube"></i></a></li>
         <li><a href="http://www.youtube.com/@mossysocksVODs" class="links-mossie">YouTube Vods <i class="fa-brands fa-youtube"></i></a></li>
         <li><a href="https://www.instagram.com/mossy_socks?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="links-mossie">Instagram <i class="fa-brands fa-instagram"></i></a></li>
@@ -54,6 +54,12 @@
 
 <img id="chest" class="chest" src="Minecraft chest.jpg"/>
 <button id="mossie-button" onclick="changeButton()">Open Chest</button>
+<audio preload="auto" class="open-chest-audio" >
+    <source src="open chest audio.mp3">
+</audio>
+<audio preload="auto" class="close-chest-audio" >
+    <source src="close chest audio.mp3">
+</audio>
 <script>
 function changeButton() {
     const btn = document.getElementById("mossie-button");
@@ -62,12 +68,33 @@ function changeButton() {
     if (btn.textContent === "Open Chest") {
         btn.textContent = "Close Chest";
         image.src = "C!Mossie items.png";
+        document.querySelector('.open-chest-audio').play();
     } else {
         btn.textContent = "Open Chest";
         image.src = "Minecraft chest.jpg";
+        document.querySelector('.close-chest-audio').play();
     }
 } 
 </script>
 <img src="minecraft sword.png" class="sword-mossie">
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+  let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 </body>
 </html>

@@ -36,7 +36,7 @@ const towns = [
         "name": "The Forrest"
     },
 ];
-const townImage = document.getElementById("town-image");
+const townImage = document.getElementById("image");
 const option0 = document.getElementById("option0");
 const option1 = document.getElementById("option1");
 const option2 = document.getElementById("option2");

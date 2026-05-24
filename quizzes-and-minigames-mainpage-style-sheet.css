@@ -1,0 +1,580 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "MyFont", sans-serif;
+    scroll-behavior: smooth;
+    box-sizing:border-box
+}
+
+@font-face{
+    font-family: "MyFont";
+    src: url("Pixeled.ttf") format("truetype");
+}
+
+.quizzes-main-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("landscape\ image12.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.headingbox3{
+    border-radius: 6px;
+    background-color: rgb(1, 45, 43);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 10;
+    left: 50%;
+    transform: translate(-50%);
+    padding-left: 5%;
+    padding-right: 5%;
+    cursor: context-menu;
+}
+
+.heading{
+    text-align: center;
+    color: #017672;
+    text-shadow: 2px 2px black;
+}
+
+.backArrow{
+    font-size: 190px;
+    color: #fff;
+    position: fixed;
+    top: -275;
+    left: 50;
+    transition: ease-in-out .5s;
+}
+
+.backArrow:hover{
+    background-image: url(sculk\ minecraft\ wallpaper.jpg);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.quote-quiz{
+    height: 200px;
+    width: 500px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    top: 250px;
+    left: 25%;
+    transform: translate(-50%);
+    display: block;
+    position: fixed;
+    justify-content: center;
+    text-shadow: 2px 2px black;
+}
+
+.quote-quiz-text{
+    font-size: 27px;
+    padding-top: 0.5%;
+}
+
+.quote-quiz-text2{
+    font-size: 20px;
+    padding-top: 5%;
+}
+
+.image-association{
+    width: 500px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    top: 650px;
+    left: 25%;
+    transform: translate(-50%);
+    display: block;
+    position: fixed;
+    justify-content: center;
+    text-shadow: 2px 2px black;
+}
+
+.image-association-text{
+    font-size: 25px;
+    padding-top: 0.5%;
+}
+
+.image-association-text2{
+    font-size: 16px;
+    padding-top: 3%;
+}
+
+.emoji-association{
+    height: 200px;
+    width: 500px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    top: 650px;
+    left: 50%;
+    transform: translate(-50%);
+    display: block;
+    position: fixed;
+    justify-content: center;
+    text-shadow: 2px 2px black;
+}
+
+.emoji-association-text{
+    font-size: 25px;
+    padding-top: 0.5%;
+}
+
+.emoji-association-text2{
+    font-size: 16px;
+    padding-top: 3%;
+}
+
+.lore-quiz{
+    height: 200px;
+    width: 500px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    top: 250px;
+    left: 50%;
+    transform: translate(-50%);
+    display: block;
+    position: fixed;
+    justify-content: center;
+    text-shadow: 2px 2px black;
+}
+
+.lore-quiz-text{
+    font-size: 27px;
+    padding-top: 0.5%;
+}
+
+.lore-quiz-text2{
+    font-size: 20px;
+    padding-top: 5%;
+}
+
+.town-quiz{
+    height: 200px;
+    width: 500px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    top: 250px;
+    left: 75%;
+    transform: translate(-50%);
+    display: block;
+    position: fixed;
+    justify-content: center;
+    text-shadow: 2px 2px black;
+}
+
+.town-quiz-text{
+    font-size: 27px;
+    padding-top: 0.5;
+}
+
+.town-quiz-text2{
+    font-size: 20px;
+    padding-top: 5%;
+}
+
+.colour-association{
+    height: 200px;
+    width: 500px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    top: 650px;
+    left: 75%;
+    transform: translate(-50%);
+    display: block;
+    position: fixed;
+    justify-content: center;
+    text-shadow: 2px 2px black;
+}
+
+.colour-association-text{
+    font-size: 27px;
+    padding-top: 0.5%;
+}
+
+.colour-association-text2{
+    font-size: 17px;
+    padding-top: 3%;
+}
+
+.four-in-a-row-box{
+    height: 200px;
+    width: 500px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    top: 1050px;
+    left: 25%;
+    transform: translate(-50%);
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    text-shadow: 2px 2px black;
+}
+
+.four-in-a-row-text{
+    font-size: 27px;
+    padding-top: 0.5%;
+}
+
+.four-in-a-row-text2{
+    font-size: 17px;
+    padding-top: 3%;
+}
+
+.tic-tac-toe-box{
+    height: 200px;
+    width: 500px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    top: 1050px;
+    left: 50%;
+    transform: translate(-50%);
+    display: block;
+    position: fixed;
+    justify-content: center;
+    text-shadow: 2px 2px black;
+}
+
+.tic-tac-toe-text{
+    font-size: 27px;
+    padding-top: 0.5%;
+}
+
+.tic-tac-toe-text2{
+    font-size: 17px;
+    padding-top: 3%;
+}
+
+.memory-game-box{
+    height: 200px;
+    width: 500px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    top: 1050px;
+    left: 75%;
+    transform: translate(-50%);
+    display: block;
+    position: fixed;
+    justify-content: center;
+    text-shadow: 2px 2px black;
+}
+
+.memory-game-text2{
+    font-size: 17px;
+    padding-top: 3%;
+}
+
+.memory-game-text{
+    font-size: 27px;
+    padding-top: 0.5%;
+}
+
+#myBtn {
+  display: none;
+  position: fixed; 
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgb(3, 52, 42);
+  color: white;
+  cursor: pointer; 
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  visibility: hidden;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+@media (max-width: 1440px){
+    .backArrow{
+        font-size: 90px;
+        top: -125;
+        left: 10;
+    }
+
+    .quote-quiz{
+        width: 300px;
+        height: 150px;
+        top: 150px;
+    }
+
+    .quote-quiz-text{
+        font-size: 17px;
+    }
+
+    .quote-quiz-text2{
+        font-size: 12px;
+    }
+
+    .lore-quiz{
+        width: 300px;
+        height: 150px;
+        top: 150px;
+    }
+
+    .lore-quiz-text{
+        font-size: 17px;
+    }
+
+    .lore-quiz-text2{
+        font-size: 12px;
+    }
+
+    .town-quiz{
+        width: 300px;
+        height: 150px;
+        top: 150px;
+    }
+
+    .town-quiz-text{
+        font-size: 17px;
+    }
+
+    .town-quiz-text2{
+        font-size: 12px;
+    }
+
+    .image-association{
+        width: 300px;
+        height: 150px;
+        top: 350px;
+    }
+
+    .image-association-text{
+        font-size: 15px;
+    }
+
+    .image-association-text2{
+        font-size: 12px;
+    }
+
+    .emoji-association{
+        width: 300px;
+        height: 150px;
+        top: 350px;
+    }
+
+    .emoji-association-text{
+        font-size: 15px;
+    }
+
+    .emoji-association-text2{
+        font-size: 12px;
+    }
+
+    .colour-association{
+        width: 300px;
+        height: 150px;
+        top: 350px;
+    }
+
+    .colour-association-text{
+        font-size: 15px;
+    }
+
+    .colour-association-text2{
+        font-size: 12px;
+    }
+
+    .four-in-a-row-box{
+        width: 300px;
+        height: 150px;
+        top: 550px;
+    }
+
+    .four-in-a-row-text{
+        font-size: 17px;
+    }
+
+    .four-in-a-row-text2{
+        font-size: 12px;
+    }
+
+    .tic-tac-toe-box{
+        width: 300px;
+        height: 150px;
+        top: 550px;
+    }
+
+    .tic-tac-toe-text{
+        font-size: 17px;
+    }
+
+    .tic-tac-toe-text2{
+        font-size: 12px;
+    }
+
+    .memory-game-box{
+        width: 300px;
+        height: 150px;
+        top: 550px;
+    }
+
+    .memory-game-text{
+        font-size: 17px;
+    }
+
+    .memory-game-text2{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px){
+    .quizzes-main-page{
+        height: 2000px;
+        overflow-y: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        background: linear-gradient(#AED5F5, #4face5, #367adf, #394988, #3534ac);
+    }
+
+    .headingbox3{
+        width: 250px;
+        font-size: 9px;
+        height: 125px;
+        left: 50%;
+        transform: translate(-50%);
+        position: absolute;
+    }
+
+    .quote-quiz{
+        top: 150px;
+        transform: translate(-50%);
+        left: 50%;
+        position: absolute;
+    }
+
+    .lore-quiz{
+        top: 350px;
+        transform: translate(-50%);
+        left: 50%;
+        position: absolute;
+    }
+
+    .town-quiz{
+        top: 550px;
+        transform: translate(-50%);
+        left: 50%;
+        position: absolute;
+    }
+
+    .image-association{
+        top: 750px;
+        transform: translate(-50%);
+        left: 50%;
+        position: absolute;
+    }
+
+    .emoji-association{
+        top: 950px;
+        transform: translate(-50%);
+        left: 50%;
+        position: absolute;
+    }
+
+    .colour-association{
+        top: 1150px;
+        transform: translate(-50%);
+        left: 50%;
+        position: absolute;
+    }
+
+    .four-in-a-row-box{
+        top: 1350px;
+        transform: translate(-50%);
+        left: 50%;
+        position: absolute;
+    }
+
+    .tic-tac-toe-box{
+        top: 1550px;
+        transform: translate(-50%);
+        left: 50%;
+        position: absolute;
+    }
+
+    .memory-game-box{
+        top: 1750px;
+        transform: translate(-50%);
+        left: 50%;
+        position: absolute;
+    }
+
+    #mybtn{
+        visibility: visible;
+    }
+}

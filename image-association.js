@@ -13,7 +13,7 @@ const images = [
     },
     {
         "image": "cute dragin image c!ashlyn core.jpg",
-        "name": "C!Ashlyn"
+        "name": "Sheldon"
     },
     {
         "image": "gears image c!desca core.jpg",
@@ -38,6 +38,70 @@ const images = [
     {
         "image": "wooden hands image c!mossie core.jpg",
         "name": "C!Mossie"
+    },
+    {
+        "image": "angel core.jpg",
+        "name": "Angel"
+    },
+    {
+        "image": "fireflies core.jpg",
+        "name": "The Fireflies"
+    },
+    {
+        "image": "trees core.jpg",
+        "name": "The Trees"
+    },
+    {
+        "image": "doris core.jpg",
+        "name": "Queen Doris"
+    },
+    {
+        "image": "doris core 1.jpg",
+        "name": "Queen Doris"
+    },
+    {
+        "image": "ashlyn core 1.jpg",
+        "name": "C!Ashlyn"
+    },
+    {
+        "image": "ashlyn core 2.jpg",
+        "name": "C!Ashlyn"
+    },
+    {
+        "image": "ashlyn core 3.jpg",
+        "name": "C!Ashlyn"
+    },
+    {
+        "image": "koda core.jpg",
+        "name": "Koda"
+    },
+    {
+        "image": "ashlyn core.jpg",
+        "name": "C!Ashlyn"
+    },
+    {
+        "image": "doris core 2.jpg",
+        "name": "Queen Doris"
+    },
+    {
+        "image": "ashlyn core 4.jpg",
+        "name": "C!Ashlyn"
+    },
+    {
+        "image": "cheese core.jpg",
+        "name": "Cheese"
+    },
+    {
+        "image": "ashlyn core 3.jpg",
+        "name": "C!Ashlyn"
+    },
+    {
+        "image": "bigman core.jpg",
+        "name": "Bigman"
+    },
+    {
+        "image": "ethan core.jpg",
+        "name": "C!Ethan"
     }
 ];
 const imageImage = document.getElementById("image");

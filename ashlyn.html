@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <script src="https://kit.fontawesome.com/79670ba214.js" crossorigin="anonymous"></script>
         <link rel="icon"  href="P4persmp logo.jpg">
-        <link rel="stylesheet" type="text/css" href="style sheet.css">
+        <link rel="stylesheet" type="text/css" href="ashlyn-style-sheet.css">
     </head>
     <body class="ashlyn">
 
@@ -13,7 +13,7 @@
     <h1 class="heading-ashlyn">The P4perSMP</h1>
 </div>
 <ul class="character-list-ashlyn">
-    <li><a href="ethan.html">C!Ethan!</a></li>
+    <li><a href="ethan.html">C!Ethan</a></li>
     <li><a href="andy.html">C!Andy</a></li>
     <li><a href="taylor.html">C!Taylor</a></li>
     <li><a href="ashlyn.html">C!Ashlyn</a></li>
@@ -29,10 +29,10 @@
     <h3 class="ashlyn-name">C!Ashlyn</h3>
     <img src="C!ashlyn minecraft skin.png" class="ashlyn-skin"/>
 </div>
-    <img src="C!Ashlyn achievement.png" class="ashlyn-achievement"/>
+<img src="C!Ashlyn achievement.png" class="ashlyn-achievement"/>
 <div class="ashlyn-facts">
     <div class="ashlyn-key-facts">
-        <h4 class="ashlyn-facts-title">Key Facts!</h4>
+        <h3 class="ashlyn-facts-title">Key Facts!</h4>
         <ul class="ashlyn-key-facts-list">
             <li><p>She/Her</p></li>
             <li><p>Tavern owner</p></li>
@@ -42,16 +42,16 @@
         </ul>
     </div>
     <div class="ashlyn-other">
-        <div class="ashlyn-pets">
-            <ul class="ashlyn-pets-list">
-                <li class="none-list"><h4 class="ashlyn-pets-title">Pets!</h4></li>
-                <li><p>Sheldon, Dragon</p></li>
-            </ul>
-        </div>
+    <div class="ashlyn-pets">
+        <h3 class="ashlyn-pets-title">Pets!</h4>
+        <ul class="ashlyn-pets-list">
+            <li><p>Sheldon, Dragon</p></li>
+        </ul>
+    </div>
     </div>
     <div class="credits-ashlyn">
         <ul>
-            <li class="none-list"><p>All credits for C!Ashlyn belong to DearestAshlyn</p></li>
+            <li class="none-list"><h3>All credits for C!Ashlyn belong to DearestAshlyn</h3></li>
             <li><a href="http://www.youtube.com/@dearestashlyn" class="ashlyn-links">Youtube <i class="fa-brands fa-youtube"></i></a></li>
             <li><a href="https://www.instagram.com/dearestashlyn?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="ashlyn-links">Instagram Main <i class="fa-brands fa-instagram"></i></a></li>
             <li><a href="https://www.instagram.com/ashlynnoellexo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="ashlyn-links">Instagram Personal <i class="fa-brands fa-instagram"></i></a></li>
@@ -65,6 +65,12 @@
 
 <img id="chest" class="chest" src="Minecraft chest.jpg"/>
 <button id="ashlyn-button" onclick="changeButton()">Open Chest</button>
+<audio preload="auto" class="open-chest-audio" >
+    <source src="open chest audio.mp3">
+</audio>
+<audio preload="auto" class="close-chest-audio" >
+    <source src="close chest audio.mp3">
+</audio>
 <script>
 function changeButton() {
     const btn = document.getElementById("ashlyn-button");
@@ -73,11 +79,32 @@ function changeButton() {
     if (btn.textContent === "Open Chest") {
         btn.textContent = "Close Chest";
         image.src = "C!Ashlyn items.png";
+        document.querySelector('.open-chest-audio').play();
     } else {
         btn.textContent = "Open Chest";
         image.src = "Minecraft chest.jpg";
+        document.querySelector('.close-chest-audio').play();
     }
 } 
+</script>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+  let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 </script>
 </body>
 </html>

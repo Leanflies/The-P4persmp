@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "MyFont", sans-serif;
+    scroll-behavior: smooth;
+    box-sizing:border-box
+}
+
+@font-face{
+    font-family: "MyFont";
+    src: url("Pixeled.ttf") format("truetype");
+}
+
+.four-in-a-row{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #5E122A, #9B3636);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    color: white;
+}
+
+.four-in-a-row-title{
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+
+.game-container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.board-and-reset{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+#status{
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#board{
+    display: grid;
+    grid-template-columns: repeat(7, 130px);
+    grid-template-rows: repeat(6, 130px);
+    gap: 6px;
+    background: #0044aa;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    justify-items: center;
+    align-items: center;
+}
+
+.cell{
+    width: 120px;
+    height: 120px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2 ease;
+}
+
+.cell:hover{
+    transform: scale(1.05);
+}
+
+.cell.red{
+    background: #e53935;
+}
+
+.cell.yellow{
+    background: #fdd835;
+}
+
+#resetBtn{
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 2rem;
+    border: none;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #1e3c72;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#resetBtn:hover{
+    background: #e0e0e0;
+}
+
+.backArrow{
+    font-size: 190px;
+    color: #fff;
+    position: fixed;
+    top: -275;
+    left: 100;
+    transition: ease-in-out .5s;
+}
+
+.backArrow:hover{
+    background-image: url(sculk\ minecraft\ wallpaper.jpg);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@media (max-width: 1440px){
+    .backArrow{
+        font-size: 90px;
+        top: -125;
+        left: 10;
+    }
+
+    #board{
+        grid-template-columns: repeat(7, 70px);
+        grid-template-rows: repeat(6, 70px);
+    }
+
+    .board-and-reset{
+        top: 55%;
+    }
+
+    .cell{
+        width: 60px;
+        height: 60px;
+    }
+
+    #resetBtn{
+        font-size: 1rem;
+    }
+
+    .four-in-a-row-title{
+        font-size: 20px;
+    }
+
+    #status{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px){
+    .four-in-a-row-title{
+        font-size: 17px;
+    }
+
+    .backArrow{
+        top: -50px;
+    }
+
+    #board{
+        grid-template-columns: repeat(7, 50px);
+        grid-template-rows: repeat(6, 50px);
+    }
+
+    .cell{
+        width: 40px;
+        height: 40px;
+    }
+}

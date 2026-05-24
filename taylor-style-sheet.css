@@ -1,0 +1,451 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "MyFont", sans-serif;
+    scroll-behavior: smooth;
+    box-sizing:border-box
+}
+
+@font-face{
+    font-family: "MyFont";
+    src: url("Pixeled.ttf") format("truetype");
+}
+
+.headingbox2-taylor{
+    border-radius: 6px;
+    background-image: url("long\ minecraft\ bookshelf.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: fixed;
+    top: 10px;
+    left: calc(220px + ((100vw - 220px) / 2));
+    transform: translateX(-50%);
+    padding: 10px 5%;
+    cursor: context-menu;
+    font-size: 30px;
+    height: 200px;
+    width: 925px;
+}
+
+.heading-taylor{
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 2px black;
+}
+
+.taylor-name{
+    color: #ffffff;
+    background-image: url("long\ minecraft\ bookshelf.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 17.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    cursor: context-menu;
+    width: 250px;
+    font-size: 30px;
+}
+
+.taylor-achievement{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 3.5%;
+    left: 12%;
+    width: 425px;
+}
+
+.taylor-skin{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 400px;
+    height: 600px;
+}
+
+.taylor-key-facts{
+    display: block; 
+    flex: 1 1 150px;
+    color: #ffffff;
+}
+
+.taylor-main{
+    background: none;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 475px;
+}
+
+.taylor-facts{
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    padding: 20px; 
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 6px;
+    text-shadow: 2px 2px black;
+    cursor: context-menu;
+    background-image: url("long\ minecraft\ bookshelf.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 900px;
+    justify-content: space-evenly;
+    height: 1100px;
+    overflow-y: auto;
+    top: calc(210px + ((100vh - 210px) / 2));
+    left: calc(220px + ((100vw - 220px) / 2));
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+}
+
+.taylor-facts::-webkit-scrollbar {
+    width: 10px;
+}
+
+.taylor-facts::-webkit-scrollbar-track {
+    background-image: url("long\ minecraft\ bookshelf.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden; 
+}
+
+.taylor-facts::-webkit-scrollbar-thumb {
+    background-image: url("long\ minecraft\ bookshelf.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;        
+    border-radius: 6px;
+}
+
+.taylor-facts::-webkit-scrollbar-thumb:hover {
+    background-image: url("long\ minecraft\ bookshelf.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.taylor-facts ul {
+    padding: 0;
+    margin: 0;
+}
+
+.taylor-facts p {
+    line-height: 1.4;
+}
+
+.taylor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1e3c04;
+    text-shadow: 2px 2px black;
+    margin: 0;
+}
+
+.character-list-taylor{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #408001;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: clamp(120px, 18vw, 220px);
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.character-list-taylor li{
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid white;
+    font-size: clamp(14px, 1.2vw, 20px);
+}
+
+.character-list-taylor li:last-child {
+    border-bottom: none;
+}
+
+.character-list-taylor li a{
+    color: white;
+    text-decoration: none;
+    transition: ease-in-out .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    box-sizing: border-box;
+    flex: 1;
+    inset: 0;
+    position: absolute;
+}
+
+
+.character-list-taylor li a:hover{
+    background-color: rgb(80, 132, 87);
+    box-shadow: 0 0 5px rgb(80, 132, 87), 0 0 25px rgb(80, 132, 87), 0 0 50px rgb(80, 132, 87), 0 0 100px rgb(80, 132, 87), 0 0 200px rgb(80, 132, 87);
+}
+
+.taylor-other{
+    color: #ffffff;
+    display: block; 
+    flex: 1 1 150px;
+}
+
+.oakley{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 90px;
+    right: 75px;
+    height: 350px;
+}
+
+#taylor-button{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    bottom: 300px;
+    right: 100px;
+    background-image: url("long\ minecraft\ bookshelf.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    color: #ffffff;
+    text-shadow: 2px 2px black;
+    cursor: pointer;
+    width: 250px;
+    font-size: 25px;
+}
+
+.credits-taylor{
+    color: #ffffff;
+    display: block; 
+    flex: 1 1 150px;
+}
+
+.links-taylor{
+    color: #ffffff;
+    text-shadow: 2px 2px black;
+    text-decoration: none;
+}
+
+.chest{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 25px;
+    right: 100px;
+    height: 250px;
+}
+
+.none-list{
+    list-style: none;
+}
+
+#myBtn {
+  display: none;
+  position: fixed; 
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgb(32, 94, 13);
+  color: white;
+  cursor: pointer; 
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  visibility: hidden;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+@media (max-width: 1440px){
+    .character-list-taylor{
+        width: 120px;
+    }
+
+    .character-list-taylor li{
+        font-size: 12px;
+    }
+
+    .taylor-achievement{
+        width: 220px;
+        left: 13%;
+    }
+
+    .taylor-facts{
+        width: 600px;
+        font-size: 12px;
+        height: 500px;
+        top: calc(110px + ((100vh - 110px) / 2));
+        left: calc(120px + ((100vw - 120px) / 2));
+    }
+
+    .headingbox2-taylor{
+        width: 500px;
+        font-size: 15px;
+        height: 100px;
+        left: calc(120px + ((100vw - 120px) / 2));
+        transform: translate(-50%);
+    }
+
+    .taylor-skin{
+        height: 400px;
+        top: 200px;
+    }
+
+    .taylor-name{
+        width: 200px;
+        font-size: 15px;
+    }
+
+    .taylor-main{
+        left: 300px;
+    }
+
+    .chest{
+        height: 150px;
+    }
+
+    #taylor-button{
+        width: 150px;
+        font-size: 15px;
+        bottom: 200px;
+    }
+
+    .oakley{
+        right: 75px;
+        left: auto;
+        height: 200px;
+        top: 175px;
+    }
+}
+
+@media (max-width: 768px){
+    .taylor{
+        overflow-y: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        height: 1600px;
+    }
+
+    .character-list-taylor{
+        position: fixed;
+        top: 0;
+        width: 75px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .character-list-taylor li{
+        font-size: 8px;
+    }
+
+    .taylor-facts{
+        width: 275px;
+        left: calc(75px + ((100vw - 75px)/2));
+        height: 600px;
+        align-items: center;
+        justify-content: center;
+        padding-left: 2.5%;
+        top: 900px;
+        position: absolute;
+        overflow-y: hidden;
+    }
+
+    .taylor-facts ul{
+        padding: 0;
+        margin: 0 auto;
+        list-style: none;
+    }
+
+    .taylor-facts li{
+        font-size: 9px;
+    }
+
+    .headingbox2-taylor{
+        width: 250px;
+        font-size: 9px;
+        height: 125px;
+        left: calc(75px + ((100vw - 75px)/2));
+        position: absolute;
+    } 
+
+    .taylor-achievement{
+        top: 155px;
+        left: calc(75px + ((100vw - 75px)/2));
+        transform: translate(-50%);
+        width: 300px;
+        position: absolute;
+    }
+    
+    .taylor-main{
+        position: absolute;
+        top: 250px;
+        left: calc(75px + ((100vw - 75px) / 2));
+        transform: translateX(-50%);
+        flex-direction: column;
+    }   
+
+    .taylor-name{
+        position: static;
+    }
+
+    .taylor-skin{
+        position: static;
+        height: 300px;
+    }
+
+    .oakley{
+        visibility: hidden;
+    }
+
+    #taylor-button{
+        left: calc(75px + ((100vw - 75px) / 2));
+        transform: translateX(-50%);
+        position: absolute;
+        top: 1250px;
+        height: 50px;
+        width: 175px;
+        font-size: 15px;
+    }
+
+    .chest{
+        left: calc(75px + ((100vw - 75px) / 2));
+        transform: translateX(-50%);
+        position: absolute;
+        top: 1350px;
+        width: 200px;
+        height: 200px;
+    }
+
+    #mybtn{
+        visibility: visible;
+    }
+}

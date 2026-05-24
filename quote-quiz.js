@@ -48,7 +48,7 @@ const quotes = [
         "name": "C!Andy"
     }
 ];
-const quoteImage = document.getElementById("quote-image");
+const quoteImage = document.getElementById("image");
 const option0 = document.getElementById("option0");
 const option1 = document.getElementById("option1");
 const option2 = document.getElementById("option2");
