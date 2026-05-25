@@ -411,6 +411,7 @@
         padding: 0;
         margin: 0 auto;
         list-style: none;
+        line-height: 1.5px;
     }
 
     .ethan-facts li{
