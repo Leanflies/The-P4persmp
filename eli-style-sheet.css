@@ -349,11 +349,11 @@
     .eli-facts{
         width: 275px;
         left: calc(75px + ((100vw - 75px)/2));
-        height: 500px;
+        height: 700px;
         align-items: center;
         justify-content: center;
         padding-left: 2.5%;
-        top: 900px;
+        top: 1000px;
         position: absolute;
         overflow-y: hidden;
     }
@@ -366,6 +366,7 @@
 
     .eli-facts li{
         font-size: 9px;
+        margin-bottom: 10px;
     }
 
     .headingbox2-eli{
@@ -409,7 +410,7 @@
         left: calc(75px + ((100vw - 75px) / 2));
         transform: translateX(-50%);
         position: absolute;
-        top: 1250px;
+        top: 1450px;
         height: 50px;
         width: 175px;
         font-size: 15px;
@@ -419,7 +420,7 @@
         left: calc(75px + ((100vw - 75px) / 2));
         transform: translateX(-50%);
         position: absolute;
-        top: 1350px;
+        top: 1550px;
         width: 200px;
         height: 200px;
     }
