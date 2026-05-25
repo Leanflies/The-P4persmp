@@ -398,11 +398,11 @@
     .ethan-facts{
         width: 275px;
         left: calc(75px + ((100vw - 75px)/2));
-        height: 600px;
+        height: 800px;
         align-items: center;
         justify-content: center;
         padding-left: 2.5%;
-        top: 900px;
+        top: 1000px;
         position: absolute;
         overflow-y: hidden;
     }
@@ -411,11 +411,11 @@
         padding: 0;
         margin: 0 auto;
         list-style: none;
-        line-height: 1.5px;
     }
 
     .ethan-facts li{
         font-size: 9px;
+        margin-bottom: 10px;
     }
 
     .headingbox2{
@@ -471,7 +471,7 @@
         left: calc(75px + ((100vw - 75px) / 2));
         transform: translateX(-50%);
         position: absolute;
-        top: 1250px;
+        top: 1450px;
         height: 50px;
         width: 175px;
         font-size: 15px;
@@ -481,7 +481,7 @@
         left: calc(75px + ((100vw - 75px) / 2));
         transform: translateX(-50%);
         position: absolute;
-        top: 1350px;
+        top: 1550px;
         width: 200px;
         height: 200px;
     }
