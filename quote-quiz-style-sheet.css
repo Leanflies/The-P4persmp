@@ -155,7 +155,7 @@
         height: 200px;
         top: 150px;
         position: absolute;
-        left: 50%;
+        left: 150%;
         transform: translate(-50%);
     }
 
