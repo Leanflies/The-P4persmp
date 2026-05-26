@@ -577,4 +577,8 @@
     #mybtn{
         visibility: visible;
     }
+
+    .backArrow{
+        position: absolute;
+    }
 }
