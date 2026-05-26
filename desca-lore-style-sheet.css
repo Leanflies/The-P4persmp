@@ -12,26 +12,26 @@
     src: url("Pixeled.ttf") format("truetype");
 }
 
-.desca-lore-page{
+.ashlyn-lore-page{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #752731;
+    background-color: rgb(255, 157, 203);
     text-shadow: 2px 2px black;
     overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
 
-.desca-lore-page::-webkit-scrollbar {
+.ashlyn-lore-page::-webkit-scrollbar {
     display: none;
 }
 
-.headingbox2-lore-desca{
+.headingbox2-lore-ashlyn{
     position: absolute;
     border-radius: 6px;
-    background:rgb(94, 18, 42);
+    background:#ff46af;
     display: flex;
     justify-content: center;
     position: absolute;
@@ -45,15 +45,15 @@
 
 .heading{
     text-align: center;
-    color: #e2ad00;
+    color: #ffffff;
     text-shadow: 2px 2px black;
 }
 
-.character-list-desca{
+.character-list-ashlyn{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #601f1f;
+    background-color: #d73e88;
     justify-content: center;
     position: fixed;
     top: 0;
@@ -66,7 +66,7 @@
     flex-direction: column;
 }
 
-.character-list-desca li{
+.character-list-ashlyn li{
     flex: 1;
     position: relative;
     display: flex;
@@ -76,11 +76,11 @@
     font-size: clamp(14px, 1.2vw, 20px);
 }
 
-.character-list-desca li:last-child {
+.character-list-ashlyn li:last-child {
     border-bottom: none;
 }
 
-.character-list-desca li a{
+.character-list-ashlyn li a{
     color: white;
     text-decoration: none;
     transition: ease-in-out .5s;
@@ -95,12 +95,12 @@
 }
 
 
-.character-list-desca li a:hover{
-    background-color: rgb(156, 41, 41);
-    box-shadow: 0 0 5px rgb(156, 41, 41), 0 0 25px rgb(156, 41, 41), 0 0 50px rgb(156, 41, 41), 0 0 100px rgb(156, 41, 41), 0 0 200px rgb(156, 41, 41);
+.character-list-ashlyn li a:hover{
+    background-color: rgb(156, 41, 99);
+    box-shadow: 0 0 5px rgb(156, 41, 99), 0 0 25px rgb(156, 41, 99), 0 0 50px rgb(156, 41, 99), 0 0 100px rgb(156, 41, 99), 0 0 200px rgb(156, 41, 99);
 }
 
-.desca-achievement-lore{
+.ashlyn-achievement-lore{
     display: flex;
     justify-content: center;
     position: fixed;
@@ -109,9 +109,9 @@
     height: 90px
 }
 
-.desca-lore{
-    background:rgb(94, 18, 42);
-    color: #e2ad00;
+.ashlyn-lore{
+    background:#ff46af;
+    color: #ffffff;
     display: block;
     position: absolute;
     justify-content: center;
@@ -130,9 +130,9 @@
     cursor: context-menu;
 }
 
-.desca-credits{
-    background:rgb(94, 18, 42);
-    color: #e2ad00;
+.ashlyn-credits{
+    background:#ff46af;
+    color: #ffffff;
     display: block;
     position: fixed;
     justify-content: center;
@@ -149,8 +149,8 @@
     cursor: context-menu;
 }
 
-.links-desca{
-    color: #e2ad00;
+.links-ashlyn{
+    color: #ffffff;
     text-shadow: 2px 2px black;
     text-decoration: none;
 }
@@ -163,7 +163,7 @@
     text-decoration: none;
 }
 
-.slideshow-desca{
+.slideshow-ashlyn{
     position: fixed;
     margin: auto;
     left: 250px;
@@ -205,25 +205,25 @@
   top: 0;
 }
 
-.dot-desca {
+.dot-ashlyn {
   cursor: pointer;
   height: 17px;
   width: 17px;
   margin: 0 2px;
-  background-color: #e2ad00;
+  background-color: #ff6ebe;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
-.dots-desca{
+.dots-ashlyn{
     position: fixed;
-    left: 450px;
+    left: 425px;
     top: 1100px;
 }
 
-.active-desca, .dot-desca:hover {
-  background-color: #ffe283;
+.active-ashlyn, .dot-ashlyn:hover {
+  background-color: #ff0090;
 }
 
 .fade {
@@ -248,7 +248,7 @@
   z-index: 99;
   border: none;
   outline: none;
-  background-color: rgb(71, 11, 26);
+  background-color: rgb(255, 162, 249);
   color: white;
   cursor: pointer; 
   padding: 15px;
@@ -261,31 +261,31 @@
 }
 
 @media (max-width: 1440px){
-    .desca-lore{
+    .ashlyn-lore{
         font-size: 16px;
         width: 500px;
         left: calc(120px + ((100vw - 120px) / 2));
         transform: translate(-50%);
     }
 
-    .headingbox2-lore-desca{
+    .headingbox2-lore-ashlyn{
         left: calc(120px + ((100vw - 120px) / 2));
         transform: translate(-50%);
     }
 
-    .desca-credits{
+    .ashlyn-credits{
         font-size: 12px;
         width: 300px;
         right: 25px;
     }
 
-    .desca-credits ul{
+    .ashlyn-credits ul{
         padding: 0;
         margin: 0 auto;
         list-style-position: outside;
     }
 
-    .slideshow-desca{
+    .slideshow-ashlyn{
         width: 250px;
         left: 200px;
     }
@@ -298,39 +298,39 @@
         font-size: 12px;
     }
 
-    .character-list-desca{
+    .character-list-ashlyn{
         width: 120px;
     }
 
-    .character-list-desca li{
+    .character-list-ashlyn li{
         font-size: 12px;
     }
 
-    .desca-achievement-lore{
+    .ashlyn-achievement-lore{
         height: 55px;
         top: 35px;
     }
 
-    .dots-desca{
+    .dots-ashlyn{
         top: 575px;
-        left: 290px;
+        left: 280px;
     }
 
-    .dot-desca{
+    .dot-ashlyn{
         width: 12px;
         height: 12px;
     }
 }
 
 @media (max-width: 768px){
-    .desca-lore-page{
+    .ashlyn-lore-page{
         overflow-y: scroll;
         -ms-overflow-style: none;
         scrollbar-width: none;
         height: 1600px;
     }
 
-    .character-list-desca{
+    .character-list-ashlyn{
         position: fixed;
         top: 0;
         width: 75px;
@@ -339,11 +339,11 @@
         flex-direction: column;
     }
 
-    .character-list-desca li{
+    .character-list-ashlyn li{
         font-size: 8px;
     }
 
-    .headingbox2-lore-desca{
+    .headingbox2-lore-ashlyn{
         width: 250px;
         font-size: 9px;
         height: 125px;
@@ -351,40 +351,41 @@
         position: absolute;
     } 
 
-    .desca-achievement-lore{
+    .ashlyn-achievement-lore{
         top: 155px;
         left: calc(75px + ((100vw - 75px)/2));
         transform: translate(-50%);
-        width: 300px;
+        width: 250px;
         position: absolute;
     }
 
-    .slideshow-desca{
+    .slideshow-ashlyn{
         left: calc(75px + ((100vw - 75px) / 2));
         transform: translate(-50%);
         top: 250px;
         position: absolute;
     }
 
-    .dots-desca{
+    .dots-ashlyn{
         top: 575px;
         left: calc(75px + ((100vw - 75px) / 2));
         transform: translate(-50%);
         position: absolute;
     }
 
-    .desca-lore{
-        width: 350px;
+    .ashlyn-lore{
+        width: 250px;
         left: calc(75px + ((100vw - 75px) / 2));
         transform: translate(-50%);
-        top: 1000px
+        top: 1100px
     }
 
-    .desca-credits{
+    .ashlyn-credits{
         top: 650px;
         left: calc(75px + ((100vw - 75px) / 2));
         transform: translate(-50%);
         position: absolute;
+        width: 250px;
     }
 
     #mybtn{
