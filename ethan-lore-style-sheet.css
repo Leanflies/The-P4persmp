@@ -12,26 +12,26 @@
     src: url("Pixeled.ttf") format("truetype");
 }
 
-.andy-lore-page{
+.ethan-lore-page{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #3c0404;
+    background-color: #376c48;
     text-shadow: 2px 2px black;
     overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
 
-.andy-lore-page::-webkit-scrollbar {
+.ethan-lore-page::-webkit-scrollbar {
     display: none;
 }
 
-.headingbox2-lore-andy{
+.headingbox2-lore{
     position: absolute;
     border-radius: 6px;
-    background-image: url(minecraft\ wood\ texture.jpg);
+    background-color: rgb(1, 45, 43);
     display: flex;
     justify-content: center;
     position: absolute;
@@ -45,15 +45,15 @@
 
 .heading{
     text-align: center;
-    color: #ffffff;
+    color: #017672;
     text-shadow: 2px 2px black;
 }
 
-.character-list-andy{
+.character-list-ethan{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #a80000;
+    background-color: #1B512D;
     justify-content: center;
     position: fixed;
     top: 0;
@@ -66,7 +66,7 @@
     flex-direction: column;
 }
 
-.character-list-andy li{
+.character-list-ethan li{
     flex: 1;
     position: relative;
     display: flex;
@@ -76,11 +76,11 @@
     font-size: clamp(14px, 1.2vw, 20px);
 }
 
-.character-list-andy li:last-child {
+.character-list-ethan li:last-child {
     border-bottom: none;
 }
 
-.character-list-andy li a{
+.character-list-ethan li a{
     color: white;
     text-decoration: none;
     transition: ease-in-out .5s;
@@ -95,12 +95,12 @@
 }
 
 
-.character-list-andy li a:hover{
-    background-color: rgb(255, 0, 0);
-    box-shadow: 0 0 5px rgb(255, 0, 0), 0 0 25px rgb(255, 0, 0), 0 0 50px rgb(255, 0, 0), 0 0 100px rgb(255, 0, 0), 0 0 200px rgb(255, 0, 0);
+.character-list-ethan li a:hover{
+    background-color: rgb(33, 190, 25);
+    box-shadow: 0 0 5px rgb(33, 190, 25), 0 0 25px rgb(33, 190, 25), 0 0 50px rgb(33, 190, 25), 0 0 100px rgb(33, 190, 25), 0 0 200px rgb(33, 190, 25);
 }
 
-.andy-achievement-lore{
+.ethan-achievement-lore{
     display: flex;
     justify-content: center;
     position: fixed;
@@ -109,9 +109,9 @@
     height: 90px
 }
 
-.andy-lore{
-    background-image: url(minecraft\ wood\ texture.jpg);
-    color: #ffffff;
+.ethan-lore{
+    background: rgb(1, 45, 43);
+    color: #017672;
     display: block;
     position: absolute;
     justify-content: center;
@@ -130,9 +130,9 @@
     cursor: context-menu;
 }
 
-.andy-credits{
-    background-image: url(minecraft\ wood\ texture.jpg);
-    color: #ffffff;
+.ethan-credits{
+    background: rgb(1, 45, 43);
+    color: #017672;
     display: block;
     position: fixed;
     justify-content: center;
@@ -149,8 +149,8 @@
     cursor: context-menu;
 }
 
-.links-andy{
-    color: #ffffff;
+.links-ethan{
+    color: #017672;
     text-shadow: 2px 2px black;
     text-decoration: none;
 }
@@ -163,7 +163,7 @@
     text-decoration: none;
 }
 
-.slideshow-andy{
+.slideshow-ethan{
     position: fixed;
     margin: auto;
     left: 250px;
@@ -205,25 +205,25 @@
   top: 0;
 }
 
-.dot-andy {
+.dot-ethan {
   cursor: pointer;
   height: 17px;
   width: 17px;
   margin: 0 2px;
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(1, 45, 43);
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
-.dots-andy{
+.dots-ethan{
     position: fixed;
     left: 375px;
     top: 1100px;
 }
 
-.active-andy, .dot-andy:hover {
-  background-color: #a80000;
+.active-ethan, .dot-ethan:hover {
+  background-color: #017672;
 }
 
 .fade {
@@ -248,7 +248,7 @@
   z-index: 99;
   border: none;
   outline: none;
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(16, 93, 35);
   color: white;
   cursor: pointer; 
   padding: 15px;
@@ -261,31 +261,25 @@
 }
 
 @media (max-width: 1440px){
-    .andy-lore{
+    .ethan-lore{
         font-size: 16px;
         width: 500px;
         left: calc(120px + ((100vw - 120px) / 2));
         transform: translate(-50%);
     }
 
-    .headingbox2-lore-andy{
+    .headingbox2-lore{
         left: calc(120px + ((100vw - 120px) / 2));
         transform: translate(-50%);
     }
 
-    .andy-credits{
+    .ethan-credits{
         font-size: 12px;
         width: 300px;
         right: 25px;
     }
 
-    .andy-credits ul{
-        padding: 0;
-        margin: 0 auto;
-        list-style-position: outside;
-    }
-
-    .slideshow-andy{
+    .slideshow-ethan{
         width: 250px;
         left: 200px;
     }
@@ -298,39 +292,39 @@
         font-size: 12px;
     }
 
-    .character-list-andy{
+    .character-list-ethan{
         width: 120px;
     }
 
-    .character-list-andy li{
+    .character-list-ethan li{
         font-size: 12px;
     }
 
-    .andy-achievement-lore{
+    .ethan-achievement-lore{
         height: 55px;
         top: 35px;
     }
 
-    .dots-andy{
+    .dots-ethan{
         top: 575px;
         left: 235px;
     }
 
-    .dot-andy{
+    .dot-ethan{
         width: 12px;
         height: 12px;
     }
 }
 
 @media (max-width: 768px){
-    .andy-lore-page{
+    .ethan-lore-page{
         overflow-y: scroll;
         -ms-overflow-style: none;
         scrollbar-width: none;
-        height: 1600px;
+        height: 1700px;
     }
 
-    .character-list-andy{
+    .character-list-ethan{
         position: fixed;
         top: 0;
         width: 75px;
@@ -339,11 +333,11 @@
         flex-direction: column;
     }
 
-    .character-list-andy li{
+    .character-list-ethan li{
         font-size: 8px;
     }
 
-    .headingbox2-lore-andy{
+    .headingbox2-lore{
         width: 250px;
         font-size: 9px;
         height: 125px;
@@ -351,7 +345,7 @@
         position: absolute;
     } 
 
-    .andy-achievement-lore{
+    .ethan-achievement-lore{
         top: 155px;
         left: calc(75px + ((100vw - 75px)/2));
         transform: translate(-50%);
@@ -359,28 +353,28 @@
         position: absolute;
     }
 
-    .slideshow-andy{
+    .slideshow-ethan{
         left: calc(75px + ((100vw - 75px) / 2));
         transform: translate(-50%);
         top: 250px;
         position: absolute;
     }
 
-    .dots-andy{
+    .dots-ethan{
         top: 575px;
         left: calc(75px + ((100vw - 75px) / 2));
         transform: translate(-50%);
         position: absolute;
     }
 
-    .andy-lore{
+    .ethan-lore{
         width: 250px;
         left: calc(75px + ((100vw - 75px) / 2));
         transform: translate(-50%);
-        top: 1100px
+        top: 1000px
     }
 
-    .andy-credits{
+    .ethan-credits{
         top: 650px;
         left: calc(75px + ((100vw - 75px) / 2));
         transform: translate(-50%);
@@ -388,11 +382,7 @@
         width: 250px;
     }
 
-    #mybtn{
-        visibility: visible;
-    }
-
-    .dot-andy{
+    .dot-ethan{
         width: 8.5px;
         height: 8.5px;
     }
