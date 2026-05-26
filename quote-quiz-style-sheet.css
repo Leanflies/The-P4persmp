@@ -137,13 +137,37 @@
 }
 
 @media (max-width: 768px){
+    .backArrow{
+        position: absolute;
+    }
+
     .quote-quiz-title{
-        font-size: 25px;
+        font-size: 20px;
     }
 
     #image{
         width: 200px;
         height: 200px;
         top: 150px
+    }
+
+    #option0{
+        top: 55%;
+    }
+    
+    #option1{
+        top: 70%;
+    }
+
+    #option2{
+        top: 85%;
+    }
+
+    #option3{
+        top: 100%;
+    }
+
+    #nextquestion{
+        top: 115%;
     }
 }
