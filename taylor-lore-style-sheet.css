@@ -364,7 +364,7 @@
         top: 155px;
         left: calc(75px + ((100vw - 75px)/2));
         transform: translate(-50%);
-        width: 300px;
+        width: 220px;
         position: absolute;
     }
 
@@ -383,10 +383,10 @@
     }
 
     .taylor-lore{
-        width: 350px;
+        width: 250px;
         left: calc(75px + ((100vw - 75px) / 2));
         transform: translate(-50%);
-        top: 1000px
+        top: 1100px
     }
 
     .taylor-credits{
@@ -394,6 +394,7 @@
         left: calc(75px + ((100vw - 75px) / 2));
         transform: translate(-50%);
         position: absolute;
+        width: 250px;
     }
 
     #mybtn{
