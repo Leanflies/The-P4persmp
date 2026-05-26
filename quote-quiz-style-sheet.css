@@ -150,6 +150,10 @@
         position: absolute;
     }
 
+    #quiz-container button{
+        position: absolute;
+    }
+
     .title{
         left: 50%;
         transform: translate(-50%);
