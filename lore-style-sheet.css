@@ -204,6 +204,7 @@
 @media (max-width: 1024px){
     .lore-page{
         background: linear-gradient(#5AA371, #3EB9A8, #1D6C61, #193A31, #1E201F);
+        height: 100vh;
     }
     
     .character-list{
@@ -249,7 +250,6 @@
         width: 42vw;
         padding-left: 2.5%;
         padding-right: 2.5%;
-        top: 50%;
         left: calc(100px + ((100vw - 100px) / 2));
         transform: translateX(-50%, -50%);
     }
