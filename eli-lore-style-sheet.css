@@ -372,7 +372,7 @@
         top: 155px;
         left: calc(75px + ((100vw - 75px)/2));
         transform: translate(-50%);
-        width: 300px;
+        width: 220px;
         position: absolute;
     }
 
@@ -391,7 +391,7 @@
     }
 
     .eli-lore{
-        width: 350px;
+        width: 250px;
         left: calc(75px + ((100vw - 75px) / 2));
         transform: translate(-50%);
         top: 1000px
@@ -402,6 +402,7 @@
         left: calc(75px + ((100vw - 75px) / 2));
         transform: translate(-50%);
         position: absolute;
+        width: 250px;
     }
 
     .quadrocopter{
