@@ -349,7 +349,7 @@
         top: 155px;
         left: calc(75px + ((100vw - 75px)/2));
         transform: translate(-50%);
-        width: 300px;
+        width: 220px;
         position: absolute;
     }
 
@@ -368,7 +368,7 @@
     }
 
     .ethan-lore{
-        width: 350px;
+        width: 300px;
         left: calc(75px + ((100vw - 75px) / 2));
         transform: translate(-50%);
         top: 900px
@@ -379,5 +379,11 @@
         left: calc(75px + ((100vw - 75px) / 2));
         transform: translate(-50%);
         position: absolute;
+        width: 300px;
+    }
+
+    .dot-ethan{
+        width: 6px;
+        height: 6px;
     }
 }
