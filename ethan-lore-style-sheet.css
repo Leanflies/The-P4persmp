@@ -321,7 +321,7 @@
         overflow-y: scroll;
         -ms-overflow-style: none;
         scrollbar-width: none;
-        height: 1600px;
+        height: 1700px;
     }
 
     .character-list-ethan{
@@ -371,7 +371,7 @@
         width: 250px;
         left: calc(75px + ((100vw - 75px) / 2));
         transform: translate(-50%);
-        top: 900px
+        top: 1000px
     }
 
     .ethan-credits{
