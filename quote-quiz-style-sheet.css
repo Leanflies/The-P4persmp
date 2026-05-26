@@ -156,7 +156,7 @@
     }
 
     #quiz-container {
-        position: fixed;
+        position: absolute;
         inset: 0; 
     }
 
