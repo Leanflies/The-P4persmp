@@ -355,7 +355,7 @@
         top: 155px;
         left: calc(75px + ((100vw - 75px)/2));
         transform: translate(-50%);
-        width: 300px;
+        width: 220px;
         position: absolute;
     }
 
@@ -374,10 +374,10 @@
     }
 
     .andy-lore{
-        width: 350px;
+        width: 250px;
         left: calc(75px + ((100vw - 75px) / 2));
         transform: translate(-50%);
-        top: 1000px
+        top: 1100px
     }
 
     .andy-credits{
@@ -385,9 +385,15 @@
         left: calc(75px + ((100vw - 75px) / 2));
         transform: translate(-50%);
         position: absolute;
+        width: 250px;
     }
 
     #mybtn{
         visibility: visible;
+    }
+
+    .dot-andy{
+        width: 8.5px;
+        height: 8.5px;
     }
 }
