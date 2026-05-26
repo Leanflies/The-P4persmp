@@ -377,7 +377,7 @@
         width: 250px;
         left: calc(75px + ((100vw - 75px) / 2));
         transform: translate(-50%);
-        top: 1100px
+        top: 1000px
     }
 
     .ashlyn-credits{
