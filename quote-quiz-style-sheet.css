@@ -143,31 +143,38 @@
 
     .quote-quiz-title{
         font-size: 20px;
+        position: absolute;
     }
 
     #image{
         width: 200px;
         height: 200px;
-        top: 150px
+        top: 150px;
+        position: absolute;
     }
 
     #option0{
-        top: 55%;
+        top: 65%;
+        position: absolute;
     }
     
     #option1{
-        top: 70%;
+        top: 80%;
+        position: absolute;
     }
 
     #option2{
-        top: 85%;
+        top: 95%;
+        position: absolute;
     }
 
     #option3{
-        top: 100%;
+        top: 110%;
+        position: absolute;
     }
 
     #nextquestion{
-        top: 115%;
+        top: 125%;
+        position: absolute;
     }
 }
