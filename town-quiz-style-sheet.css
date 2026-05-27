@@ -45,15 +45,15 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    top: 10;
+    top: 0;
     left: 50%;
     transform: translate(-50%);
     color: white;
-    font-size: 38px;
+    font-size: 50px;
 }
 
 .town-quiz-page{
-    background: radial-gradient(circle, #FFF4E6,#FFE0B8,#FFCC8A,#FFB85C,#FFA42E,#FF9000,#D17600,#A35C00,#754200,#472800,#1A0E00 95%);
+    background: radial-gradient(circle,#FFE6E6,#FFB8B8,#FF8A8A,#FF5C5C,#FF2E2E,#FF0000,#D10000,#A30000,#750000,#470000,#1A0000 95%);
 }
 
 #option0{
@@ -87,13 +87,13 @@
 }
 
 #image {
-    width: 500px;
+    width: 580px;
     margin-bottom: 20px;
     position: fixed;
-    top: 150px;
+    top: 90;
     left: 50%;
     transform: translate(-50%);
-    height: 500px;
+    height: 580px;
 }
 
 .backArrow{
@@ -126,7 +126,7 @@
     }
 
     .town-quiz-title{
-        font-size: 25px;
+        font-size: 30px
     }
 
     #image{
@@ -137,13 +137,62 @@
 }
 
 @media (max-width: 768px){
+    .town-quiz-page{
+        height: 1000px;
+    }
+
+    .backArrow{
+        position: absolute;
+    }
+
     .town-quiz-title{
-        font-size: 16px;
+        font-size: 20px;
+        position: absolute;
+    }
+
+    #quiz-container button{
+        position: absolute;
+    }
+
+    .title{
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    #quiz-container {
+        position: absolute;
+        inset: 0; 
     }
 
     #image{
         width: 200px;
         height: 200px;
-        top: 130px
+        top: 150px;
+        position: absolute;
+    }
+
+    #option0{
+        top: 65%;
+        position: absolute;
+    }
+    
+    #option1{
+        top: 80%;
+        position: absolute;
+    }
+
+    #option2{
+        top: 95%;
+        position: absolute;
+    }
+
+    #option3{
+        top: 110%;
+        position: absolute;
+    }
+
+    #next-question{
+        top: 125%;
+        position: absolute;
     }
 }
