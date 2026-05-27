@@ -45,15 +45,15 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    top: 10;
+    top: 0;
     left: 50%;
     transform: translate(-50%);
     color: white;
-    font-size: 35px;
+    font-size: 50px;
 }
 
 .colour-association-page{
-    background: radial-gradient(circle, #FFFFE6,#FFFEB8,#FFFD8A,#FFFC5C,#FFFC2E,#FFFB00,#D1CE00,#A3A000,#757300,#474600,#1A1900 95%);
+    background: radial-gradient(circle,#FFE6E6,#FFB8B8,#FF8A8A,#FF5C5C,#FF2E2E,#FF0000,#D10000,#A30000,#750000,#470000,#1A0000 95%);
 }
 
 #option0{
@@ -87,13 +87,13 @@
 }
 
 #image {
-    width: 500px;
+    width: 580px;
     margin-bottom: 20px;
     position: fixed;
-    top: 150px;
+    top: 90;
     left: 50%;
     transform: translate(-50%);
-    height: 500px;
+    height: 580px;
 }
 
 .backArrow{
@@ -126,7 +126,7 @@
     }
 
     .colour-association-title{
-        font-size: 23px;
+        font-size: 30px
     }
 
     #image{
@@ -137,13 +137,62 @@
 }
 
 @media (max-width: 768px){
-    .colour-association-title{
-        font-size: 13px;
+    .colour-association-page{
+        height: 1000px;
     }
 
-    #colour{
+    .backArrow{
+        position: absolute;
+    }
+
+    .colour-association-title{
+        font-size: 20px;
+        position: absolute;
+    }
+
+    #quiz-container button{
+        position: absolute;
+    }
+
+    .title{
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    #quiz-container {
+        position: absolute;
+        inset: 0; 
+    }
+
+    #image{
         width: 200px;
         height: 200px;
-        top: 130px
+        top: 150px;
+        position: absolute;
+    }
+
+    #option0{
+        top: 65%;
+        position: absolute;
+    }
+    
+    #option1{
+        top: 80%;
+        position: absolute;
+    }
+
+    #option2{
+        top: 95%;
+        position: absolute;
+    }
+
+    #option3{
+        top: 110%;
+        position: absolute;
+    }
+
+    #next-question{
+        top: 125%;
+        position: absolute;
     }
 }
