@@ -146,7 +146,7 @@
     }
 
     .image-association-title{
-        font-size: 20px;
+        font-size: 17px;
         position: absolute;
     }
 
@@ -167,32 +167,32 @@
     #image{
         width: 200px;
         height: 200px;
-        top: 150px;
+        top: 175px;
         position: absolute;
     }
 
     #option0{
-        top: 65%;
+        top: 75%;
         position: absolute;
     }
     
     #option1{
-        top: 80%;
+        top: 90%;
         position: absolute;
     }
 
     #option2{
-        top: 95%;
+        top: 105%;
         position: absolute;
     }
 
     #option3{
-        top: 110%;
+        top: 120%;
         position: absolute;
     }
 
     #next-question{
-        top: 125%;
+        top: 135%;
         position: absolute;
     }
 }
