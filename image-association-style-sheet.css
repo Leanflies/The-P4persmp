@@ -172,27 +172,27 @@
     }
 
     #option0{
-        top: 75%;
+        top: 85%;
         position: absolute;
     }
     
     #option1{
-        top: 90%;
+        top: 100%;
         position: absolute;
     }
 
     #option2{
-        top: 105%;
+        top: 115%;
         position: absolute;
     }
 
     #option3{
-        top: 120%;
+        top: 130%;
         position: absolute;
     }
 
     #next-question{
-        top: 135%;
+        top: 145%;
         position: absolute;
     }
 }
