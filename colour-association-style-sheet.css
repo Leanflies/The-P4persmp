@@ -86,7 +86,7 @@
     transform: translate(-50%, -50%);
 }
 
-#image {
+#colour {
     width: 580px;
     margin-bottom: 20px;
     position: fixed;
@@ -129,7 +129,7 @@
         font-size: 30px
     }
 
-    #image{
+    #colour{
         width: 280px;
         top: 90;
         height: 250px;
@@ -146,7 +146,7 @@
     }
 
     .colour-association-title{
-        font-size: 20px;
+        font-size: 17px;
         position: absolute;
     }
 
@@ -164,35 +164,35 @@
         inset: 0; 
     }
 
-    #image{
+    #colour{
         width: 200px;
         height: 200px;
-        top: 150px;
+        top: 175px;
         position: absolute;
     }
 
     #option0{
-        top: 65%;
+        top: 85%;
         position: absolute;
     }
     
     #option1{
-        top: 80%;
+        top: 100%;
         position: absolute;
     }
 
     #option2{
-        top: 95%;
+        top: 115%;
         position: absolute;
     }
 
     #option3{
-        top: 110%;
+        top: 130%;
         position: absolute;
     }
 
     #next-question{
-        top: 125%;
+        top: 145%;
         position: absolute;
     }
 }
